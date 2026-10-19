@@ -131,7 +131,7 @@ The register states the size of the class with its source, its method and its da
 
 ### 6.2 Coverage per grade
 
-Coverage is stated at each grade, counting active records at or above it, against both ends of the denominator. For example: 'Grade B or better: 41.200 of 2,1M to 2,6M (1,58% to 1,96%), denominator from the vehicle register, query of 1 September 2026, reference date 12 October 2026.'
+Coverage is stated at each grade, counting active records at or above it, against both ends of the denominator. For example: 'Grade B or better: 41 200 of 2.1M to 2.6M (1.58% to 1.96%), denominator from the vehicle register, query of 1 September 2026, reference date 12 October 2026.'
 
 This standard sets no minimum percentage. Where a jurisdiction's courts have set or applied one, its annex says so.
 

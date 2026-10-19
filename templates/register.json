@@ -24,7 +24,7 @@
         "low": 3150000,
         "high": 3900000,
         "currency": "EUR",
-        "method": "The price of package X, €1.500 per car, times the denominator"
+        "method": "The price of package X, €1 500 per car, times the denominator"
     },
     "facets": {
         "region": { "noord": 0.3, "midden": 0.45, "zuid": 0.25 },
