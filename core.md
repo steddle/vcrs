@@ -117,11 +117,11 @@ Each record names the version of the terms the person accepted. Each terms versi
 
 At each reference date the operator fixes the register's state:
 
-1. List every record as its identifier and its digest, one line per record, ordered by identifier.
-2. The snapshot root is the SHA-256 of that list.
+1. List every record as its identifier and its digest, separated by a space, one line per record, ordered by identifier in byte order.
+2. The snapshot root is the Merkle Tree Hash of RFC 9162 (Certificate Transparency Version 2.0), section 2.1.1, with SHA-256, over those lines in that order: each line, in UTF-8 and without its line break, is one entry.
 3. Anchor the root in time, by a notary, a qualified electronic timestamp under eIDAS, or a public timestamp such as OpenTimestamps.
 
-A person can be shown their own line, and anyone holding the root can check that a given record was in the register on that date.
+A person can be shown their own line with its position in the list, counted from 0, the number of lines, and its inclusion proof under RFC 9162, section 2.1.3. Anyone holding the root checks from these alone, as RFC 9162, section 2.1.3.2 sets out, that the record was in the register on that date, without seeing any other line.
 
 ## 6. Coverage
 
@@ -214,7 +214,7 @@ A representative that claims a level publishes a one-page statement: the level, 
 
 ### 11.3 Canonical form and digests
 
-A record's canonical form is its JSON under RFC 8785 (JSON Canonicalization Scheme) without its `digest` member. Records hold no floating-point numbers, so the canonical form is the record with its keys sorted by their UTF-16 code units, no insignificant whitespace, in UTF-8. Digests are SHA-256, written `sha256:` followed by 64 lowercase hexadecimal characters.
+A record's canonical form is its JSON under RFC 8785 (JSON Canonicalization Scheme) without its `digest` member. Records hold no floating-point numbers, so the canonical form is the record with its keys sorted by their UTF-16 code units, no insignificant whitespace, in UTF-8. Digests are SHA-256, written `sha256:` followed by 64 lowercase hexadecimal characters, and so are the snapshot root and each node of an inclusion proof (5.4).
 
 ### 11.4 Test vectors
 
