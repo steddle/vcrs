@@ -1,3 +1,5 @@
+<img src="art/banner.png" alt="VCRS: how a claimant register proves who stands behind the action" width="1600">
+
 # VCRS
 
 The Verified Claimant Register Standard: how a claimant register shows who stands behind a collective action.
