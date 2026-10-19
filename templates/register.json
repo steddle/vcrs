@@ -1,0 +1,60 @@
+{
+    "vcrs": "0.1.0-beta.1",
+    "annex": "nl",
+    "representative": { "name": "Stichting Voorbeeldclaim", "registration": "KvK 00000000" },
+    "action": { "title": "Software that was sold and never delivered", "defendants": ["Example Motors B.V."], "court_reference": null },
+    "operator": "Stichting Voorbeeldclaim",
+    "class": {
+        "definition": "Every person who bought a car with package X in the Netherlands between 1 January 2021 and 30 June 2026.",
+        "version": "1",
+        "approved_on": "2026-08-15"
+    },
+    "reference_date": "2026-10-12",
+    "opt_in_opened_on": null,
+    "opt_in_closed_on": null,
+    "opt_in_channel": null,
+    "denominator": {
+        "low": 21000,
+        "high": 26000,
+        "source": "RDW open data, registrations of the models concerned, times the take rate of package X in the defendant's annual report",
+        "method": "Register count times a published rate",
+        "as_of": "2026-09-01"
+    },
+    "claims": {
+        "low": 3150000,
+        "high": 3900000,
+        "currency": "EUR",
+        "method": "The price of package X, €1.500 per car, times the denominator"
+    },
+    "facets": {
+        "region": { "noord": 0.3, "midden": 0.45, "zuid": 0.25 },
+        "period": { "2021-2023": 0.55, "2024-2026": 0.45 }
+    },
+    "subgroups": [],
+    "organisations": [
+        { "name": "Vereniging Voorbeeld Rijders", "on": "2026-09-20", "form": "Letter of support" }
+    ],
+    "anchor": {
+        "method": "opentimestamps",
+        "reference": "snapshots/2026-10-12.ots",
+        "on": "2026-10-12",
+        "root": "sha256:2f4447806f0aeddb4f7768fe40c6b34aa55fb950d02385e5316da2bc4af420b5"
+    },
+    "flows": [
+        {
+            "id": "f1",
+            "live_from": "2026-09-01",
+            "live_to": null,
+            "locales": ["nl", "en"],
+            "states": { "representative": true, "defendant": true, "claim": true, "period": true },
+            "capture": {
+                "digest": "sha256:5f2b0c6c1f5e3e7a1d6c8b9a0e4f3d2c1b0a9f8e7d6c5b4a3f2e1d0c9b8a7f6e",
+                "witnessed": { "by": "bailiff", "on": "2026-09-01", "reference": "Proces-verbaal 2026-0912" }
+            }
+        }
+    ],
+    "terms": [
+        { "id": "t1", "digest": "sha256:0d4f6c2a8e1b3f5a7c9e0b2d4f6a8c1e3b5d7f9a0c2e4b6d8f1a3c5e7b9d0f2a" }
+    ],
+    "records": []
+}
