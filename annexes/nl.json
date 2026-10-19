@@ -1,0 +1,13 @@
+{
+    "code": "nl",
+    "title": "Annex NL: the Netherlands (WAMCA)",
+    "forum": "NL",
+    "opt_in_abroad": true,
+    "opt_in_channel": "registry",
+    "opt_in_window": true,
+    "parallel_declaration_abroad": true,
+    "schemes": [
+        "idin",
+        "eherkenning"
+    ]
+}
