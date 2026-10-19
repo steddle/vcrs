@@ -1,0 +1,41 @@
+{
+    "description": "Vehicle checked against the RDW register, identity through iDIN",
+    "annex": "nl",
+    "flows": {
+        "f1": true,
+        "f0": false
+    },
+    "record": {
+        "id": "r-0001",
+        "party": "natural",
+        "status": "active",
+        "joined_on": "2026-09-01",
+        "flow": "f1",
+        "terms": "t1",
+        "identity": {
+            "name": true,
+            "birth_date": true,
+            "contact_confirmed": true,
+            "verified": {
+                "scheme": "idin",
+                "assurance": "substantial",
+                "on": "2026-09-02"
+            }
+        },
+        "membership": {
+            "basis": "checked",
+            "in_class": true,
+            "evidence": [],
+            "checked_against": "RDW kentekenregister"
+        },
+        "duplicate_of": null,
+        "residence": {
+            "country": "NL",
+            "on": "2026-09-01"
+        }
+    },
+    "expected": {
+        "grade": "A",
+        "reasons": []
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "description": "Resident in Germany, consent given at sign-up before the window opened: not represented",
+    "annex": "nl",
+    "context": {
+        "reference_date": "2027-03-15",
+        "opt_in_opened_on": "2027-01-15",
+        "opt_in_closed_on": "2027-03-01",
+        "opt_in_channel": null
+    },
+    "flows": {
+        "f1": true,
+        "f0": false
+    },
+    "record": {
+        "id": "r-0001",
+        "party": "natural",
+        "status": "active",
+        "joined_on": "2026-09-01",
+        "flow": "f1",
+        "terms": "t1",
+        "identity": {
+            "name": true,
+            "birth_date": true,
+            "contact_confirmed": true,
+            "verified": null
+        },
+        "membership": {
+            "basis": "declared",
+            "in_class": null,
+            "evidence": [],
+            "checked_against": null
+        },
+        "duplicate_of": null,
+        "residence": {
+            "country": "BE",
+            "on": "2026-09-01"
+        },
+        "opt_in": {
+            "on": "2026-09-03",
+            "channel": "registry"
+        },
+        "parallel_declared": true
+    },
+    "expected": {
+        "grade": "D",
+        "reasons": [
+            "not_opted_in"
+        ]
+    }
+}

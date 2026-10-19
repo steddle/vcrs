@@ -1,0 +1,38 @@
+{
+    "description": "Every rule of 4.1 that applies is reported, in the order of 4.1",
+    "annex": null,
+    "flows": {
+        "f1": true,
+        "f0": false
+    },
+    "record": {
+        "id": "r-0001",
+        "party": "natural",
+        "status": "withdrawn",
+        "joined_on": "2026-09-01",
+        "flow": "f0",
+        "terms": "t1",
+        "identity": {
+            "name": false,
+            "birth_date": true,
+            "contact_confirmed": false,
+            "verified": null
+        },
+        "membership": {
+            "basis": "declared",
+            "in_class": null,
+            "evidence": [],
+            "checked_against": null
+        },
+        "duplicate_of": null
+    },
+    "expected": {
+        "grade": "D",
+        "reasons": [
+            "not_active",
+            "uninformed_flow",
+            "no_name",
+            "unconfirmed_contact"
+        ]
+    }
+}

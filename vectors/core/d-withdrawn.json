@@ -1,0 +1,39 @@
+{
+    "description": "Withdrawn before the reference date",
+    "annex": null,
+    "flows": {
+        "f1": true,
+        "f0": false
+    },
+    "record": {
+        "id": "r-0001",
+        "party": "natural",
+        "status": "withdrawn",
+        "joined_on": "2026-09-01",
+        "flow": "f1",
+        "terms": "t1",
+        "identity": {
+            "name": true,
+            "birth_date": true,
+            "contact_confirmed": true,
+            "verified": {
+                "scheme": "eidas",
+                "assurance": "substantial",
+                "on": "2026-09-02"
+            }
+        },
+        "membership": {
+            "basis": "checked",
+            "in_class": true,
+            "evidence": [],
+            "checked_against": "public register"
+        },
+        "duplicate_of": null
+    },
+    "expected": {
+        "grade": "D",
+        "reasons": [
+            "not_active"
+        ]
+    }
+}

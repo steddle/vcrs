@@ -1,0 +1,41 @@
+{
+    "description": "Identity through Chave Móvel Digital, notified under eIDAS at assurance high",
+    "annex": "pt",
+    "flows": {
+        "f1": true,
+        "f0": false
+    },
+    "record": {
+        "id": "r-0001",
+        "party": "natural",
+        "status": "active",
+        "joined_on": "2026-09-01",
+        "flow": "f1",
+        "terms": "t1",
+        "identity": {
+            "name": true,
+            "birth_date": true,
+            "contact_confirmed": true,
+            "verified": {
+                "scheme": "eidas",
+                "assurance": "high",
+                "on": "2026-09-02"
+            }
+        },
+        "membership": {
+            "basis": "checked",
+            "in_class": true,
+            "evidence": [],
+            "checked_against": "public register"
+        },
+        "duplicate_of": null,
+        "residence": {
+            "country": "PT",
+            "on": "2026-09-01"
+        }
+    },
+    "expected": {
+        "grade": "A",
+        "reasons": []
+    }
+}

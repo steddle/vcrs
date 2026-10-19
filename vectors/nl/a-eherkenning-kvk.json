@@ -1,0 +1,41 @@
+{
+    "description": "A company checked against the Handelsregister, acting through eHerkenning",
+    "annex": "nl",
+    "flows": {
+        "f1": true,
+        "f0": false
+    },
+    "record": {
+        "id": "r-0001",
+        "party": "legal",
+        "status": "active",
+        "joined_on": "2026-09-01",
+        "flow": "f1",
+        "terms": "t1",
+        "identity": {
+            "name": true,
+            "contact_confirmed": true,
+            "verified": {
+                "scheme": "eherkenning",
+                "assurance": "substantial",
+                "on": "2026-09-02"
+            },
+            "registration_number": true
+        },
+        "membership": {
+            "basis": "checked",
+            "in_class": true,
+            "evidence": [],
+            "checked_against": "KvK Handelsregister"
+        },
+        "duplicate_of": null,
+        "residence": {
+            "country": "NL",
+            "on": "2026-09-01"
+        }
+    },
+    "expected": {
+        "grade": "A",
+        "reasons": []
+    }
+}

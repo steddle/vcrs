@@ -1,0 +1,47 @@
+{
+    "description": "Resident in Germany, never opted in, contact never confirmed: rules 7 and 8 reported in the order of 4.1",
+    "annex": "nl",
+    "context": {
+        "reference_date": "2027-03-15",
+        "opt_in_opened_on": "2027-01-15",
+        "opt_in_closed_on": "2027-03-01",
+        "opt_in_channel": null
+    },
+    "flows": {
+        "f1": true,
+        "f0": false
+    },
+    "record": {
+        "id": "r-0001",
+        "party": "natural",
+        "status": "active",
+        "joined_on": "2026-09-01",
+        "flow": "f1",
+        "terms": "t1",
+        "identity": {
+            "name": true,
+            "birth_date": true,
+            "contact_confirmed": false,
+            "verified": null
+        },
+        "membership": {
+            "basis": "declared",
+            "in_class": null,
+            "evidence": [],
+            "checked_against": null
+        },
+        "duplicate_of": null,
+        "residence": {
+            "country": "DE",
+            "on": "2026-09-01"
+        }
+    },
+    "expected": {
+        "grade": "D",
+        "reasons": [
+            "unconfirmed_contact",
+            "not_opted_in",
+            "no_parallel_declaration"
+        ]
+    }
+}

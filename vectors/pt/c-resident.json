@@ -1,0 +1,39 @@
+{
+    "description": "Resident in Portugal: represented without opting in (art. 14 Lei 83/95), counted on declared membership",
+    "annex": "pt",
+    "flows": {
+        "f1": true,
+        "f0": false
+    },
+    "record": {
+        "id": "r-0001",
+        "party": "natural",
+        "status": "active",
+        "joined_on": "2026-09-01",
+        "flow": "f1",
+        "terms": "t1",
+        "identity": {
+            "name": true,
+            "birth_date": true,
+            "contact_confirmed": true,
+            "verified": null
+        },
+        "membership": {
+            "basis": "declared",
+            "in_class": true,
+            "evidence": [],
+            "checked_against": null
+        },
+        "duplicate_of": null,
+        "residence": {
+            "country": "PT",
+            "on": "2026-09-01"
+        }
+    },
+    "expected": {
+        "grade": "C",
+        "reasons": [
+            "declared_only"
+        ]
+    }
+}

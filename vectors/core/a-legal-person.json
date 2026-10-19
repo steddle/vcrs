@@ -1,0 +1,37 @@
+{
+    "description": "A legal person: registration number, checked against the business register, identified through eIDAS",
+    "annex": null,
+    "flows": {
+        "f1": true,
+        "f0": false
+    },
+    "record": {
+        "id": "r-0001",
+        "party": "legal",
+        "status": "active",
+        "joined_on": "2026-09-01",
+        "flow": "f1",
+        "terms": "t1",
+        "identity": {
+            "name": true,
+            "contact_confirmed": true,
+            "verified": {
+                "scheme": "eidas",
+                "assurance": "substantial",
+                "on": "2026-09-02"
+            },
+            "registration_number": true
+        },
+        "membership": {
+            "basis": "checked",
+            "in_class": true,
+            "evidence": [],
+            "checked_against": "business register"
+        },
+        "duplicate_of": null
+    },
+    "expected": {
+        "grade": "A",
+        "reasons": []
+    }
+}
