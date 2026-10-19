@@ -1,0 +1,271 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://vcrs.steddle.com/schema/0.1.0-beta.1/record.schema.json",
+    "title": "VCRS record",
+    "description": "One person's entry in a facts export: the facts that set its grade (VCRS 0.1.0-beta.1, section 4), without the personal data behind them.",
+    "type": "object",
+    "required": [
+        "id",
+        "party",
+        "status",
+        "joined_on",
+        "flow",
+        "terms",
+        "identity",
+        "membership",
+        "duplicate_of"
+    ],
+    "additionalProperties": false,
+    "properties": {
+        "id": {
+            "description": "The record's identifier in the register. Pseudonymous: never a name, an email address or a national number.",
+            "$ref": "#/$defs/id"
+        },
+        "party": {
+            "enum": [
+                "natural",
+                "legal"
+            ]
+        },
+        "status": {
+            "enum": [
+                "active",
+                "withdrawn",
+                "opted_out",
+                "excluded"
+            ]
+        },
+        "joined_on": {
+            "$ref": "#/$defs/date"
+        },
+        "flow": {
+            "description": "The flow version the person joined through.",
+            "$ref": "#/$defs/id"
+        },
+        "terms": {
+            "description": "The terms version the person accepted.",
+            "$ref": "#/$defs/id"
+        },
+        "identity": {
+            "type": "object",
+            "required": [
+                "name",
+                "contact_confirmed",
+                "verified"
+            ],
+            "additionalProperties": false,
+            "properties": {
+                "name": {
+                    "description": "A name is held.",
+                    "type": "boolean"
+                },
+                "birth_date": {
+                    "description": "A date of birth is held. Natural persons.",
+                    "type": "boolean"
+                },
+                "registration_number": {
+                    "description": "A business or associations register number is held. Legal persons.",
+                    "type": "boolean"
+                },
+                "contact_confirmed": {
+                    "description": "The person confirmed a contact channel, for example by a link sent to it.",
+                    "type": "boolean"
+                },
+                "verified": {
+                    "description": "How identity was verified, or null where it was not (section 4.4).",
+                    "oneOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "object",
+                            "required": [
+                                "scheme",
+                                "assurance",
+                                "on"
+                            ],
+                            "additionalProperties": false,
+                            "properties": {
+                                "scheme": {
+                                    "description": "eidas for a notified eIDAS means or the EU Digital Identity Wallet; otherwise a scheme an annex names, such as idin.",
+                                    "type": "string",
+                                    "pattern": "^[a-z0-9_-]{2,32}$"
+                                },
+                                "assurance": {
+                                    "enum": [
+                                        "low",
+                                        "substantial",
+                                        "high"
+                                    ]
+                                },
+                                "on": {
+                                    "$ref": "#/$defs/date"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "membership": {
+            "type": "object",
+            "required": [
+                "basis",
+                "in_class",
+                "evidence",
+                "checked_against"
+            ],
+            "additionalProperties": false,
+            "properties": {
+                "basis": {
+                    "description": "declared: the person's own word. supplied: evidence the person provided. checked: a source outside the person (section 4.3).",
+                    "enum": [
+                        "declared",
+                        "supplied",
+                        "checked"
+                    ]
+                },
+                "in_class": {
+                    "description": "Whether the facts held place the person inside the class definition: true, false, or null where they don't decide it.",
+                    "type": [
+                        "boolean",
+                        "null"
+                    ]
+                },
+                "evidence": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "required": [
+                            "type",
+                            "digest"
+                        ],
+                        "additionalProperties": false,
+                        "properties": {
+                            "type": {
+                                "type": "string",
+                                "minLength": 1
+                            },
+                            "digest": {
+                                "$ref": "#/$defs/digest"
+                            }
+                        }
+                    }
+                },
+                "checked_against": {
+                    "description": "The outside source membership was checked against, where basis is checked.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            }
+        },
+        "residence": {
+            "description": "The person's country of habitual residence, and the date it was established for (section 4.6).",
+            "type": "object",
+            "required": [
+                "country",
+                "on"
+            ],
+            "additionalProperties": false,
+            "properties": {
+                "country": {
+                    "type": "string",
+                    "pattern": "^[A-Z]{2}$"
+                },
+                "on": {
+                    "$ref": "#/$defs/date"
+                },
+                "source": {
+                    "description": "Where the residence comes from: the person's declaration, an identity document, a register.",
+                    "type": "string",
+                    "minLength": 1
+                }
+            }
+        },
+        "opt_in": {
+            "description": "The person's express statement that they want to be represented in this action, where the annex requires one (section 4.6).",
+            "oneOf": [
+                {
+                    "type": "null"
+                },
+                {
+                    "type": "object",
+                    "required": [
+                        "on",
+                        "channel"
+                    ],
+                    "additionalProperties": false,
+                    "properties": {
+                        "on": {
+                            "$ref": "#/$defs/date"
+                        },
+                        "channel": {
+                            "description": "Where the opt-in went. Where the export states a court-set channel (opt_in_channel) or the annex names one, it holds that value as written, registry under Annex NL; any other value does not count.",
+                            "type": "string",
+                            "minLength": 1
+                        }
+                    }
+                }
+            ]
+        },
+        "parallel_declared": {
+            "description": "The person declared they are not represented in another action, and claim nowhere else, on the same claim against the same defendant (section 4.6).",
+            "type": "boolean"
+        },
+        "dedupe_key": {
+            "description": "A salted digest of the normalised identifying fields (section 4.5).",
+            "type": "string",
+            "pattern": "^[0-9a-f]{16,128}$"
+        },
+        "duplicate_of": {
+            "oneOf": [
+                {
+                    "$ref": "#/$defs/id"
+                },
+                {
+                    "type": "null"
+                }
+            ]
+        },
+        "facets": {
+            "type": "object",
+            "additionalProperties": {
+                "type": "string"
+            }
+        },
+        "subgroup": {
+            "type": "string",
+            "minLength": 1
+        },
+        "grade": {
+            "description": "The grade the operator states. A validator recomputes it.",
+            "enum": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ]
+        },
+        "digest": {
+            "description": "SHA-256 of the record's canonical form without this member (section 11.3).",
+            "$ref": "#/$defs/digest"
+        }
+    },
+    "$defs": {
+        "date": {
+            "type": "string",
+            "format": "date",
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "digest": {
+            "type": "string",
+            "pattern": "^sha256:[0-9a-f]{64}$"
+        },
+        "id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9._:-]{1,64}$"
+        }
+    }
+}

@@ -1,0 +1,305 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://vcrs.steddle.com/schema/0.1.0-beta.1/conformance.schema.json",
+    "title": "VCRS conformance statement",
+    "description": "The one-page statement a representative publishes when it claims a level (VCRS 0.1.0-beta.1, section 11.2). No personal data.",
+    "type": "object",
+    "required": [
+        "vcrs",
+        "annex",
+        "level",
+        "representative",
+        "action",
+        "operator",
+        "reference_date",
+        "denominator",
+        "counts",
+        "coverage",
+        "snapshot",
+        "auditor",
+        "issued_on"
+    ],
+    "additionalProperties": false,
+    "properties": {
+        "vcrs": {
+            "const": "0.1.0-beta.1"
+        },
+        "annex": {
+            "type": "string",
+            "pattern": "^[a-z]{2}$"
+        },
+        "level": {
+            "enum": [
+                "registered",
+                "identified",
+                "verified"
+            ]
+        },
+        "representative": {
+            "type": "string",
+            "minLength": 1
+        },
+        "action": {
+            "type": "object",
+            "required": [
+                "title",
+                "defendants"
+            ],
+            "additionalProperties": false,
+            "properties": {
+                "title": {
+                    "type": "string",
+                    "minLength": 1
+                },
+                "defendants": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "minItems": 1
+                },
+                "court_reference": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            }
+        },
+        "operator": {
+            "type": "string",
+            "minLength": 1
+        },
+        "reference_date": {
+            "$ref": "#/$defs/date"
+        },
+        "denominator": {
+            "type": "object",
+            "required": [
+                "low",
+                "high",
+                "source",
+                "as_of"
+            ],
+            "additionalProperties": false,
+            "properties": {
+                "low": {
+                    "type": "integer",
+                    "minimum": 1
+                },
+                "high": {
+                    "type": "integer",
+                    "minimum": 1
+                },
+                "source": {
+                    "type": "string",
+                    "minLength": 1
+                },
+                "as_of": {
+                    "$ref": "#/$defs/date"
+                }
+            }
+        },
+        "claims": {
+            "description": "The size of the represented claims, where damages are claimed (section 6.5): a range in whole units of the currency, with its method.",
+            "type": "object",
+            "required": [
+                "low",
+                "high",
+                "currency",
+                "method"
+            ],
+            "additionalProperties": false,
+            "properties": {
+                "low": {
+                    "type": "integer",
+                    "minimum": 0
+                },
+                "high": {
+                    "type": "integer",
+                    "minimum": 0
+                },
+                "currency": {
+                    "type": "string",
+                    "pattern": "^[A-Z]{3}$"
+                },
+                "method": {
+                    "type": "string",
+                    "minLength": 1
+                }
+            }
+        },
+        "counts": {
+            "description": "Active records per grade, and records not active, at the reference date.",
+            "type": "object",
+            "required": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "inactive"
+            ],
+            "additionalProperties": false,
+            "properties": {
+                "A": {
+                    "type": "integer",
+                    "minimum": 0
+                },
+                "B": {
+                    "type": "integer",
+                    "minimum": 0
+                },
+                "C": {
+                    "type": "integer",
+                    "minimum": 0
+                },
+                "D": {
+                    "type": "integer",
+                    "minimum": 0
+                },
+                "inactive": {
+                    "type": "integer",
+                    "minimum": 0
+                }
+            }
+        },
+        "coverage": {
+            "description": "Active records at or above each grade, as a percentage of each end of the denominator.",
+            "type": "object",
+            "required": [
+                "A",
+                "B",
+                "C"
+            ],
+            "additionalProperties": false,
+            "properties": {
+                "A": {
+                    "$ref": "#/$defs/share"
+                },
+                "B": {
+                    "$ref": "#/$defs/share"
+                },
+                "C": {
+                    "$ref": "#/$defs/share"
+                }
+            }
+        },
+        "snapshot": {
+            "type": "object",
+            "required": [
+                "root",
+                "records",
+                "anchor"
+            ],
+            "additionalProperties": false,
+            "properties": {
+                "root": {
+                    "type": "string",
+                    "pattern": "^sha256:[0-9a-f]{64}$"
+                },
+                "records": {
+                    "type": "integer",
+                    "minimum": 0
+                },
+                "anchor": {
+                    "type": [
+                        "object",
+                        "null"
+                    ],
+                    "required": [
+                        "method",
+                        "reference",
+                        "on"
+                    ],
+                    "additionalProperties": false,
+                    "properties": {
+                        "method": {
+                            "enum": [
+                                "notary",
+                                "qualified_timestamp",
+                                "opentimestamps"
+                            ]
+                        },
+                        "reference": {
+                            "type": "string",
+                            "minLength": 1
+                        },
+                        "on": {
+                            "$ref": "#/$defs/date"
+                        }
+                    }
+                }
+            }
+        },
+        "auditor": {
+            "description": "Who checked the register under section 8, or null in a draft no auditor has reported on.",
+            "type": [
+                "object",
+                "null"
+            ],
+            "required": [
+                "firm",
+                "standard",
+                "report_date",
+                "check"
+            ],
+            "additionalProperties": false,
+            "properties": {
+                "firm": {
+                    "type": "string",
+                    "minLength": 1
+                },
+                "standard": {
+                    "description": "The professional standard the report was made under, e.g. ISRS 4400 or Standaard 4400N.",
+                    "type": "string",
+                    "minLength": 1
+                },
+                "report_date": {
+                    "$ref": "#/$defs/date"
+                },
+                "check": {
+                    "enum": [
+                        "sample_tracing",
+                        "full_recomputation",
+                        "reproduction_test"
+                    ]
+                }
+            }
+        },
+        "issued_on": {
+            "$ref": "#/$defs/date"
+        }
+    },
+    "$defs": {
+        "date": {
+            "type": "string",
+            "format": "date",
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "share": {
+            "type": "object",
+            "required": [
+                "records",
+                "low",
+                "high"
+            ],
+            "additionalProperties": false,
+            "properties": {
+                "records": {
+                    "type": "integer",
+                    "minimum": 0
+                },
+                "low": {
+                    "description": "records as a percentage of the denominator's high end.",
+                    "type": "number",
+                    "minimum": 0
+                },
+                "high": {
+                    "description": "records as a percentage of the denominator's low end.",
+                    "type": "number",
+                    "minimum": 0
+                }
+            }
+        }
+    }
+}
