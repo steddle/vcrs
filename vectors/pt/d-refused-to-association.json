@@ -1,0 +1,39 @@
+{
+    "description": "Resident in Portugal who refused representation to the association alone (art. 15(4) Lei 83/95 takes a declaration in the court file): withdrawn, so not counted",
+    "annex": "pt",
+    "flows": {
+        "f1": true,
+        "f0": false
+    },
+    "record": {
+        "id": "r-0001",
+        "party": "natural",
+        "status": "withdrawn",
+        "joined_on": "2026-09-01",
+        "flow": "f1",
+        "terms": "t1",
+        "identity": {
+            "name": true,
+            "birth_date": true,
+            "contact_confirmed": true,
+            "verified": null
+        },
+        "membership": {
+            "basis": "declared",
+            "in_class": true,
+            "evidence": [],
+            "checked_against": null
+        },
+        "duplicate_of": null,
+        "residence": {
+            "country": "PT",
+            "on": "2026-09-01"
+        }
+    },
+    "expected": {
+        "grade": "D",
+        "reasons": [
+            "not_active"
+        ]
+    }
+}
