@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased]
+## [0.1.0-beta.1] - 2026-10-20
 
 The first draft for consultation: a core that holds in every jurisdiction, and annexes that hold what one jurisdiction's law requires.
 
