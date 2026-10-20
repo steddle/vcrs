@@ -1,8 +1,8 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://vcrs.steddle.com/schema/0.1.0-beta.1/conformance.schema.json",
+    "$id": "https://vcrs.steddle.com/schema/0.1.0-beta.2/conformance.schema.json",
     "title": "VCRS conformance statement",
-    "description": "The one-page statement a representative publishes when it claims a level (VCRS 0.1.0-beta.1, section 11.2). No personal data.",
+    "description": "The one-page statement a representative publishes when it claims a level (VCRS 0.1.0-beta.2, section 11.2). No personal data.",
     "type": "object",
     "required": [
         "vcrs",
@@ -22,7 +22,7 @@
     "additionalProperties": false,
     "properties": {
         "vcrs": {
-            "const": "0.1.0-beta.1"
+            "const": "0.1.0-beta.2"
         },
         "annex": {
             "type": "string",

@@ -1,6 +1,6 @@
 # Annex NL: the Netherlands (WAMCA)
 
-VCRS 0.1.0-beta.1. Draft for consultation. Not legal advice. Law and rulings as read on 19 October 2026: statutes from the BWB, rulings from rechtspraak.nl, each quote checked against the publisher's text.
+VCRS 0.1.0-beta.2. Draft for consultation. Not legal advice. Law and rulings as read on 19 October 2026: statutes from the BWB, rulings from rechtspraak.nl, each quote checked against the publisher's text.
 
 ## 1. The regime
 

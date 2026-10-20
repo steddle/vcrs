@@ -1,6 +1,6 @@
 # Annex XX: <country> (<regime>)
 
-VCRS 0.1.0-beta.1. Draft for consultation. Not legal advice. Law as read on <date>.
+VCRS 0.1.0-beta.2. Draft for consultation. Not legal advice. Law as read on <date>.
 
 ## 1. The regime
 
