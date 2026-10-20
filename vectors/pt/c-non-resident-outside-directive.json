@@ -1,0 +1,46 @@
+{
+    "description": "Resident in Spain, never expressed the will to be represented, in an action outside DL 114-A/2023: no statute asks people abroad to opt in",
+    "annex": "pt",
+    "context": {
+        "reference_date": "2026-10-12",
+        "opt_in_opened_on": null,
+        "opt_in_closed_on": null,
+        "opt_in_channel": null,
+        "directive": false
+    },
+    "flows": {
+        "f1": true,
+        "f0": false
+    },
+    "record": {
+        "id": "r-0001",
+        "party": "natural",
+        "status": "active",
+        "joined_on": "2026-09-01",
+        "flow": "f1",
+        "terms": "t1",
+        "identity": {
+            "name": true,
+            "birth_date": true,
+            "contact_confirmed": true,
+            "verified": null
+        },
+        "membership": {
+            "basis": "declared",
+            "in_class": null,
+            "evidence": [],
+            "checked_against": null
+        },
+        "duplicate_of": null,
+        "residence": {
+            "country": "ES",
+            "on": "2026-09-01"
+        }
+    },
+    "expected": {
+        "grade": "C",
+        "reasons": [
+            "declared_only"
+        ]
+    }
+}

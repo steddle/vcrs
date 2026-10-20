@@ -1,6 +1,13 @@
 {
     "description": "Resident in Spain, expressed the will to be represented (art. 12 DL 114-A/2023), no formality and no parallel declaration needed",
     "annex": "pt",
+    "context": {
+        "reference_date": "2026-10-12",
+        "opt_in_opened_on": null,
+        "opt_in_closed_on": null,
+        "opt_in_channel": null,
+        "directive": true
+    },
     "flows": {
         "f1": true,
         "f0": false

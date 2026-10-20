@@ -51,7 +51,8 @@
             "type": "object",
             "required": [
                 "title",
-                "defendants"
+                "defendants",
+                "directive"
             ],
             "additionalProperties": false,
             "properties": {
@@ -72,6 +73,10 @@
                         "string",
                         "null"
                     ]
+                },
+                "directive": {
+                    "description": "Whether the action is brought under the forum's transposition of Directive (EU) 2020/1828. An annex may bind people abroad only on an opt-in in such an action alone (section 4.6).",
+                    "type": "boolean"
                 }
             }
         },

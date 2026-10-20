@@ -2,7 +2,7 @@
     "vcrs": "0.1.0-beta.2",
     "annex": "nl",
     "representative": { "name": "Stichting Voorbeeldclaim", "registration": "KvK 00000000" },
-    "action": { "title": "Software that was sold and never delivered", "defendants": ["Example Motors B.V."], "court_reference": null },
+    "action": { "title": "Software that was sold and never delivered", "defendants": ["Example Motors B.V."], "court_reference": null, "directive": true },
     "operator": "Stichting Voorbeeldclaim",
     "class": {
         "definition": "Every person who bought a car with package X in the Netherlands between 1 January 2021 and 30 June 2026.",

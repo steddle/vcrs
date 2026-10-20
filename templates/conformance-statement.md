@@ -5,7 +5,7 @@ VCRS 0.1.0-beta.2, core and Annex <XX>. One page, no personal data. The same con
 | | |
 |---|---|
 | Representative | <name, registration number> |
-| Action | <title>, against <defendants>, <court and case number> |
+| Action | <title>, against <defendants>, <court and case number>, <under the forum's transposition of Directive (EU) 2020/1828, or not> |
 | Operator | <name> |
 | Level claimed | <Registered, Identified or Verified> |
 | Reference date | <YYYY-MM-DD> |

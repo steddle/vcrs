@@ -2,7 +2,7 @@
     "code": "pt",
     "title": "Annex PT: Portugal (ação popular and DL 114-A/2023)",
     "forum": "PT",
-    "opt_in_abroad": true,
+    "opt_in_abroad": "directive",
     "opt_in_channel": null,
     "opt_in_window": false,
     "parallel_declaration_abroad": false,
