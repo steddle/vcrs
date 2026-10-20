@@ -44,6 +44,7 @@ The [self-assessment](checklist/self-assessment.md) is the same list as question
 | Netherlands | WAMCA, art. 3:305a BW | [Annex NL](annexes/nl.md) |
 | Portugal | Ação popular, DL 114-A/2023 | [Annex PT](annexes/pt.md) |
 | Austria | Verbandsklage auf Abhilfe, §§ 623 to 635 ZPO | [Annex AT](annexes/at.md) |
+| Germany | Verbandsklage under the VDuG | [Annex DE](annexes/de.md) |
 
 The core's residence rule (4.6) follows the Representative Actions Directive, so it holds in every member state.
 

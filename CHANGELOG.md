@@ -4,6 +4,7 @@
 
 **Added**
 - Annex AT (Verbandsklage auf Abhilfe), each Required item cited to its article or ruling.
+- Annex DE (Verbandsklage under the VDuG), each Required item cited to its article or ruling.
 - The facts export and the conformance statement state whether the action is brought under the forum's transposition of Directive (EU) 2020/1828 (`action.directive`, core 4.6 and 11.1). An annex may set `opt_in_abroad` to `"directive"`: people abroad then opt in only in such an action.
 
 **Changed**

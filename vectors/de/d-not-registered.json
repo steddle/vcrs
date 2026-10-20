@@ -1,0 +1,49 @@
+{
+    "description": "Signed up with the representative but never registered the claim with the Bundesamt für Justiz, and the § 46(1) window has closed",
+    "annex": "de",
+    "context": {
+        "reference_date": "2027-03-15",
+        "opt_in_opened_on": "2026-11-02",
+        "opt_in_closed_on": "2027-03-01",
+        "opt_in_channel": null
+    },
+    "flows": {
+        "f1": true
+    },
+    "record": {
+        "id": "r-0001",
+        "party": "natural",
+        "status": "active",
+        "joined_on": "2026-03-02",
+        "flow": "f1",
+        "terms": "t1",
+        "identity": {
+            "name": true,
+            "birth_date": true,
+            "contact_confirmed": true,
+            "verified": null
+        },
+        "membership": {
+            "basis": "supplied",
+            "in_class": true,
+            "evidence": [
+                {
+                    "type": "order_confirmation",
+                    "digest": "sha256:4f2b9c0e1d7a6b3c8e5f0a9d2c4b6e8f1a3c5e7d9b0f2a4c6e8d0b2f4a6c8e0d"
+                }
+            ],
+            "checked_against": null
+        },
+        "duplicate_of": null,
+        "residence": {
+            "country": "DE",
+            "on": "2026-03-02"
+        }
+    },
+    "expected": {
+        "grade": "D",
+        "reasons": [
+            "not_opted_in"
+        ]
+    }
+}
