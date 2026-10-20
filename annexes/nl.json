@@ -4,8 +4,9 @@
     "forum": "NL",
     "opt_in_abroad": true,
     "opt_in_channel": "registry",
+    "opt_in_residents": false,
     "opt_in_window": true,
-    "parallel_declaration_abroad": true,
+    "parallel_declaration": true,
     "schemes": [
         "idin",
         "eherkenning"

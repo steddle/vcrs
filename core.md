@@ -58,7 +58,7 @@ A record is grade D when any of these holds at the reference date:
 5. It holds no name.
 6. It holds nothing that tells two people with the same name apart: a date of birth for a natural person, a registration number for a legal person.
 7. Its contact channel was never confirmed by the person.
-8. Where the annex binds people who live outside the forum only on an express opt-in: its residence is not held; or, once the opt-in is due (4.6), it lives abroad and holds no opt-in made in time, or no declaration on parallel actions where the annex requires one.
+8. Where the annex binds people who live outside the forum, people who live in it, or both, only on an express opt-in: its residence is not held, where the opt-in turns on it; or, once the opt-in is due (4.6), the person must opt in and the record holds no opt-in made in time, or no declaration on parallel actions where the annex requires one.
 
 ### 4.2 Grade C: identified
 
@@ -83,13 +83,13 @@ Two records are duplicates when they name the same person, or claim on the same 
 
 ### 4.6 Residence and parallel actions
 
-Under the Representative Actions Directive, a person whose habitual residence is outside the member state of the court is bound only if they explicitly ask to be represented (Directive (EU) 2020/1828, art. 9(3)), and nobody is represented twice or paid twice on the same claim against the same trader (art. 9(4)). Where the annex binds people abroad only on an opt-in:
+Under the Representative Actions Directive, a person whose habitual residence is outside the member state of the court is bound only if they explicitly ask to be represented (Directive (EU) 2020/1828, art. 9(3)), and nobody is represented twice or paid twice on the same claim against the same trader (art. 9(4)). Where the law binds residents of the forum too only by an act of their own, the annex says so (`opt_in_residents`), and everyone in the class opts in. Where the annex binds people abroad, residents or both only on an opt-in:
 
-- Each record holds the person's country of habitual residence, the date it is established for, and its source.
-- Once the opt-in is due, the record of a person living abroad holds it: when they made it, through which channel, and the action it names.
+- Each record holds the person's country of habitual residence, the date it is established for, and its source, where the opt-in turns on residence.
+- Once the opt-in is due, the record of a person who must opt in holds it: when they made it, through which channel, and the action it names.
 - Where the annex requires it, that record also holds the person's declaration that they are not represented, and do not claim, elsewhere on the same claim.
 
-The annex says when the opt-in is due and through which channel. Where it binds people abroad on an opt-in only in an action brought under the forum's transposition of the Directive, the export states whether this action is one (`directive`). Where people abroad opt in during a window the court sets after it appoints the representative, the export states the days that window opened and closed (`opt_in_opened_on`, `opt_in_closed_on`), and a record abroad needs its opt-in only at a reference date after the window closed, made within the window and through the channel the court set, which the export states (`opt_in_channel`), or else the one the annex names. Until then this standard counts the record on its residence alone; the annex says whether a court is known to count that support, and the cross-section (6.3) can show people abroad apart from residents, so their support can be weighed either way. Where the annex has no such window, the opt-in is due from the start. Where the court applies opt-out to people abroad, the export states no window.
+The annex says when the opt-in is due and through which channel. Where it binds people abroad on an opt-in only in an action brought under the forum's transposition of the Directive, the export states whether this action is one (`directive`). Where people abroad opt in during a window the court sets after it appoints the representative, the export states the days that window opened and closed (`opt_in_opened_on`, `opt_in_closed_on`), and a record that must opt in needs its opt-in only at a reference date after the window closed, made within the window and through the channel the court set, which the export states (`opt_in_channel`), or else the one the annex names. Until then this standard counts the record on its residence alone; the annex says whether a court is known to count that support, and the cross-section (6.3) can show people abroad apart from residents, so their support can be weighed either way. Where the annex has no such window, the opt-in is due from the start. Where the court applies opt-out to people abroad, the export states no window.
 
 An electronic identification proves who a person is. In the EU Digital Identity Wallet residence is an optional attribute (Implementing Regulation (EU) 2024/2977, Annex, Table 2), so residence needs a source of its own.
 
