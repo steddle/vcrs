@@ -43,6 +43,7 @@ The [self-assessment](checklist/self-assessment.md) is the same list as question
 |---|---|---|
 | Austria | Verbandsklage auf Abhilfe, §§ 623 to 635 ZPO | [Annex AT](annexes/at.md) |
 | Belgium | Action en réparation collective, Livre XVII CDE | [Annex BE](annexes/be.md) |
+| Czech Republic | Hromadné řízení, zákon č. 179/2024 Sb. | [Annex CZ](annexes/cz.md) |
 | Finland | Ryhmäkanne, ryhmäkannelaki 444/2007 | [Annex FI](annexes/fi.md) |
 | Germany | Verbandsklage under the VDuG | [Annex DE](annexes/de.md) |
 | Ireland | Representative action, Act No. 22 of 2023 | [Annex IE](annexes/ie.md) |

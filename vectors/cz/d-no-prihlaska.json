@@ -1,0 +1,44 @@
+{
+    "description": "Signed up on the plaintiff's site and confirmed by mail, but made no signed přihláška (§ 33 odst. 1)",
+    "annex": "cz",
+    "flows": {
+        "f1": true,
+        "f0": false
+    },
+    "record": {
+        "id": "r-0001",
+        "party": "natural",
+        "status": "active",
+        "joined_on": "2026-09-01",
+        "flow": "f1",
+        "terms": "t1",
+        "identity": {
+            "name": true,
+            "birth_date": true,
+            "contact_confirmed": true,
+            "verified": null
+        },
+        "membership": {
+            "basis": "supplied",
+            "in_class": true,
+            "evidence": [
+                {
+                    "type": "order_confirmation",
+                    "digest": "sha256:9c1d3e5f7a2b4c6d8e0f1a3b5c7d9e1f2a4b6c8d0e2f4a6b8c0d2e4f6a8b0c2d"
+                }
+            ],
+            "checked_against": null
+        },
+        "duplicate_of": null,
+        "residence": {
+            "country": "CZ",
+            "on": "2026-09-01"
+        }
+    },
+    "expected": {
+        "grade": "D",
+        "reasons": [
+            "not_opted_in"
+        ]
+    }
+}

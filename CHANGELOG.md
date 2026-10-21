@@ -10,6 +10,7 @@
 - Annex IE (representative action under the 2023 Act), each Required item cited to its section, rule or ruling.
 - Annex FI (ryhmäkanne under the ryhmäkannelaki), each Required item cited to its section.
 - Annex PL (postępowanie grupowe), each Required item cited to its article or ruling.
+- Annex CZ (hromadné řízení), each Required item cited to its section or ruling.
 - The facts export states whether residents opt in in this action (`opt_in_residents`), where the annex leaves it to the court or an approved agreement (`"action"`).
 - The facts export and the conformance statement state whether the action is brought under the forum's transposition of Directive (EU) 2020/1828 (`action.directive`, core 4.6 and 11.1). An annex may set `opt_in_abroad` to `"directive"`: people abroad then opt in only in such an action.
 
