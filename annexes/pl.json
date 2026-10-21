@@ -1,0 +1,11 @@
+{
+    "code": "pl",
+    "title": "Annex PL: Poland (postępowanie grupowe)",
+    "forum": "PL",
+    "opt_in_abroad": true,
+    "opt_in_channel": "representative",
+    "opt_in_residents": true,
+    "opt_in_window": false,
+    "parallel_declaration": true,
+    "schemes": []
+}

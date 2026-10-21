@@ -48,6 +48,7 @@ The [self-assessment](checklist/self-assessment.md) is the same list as question
 | Ireland | Representative action, Act No. 22 of 2023 | [Annex IE](annexes/ie.md) |
 | Italy | Azione di classe and azione rappresentativa | [Annex IT](annexes/it.md) |
 | Netherlands | WAMCA, art. 3:305a BW | [Annex NL](annexes/nl.md) |
+| Poland | Postępowanie grupowe, ustawa z dnia 17 grudnia 2009 r. | [Annex PL](annexes/pl.md) |
 | Portugal | Ação popular, DL 114-A/2023 | [Annex PT](annexes/pt.md) |
 
 The core's residence rule (4.6) follows the Representative Actions Directive, so it holds in every member state.
