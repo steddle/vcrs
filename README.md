@@ -47,7 +47,6 @@ The [self-assessment](checklist/self-assessment.md) is the same list as question
 | Germany | Verbandsklage under the VDuG | [Annex DE](annexes/de.md) |
 | Belgium | Action en réparation collective, Livre XVII CDE | [Annex BE](annexes/be.md) |
 | Italy | Azione di classe and azione rappresentativa | [Annex IT](annexes/it.md) |
-| Ireland | Representative action, Act No. 22 of 2023 | [Annex IE](annexes/ie.md) |
 
 The core's residence rule (4.6) follows the Representative Actions Directive, so it holds in every member state.
 
