@@ -13,6 +13,7 @@
     "opt_in_opened_on": null,
     "opt_in_closed_on": null,
     "opt_in_channel": null,
+    "opt_in_residents": null,
     "denominator": {
         "low": 21000,
         "high": 26000,

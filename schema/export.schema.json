@@ -15,6 +15,7 @@
         "opt_in_opened_on",
         "opt_in_closed_on",
         "opt_in_channel",
+        "opt_in_residents",
         "denominator",
         "flows",
         "terms",
@@ -140,6 +141,17 @@
                 {
                     "type": "string",
                     "minLength": 1
+                }
+            ]
+        },
+        "opt_in_residents": {
+            "description": "Whether residents of the forum opt in in this action, where the annex leaves it to the court or an approved agreement (section 4.6). Null where the annex decides.",
+            "oneOf": [
+                {
+                    "type": "null"
+                },
+                {
+                    "type": "boolean"
                 }
             ]
         },

@@ -1,0 +1,46 @@
+{
+    "description": "An SME with its principal establishment in Luxembourg, no option at the greffe by the close of the four months after the merits judgment (art. XVII.45 §3, 7° and XVII.55/1 CDE): not a member",
+    "annex": "be",
+    "context": {
+        "reference_date": "2027-06-01",
+        "opt_in_opened_on": "2027-01-15",
+        "opt_in_closed_on": "2027-05-14",
+        "opt_in_channel": null,
+        "opt_in_residents": false
+    },
+    "flows": {
+        "f1": true,
+        "f0": false
+    },
+    "record": {
+        "id": "r-0001",
+        "party": "legal",
+        "status": "active",
+        "joined_on": "2026-09-01",
+        "flow": "f1",
+        "terms": "t1",
+        "identity": {
+            "name": true,
+            "contact_confirmed": true,
+            "verified": null,
+            "registration_number": true
+        },
+        "membership": {
+            "basis": "declared",
+            "in_class": null,
+            "evidence": [],
+            "checked_against": null
+        },
+        "duplicate_of": null,
+        "residence": {
+            "country": "LU",
+            "on": "2026-09-01"
+        }
+    },
+    "expected": {
+        "grade": "D",
+        "reasons": [
+            "not_opted_in"
+        ]
+    }
+}

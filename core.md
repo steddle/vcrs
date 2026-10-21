@@ -83,7 +83,7 @@ Two records are duplicates when they name the same person, or claim on the same 
 
 ### 4.6 Residence and parallel actions
 
-Under the Representative Actions Directive, a person whose habitual residence is outside the member state of the court is bound only if they explicitly ask to be represented (Directive (EU) 2020/1828, art. 9(3)), and nobody is represented twice or paid twice on the same claim against the same trader (art. 9(4)). Where the law binds residents of the forum too only by an act of their own, the annex says so (`opt_in_residents`), and everyone in the class opts in. Where the annex binds people abroad, residents or both only on an opt-in:
+Under the Representative Actions Directive, a person whose habitual residence is outside the member state of the court is bound only if they explicitly ask to be represented (Directive (EU) 2020/1828, art. 9(3)), and nobody is represented twice or paid twice on the same claim against the same trader (art. 9(4)). Where the law binds residents of the forum too only by an act of their own, the annex says so (`opt_in_residents`), and everyone in the class opts in. Where the court or an approved agreement chooses whether residents opt in, the annex leaves it to the action and the export states the choice (`opt_in_residents`); an export that leaves it unstated is read as binding residents on an opt-in, and meets no level. Where the annex binds people abroad, residents or both only on an opt-in:
 
 - Each record holds the person's country of habitual residence, the date it is established for, and its source, where the opt-in turns on residence.
 - Once the opt-in is due, the record of a person who must opt in holds it: when they made it, through which channel, and the action it names.

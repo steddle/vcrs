@@ -1,0 +1,11 @@
+{
+    "code": "be",
+    "title": "Annex BE: Belgium (action en réparation collective)",
+    "forum": "BE",
+    "opt_in_abroad": true,
+    "opt_in_channel": "registry",
+    "opt_in_residents": "action",
+    "opt_in_window": true,
+    "parallel_declaration": false,
+    "schemes": []
+}

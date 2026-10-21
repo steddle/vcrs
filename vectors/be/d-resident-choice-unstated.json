@@ -1,0 +1,46 @@
+{
+    "description": "Resident in Belgium, no option at the greffe after the window closed, in an export that leaves unstated whether residents opt in: read as opting in (core 4.6)",
+    "annex": "be",
+    "context": {
+        "reference_date": "2027-06-01",
+        "opt_in_opened_on": "2027-01-15",
+        "opt_in_closed_on": "2027-05-14",
+        "opt_in_channel": null,
+        "opt_in_residents": null
+    },
+    "flows": {
+        "f1": true,
+        "f0": false
+    },
+    "record": {
+        "id": "r-0001",
+        "party": "natural",
+        "status": "active",
+        "joined_on": "2026-09-01",
+        "flow": "f1",
+        "terms": "t1",
+        "identity": {
+            "name": true,
+            "birth_date": true,
+            "contact_confirmed": true,
+            "verified": null
+        },
+        "membership": {
+            "basis": "declared",
+            "in_class": null,
+            "evidence": [],
+            "checked_against": null
+        },
+        "duplicate_of": null,
+        "residence": {
+            "country": "BE",
+            "on": "2026-09-01"
+        }
+    },
+    "expected": {
+        "grade": "D",
+        "reasons": [
+            "not_opted_in"
+        ]
+    }
+}
