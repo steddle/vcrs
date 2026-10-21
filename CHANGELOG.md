@@ -9,6 +9,7 @@
 - Annex IT (azione di classe and azione rappresentativa), each Required item cited to its article or ruling.
 - The facts export states whether residents opt in in this action (`opt_in_residents`), where the annex leaves it to the court or an approved agreement (`"action"`).
 - The facts export and the conformance statement state whether the action is brought under the forum's transposition of Directive (EU) 2020/1828 (`action.directive`, core 4.6 and 11.1). An annex may set `opt_in_abroad` to `"directive"`: people abroad then opt in only in such an action.
+- Annex IE (representative action under the 2023 Act), each Required item cited to its section, rule or ruling.
 
 **Changed**
 - The opt-in rule (core 4.1 rule 8, 4.6) also binds residents of the forum where the annex sets `opt_in_residents`; where both opt in, residence decides nothing. The annex key `parallel_declaration_abroad` is `parallel_declaration`, and the declaration goes with every opt-in.

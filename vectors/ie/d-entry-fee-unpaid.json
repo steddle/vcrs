@@ -1,0 +1,44 @@
+{
+    "description": "Did not pay the qualified entity's entry fee within the period it published (s. 29(3))",
+    "annex": "ie",
+    "flows": {
+        "f1": true,
+        "f0": false
+    },
+    "record": {
+        "id": "r-0001",
+        "party": "natural",
+        "status": "excluded",
+        "joined_on": "2026-09-01",
+        "flow": "f1",
+        "terms": "t1",
+        "identity": {
+            "name": true,
+            "birth_date": true,
+            "contact_confirmed": true,
+            "verified": null
+        },
+        "membership": {
+            "basis": "declared",
+            "in_class": true,
+            "evidence": [],
+            "checked_against": null
+        },
+        "duplicate_of": null,
+        "residence": {
+            "country": "IE",
+            "on": "2026-09-01"
+        },
+        "opt_in": {
+            "on": "2026-09-01",
+            "channel": "qe"
+        },
+        "parallel_declared": true
+    },
+    "expected": {
+        "grade": "D",
+        "reasons": [
+            "not_active"
+        ]
+    }
+}
