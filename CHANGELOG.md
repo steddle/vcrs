@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased]
+## [0.1.0-beta.2] - 2026-10-21
 
 **Added**
 - Annex AT (Verbandsklage auf Abhilfe), each Required item cited to its article or ruling.
