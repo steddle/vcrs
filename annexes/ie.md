@@ -64,7 +64,7 @@ A register that claims a level in an Irish action meets every item below. The fi
 ## 5. Recommended items
 
 - **Evidence that each person was affected.** The Act asks for none, but whether the class information suffices 'is clearly a matter of disputed fact' (ICCL v Microsoft, para. 113), and the consumers affected 'may well give rise to issues in dispute in proceedings where the provision of discovery will be both relevant and necessary' (para. 131).
-- **A last list lodged just before the order.** Joining stays open until the court deems the action admissible (s. 24(2)), so notifications keep arriving after the list of O. 15 r. 43(1).
+- **A last list lodged right before the order.** Joining stays open until the court deems the action admissible (s. 24(2)), so notifications keep arriving after the list of O. 15 r. 43(1).
 - **Names beside identifiers.** The court list may hold identifiers alone (O. 15 r. 43(1)), but the trader receives names at admissibility (s. 25(4)(a)), so the register keeps both from the start.
 - **Identity verification.** It protects the declaration and the list of those eligible at the end against challenge.
 - **The cost of the register in the financial overview.** The QE 'shall disclose to the Court a financial overview that specifies the sources of funds used by it to support the representative action' (s. 27(3)), and the register is paid from the QE's own funds and the fees.

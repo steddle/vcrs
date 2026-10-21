@@ -1,0 +1,45 @@
+{
+    "description": "Signed up with the claimant, no notice yet, while the court's period is still open: counted on the record's other facts (6 § 1 mom)",
+    "annex": "fi",
+    "context": {
+        "reference_date": "2026-12-15",
+        "opt_in_opened_on": "2026-11-02",
+        "opt_in_closed_on": null,
+        "opt_in_channel": null
+    },
+    "flows": {
+        "f1": true,
+        "f0": false
+    },
+    "record": {
+        "id": "r-0001",
+        "party": "natural",
+        "status": "active",
+        "joined_on": "2026-09-01",
+        "flow": "f1",
+        "terms": "t1",
+        "identity": {
+            "name": true,
+            "birth_date": true,
+            "contact_confirmed": true,
+            "verified": null
+        },
+        "membership": {
+            "basis": "declared",
+            "in_class": true,
+            "evidence": [],
+            "checked_against": null
+        },
+        "duplicate_of": null,
+        "residence": {
+            "country": "FI",
+            "on": "2026-09-01"
+        }
+    },
+    "expected": {
+        "grade": "C",
+        "reasons": [
+            "declared_only"
+        ]
+    }
+}
