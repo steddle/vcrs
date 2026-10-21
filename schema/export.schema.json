@@ -111,7 +111,7 @@
             "$ref": "#/$defs/date"
         },
         "opt_in_opened_on": {
-            "description": "The first day of the window the court set for the people who must opt in (section 4.6); where it sets more than one term, the first day of the first. Null where no window is set.",
+            "description": "The first day of the window the court set for the people who must opt in (section 4.6); where it sets more than one term, the first day of the first. Null where no window is set, or where the annex has no window.",
             "oneOf": [
                 {
                     "type": "null"
@@ -133,7 +133,7 @@
             ]
         },
         "opt_in_channel": {
-            "description": "The channel the court set for opt-ins, written as the records write it in opt_in.channel (section 4.6). Null where the annex's own channel applies.",
+            "description": "The channel the court set for opt-ins, written as the records write it in opt_in.channel (section 4.6). Null where the annex's own channel applies, as it always does where the annex has no window.",
             "oneOf": [
                 {
                     "type": "null"
