@@ -1,0 +1,51 @@
+{
+    "description": "Adhered by a domanda in the fascicolo informatico within a term, identified by SPID (notified under eIDAS), membership checked against the defendant's records (art. 840-septies(1) c.p.c.)",
+    "annex": "it",
+    "context": {
+        "reference_date": "2027-12-01",
+        "opt_in_opened_on": "2026-11-15",
+        "opt_in_closed_on": "2027-10-20",
+        "opt_in_channel": null
+    },
+    "flows": {
+        "f1": true,
+        "f0": false
+    },
+    "record": {
+        "id": "r-0001",
+        "party": "natural",
+        "status": "active",
+        "joined_on": "2026-09-01",
+        "flow": "f1",
+        "terms": "t1",
+        "identity": {
+            "name": true,
+            "birth_date": true,
+            "contact_confirmed": true,
+            "verified": {
+                "scheme": "eidas",
+                "assurance": "substantial",
+                "on": "2026-09-02"
+            }
+        },
+        "membership": {
+            "basis": "checked",
+            "in_class": true,
+            "evidence": [],
+            "checked_against": "defendant's recall list"
+        },
+        "duplicate_of": null,
+        "residence": {
+            "country": "IT",
+            "on": "2026-09-01"
+        },
+        "opt_in": {
+            "on": "2027-01-10",
+            "channel": "pst"
+        }
+    },
+    "expected": {
+        "grade": "A",
+        "reasons": []
+    }
+}
