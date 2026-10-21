@@ -69,6 +69,7 @@ A register that claims a level in a Polish action meets every item below. The fi
 - **Evidence of consumer status** where the defendant can argue business use: in XXIV C 709/15 the court held that 'Sama okoliczność, że dana osoba wykonuje działalność gospodarczą, nie implikuje domniemania faktycznego' and checked the contracts.
 - **The declaration in the languages the entity publishes** for joining (art. 46c pkt 2 lit. e u.o.k.k.).
 - **A record of the announcement**: where and when it was published (art. 11 ust. 3).
+- **An operator receiving declarations for the representative.** Each declaration is addressed to the representative by name, at a channel the representative publishes as its own; the operator receives it as the representative's processor under a written mandate to receive; the opt-in's day is the day the representative had it, and the register keeps the day the operator received it. A declaration falls within the court's term only where the representative had it in time (art. 11 ust. 2 pkt 3, ust. 5). This lowers the risk of the question section 8 leaves open; it does not settle it.
 
 ## 6. Recognised identification
 
@@ -89,6 +90,7 @@ A recommendation, not a court's rule.
 - Whether the 10 are tested again when members fall below 10 after admission. II C 121/11 is a first-instance order.
 - The export states no opt-in window, since the opt-in is due from the start, so the validator does not test that a declaration came within the court's term: PL-2 records a late one `excluded`, and the auditor checks it.
 - Whether art. 6 ust. 7's statements bind declarations made after the announcement. PL-14 asks them of all.
+- Whether a declaration an operator receives for the representative is made to the representative (art. 11 ust. 2 pkt 3). No source read addresses an agent.
 - No ruling under the 2024 rules on an action by a podmiot upoważniony was found.
 
 ## Sources

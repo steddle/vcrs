@@ -68,6 +68,7 @@ A register that claims a level in an Irish action meets every item below. The fi
 - **Names beside identifiers.** The court list may hold identifiers alone (O. 15 r. 43(1)), but the trader receives names at admissibility (s. 25(4)(a)), so the register keeps both from the start.
 - **Identity verification.** It protects the declaration and the list of those eligible at the end against challenge.
 - **The cost of the register in the financial overview.** The QE 'shall disclose to the Court a financial overview that specifies the sources of funds used by it to support the representative action' (s. 27(3)), and the register is paid from the QE's own funds and the fees.
+- **An operator receiving notifications for the QE.** Each Form 3 is addressed to the QE by name, at a channel the QE publishes as its own; the operator receives it as the QE's processor under a written mandate to receive; the opt-in's day is the day the QE had it, and the register keeps the day the operator received it. A notification counts as made before the action is deemed admissible only where the QE had it in time (s. 24(2)). This lowers the risk of the question section 8 leaves open; it does not settle it.
 
 ## 6. Recognised identification
 

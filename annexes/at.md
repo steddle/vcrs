@@ -68,6 +68,7 @@ A register that claims a level in an Austrian action meets every item below. The
 - **Segments by liability basis within one defendant.** Claims against the maker of a car and against the maker of its engine call for different rules of liability (OGH 8 Ob 143/25z [22]), so each segment can stand on its own.
 - **Notice to each joiner that the claim data go to the defendant**, since the Beitritt is notified 'dem Gericht und der beklagten Partei gegenüber' (§ 628(2) ZPO), and a processor agreement where an operator works for the QE (art. 28 GDPR; the QE's own processing rests on § 9(8) QEG).
 - **A log that separates the operator's formal checks from the decisions of the QE and the lawyer.** The OGH left standing, as tenable, lower-court findings that an operator which only checks documents for completeness and then hands the case to a lawyer stays within the law (OGH 23 February 2021, 4 Ob 180/20d, [8]), and that an operator with power over the lawyers became 'Herr des Verfahrens' (OGH 10 September 2024, 4 Ob 144/24s, [19]). Both were provisional-measures decisions rejected as inadmissible.
+- **An operator taking requests for the QE.** Each consumer's request to join is addressed to the QE by name, at a channel the QE publishes as its own; the operator receives it as the QE's processor under a written mandate to receive; and the register keeps the day the operator received it and the day the QE had it. This lowers the risk of the question section 8 leaves open; it does not settle it.
 
 ## 6. Recognised identification
 

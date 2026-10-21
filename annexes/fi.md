@@ -68,6 +68,7 @@ A register that claims a level in a Finnish action meets every item below. The f
 - **Pre-registration kept apart from joining.** The Kuluttaja-asiamies ran a pre-registration in 2019 to see whether the group would be large enough, before any action was filed. Such support shows in the cross-section (6.3), and each person still joins within the court's period (FI-2).
 - **An enforcement mandate, and payee details.** Each member enforces their own award (HE 154/2006 vp, on 16 §), so where the claimant is to collect for members it needs a mandate, and a settlement paid through the claimant needs each member's account.
 - **A funding file ready for a 2 a § request.**
+- **An operator receiving notices for the claimant.** Each written notice is addressed to the claimant by name, at a channel the claimant publishes as its own; the operator receives it as the claimant's processor under a written mandate to receive; the opt-in's day is the day the claimant had it, and the register keeps the day the operator received it. A notice falls within the court's period only where the claimant had it in time (8 § 1 mom). This lowers the risk of the question section 8 leaves open; it does not settle it.
 
 ## 6. Recognised identification
 
