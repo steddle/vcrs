@@ -9,6 +9,8 @@
 - The README says what VCRS is under a heading of its own, sets the grade of a record apart from the level the register as a whole claims, and links the governance, the changelog and the licence by name.
 - GOVERNANCE.md names the text, the schemas and the vectors as free to use.
 - The README and its banner say a register shows who stands behind the action, and that an independent auditor checks the count, which holds at every level.
+- The README's summary puts a record without an opt-in the annex requires at grade D, and names for each level the grades it counts and the grade it reports, as core 10 does.
+- The conformance statement sets active records at grade D apart from records not active, which are grade D too, and says how its rows add up.
 - The example register's represented claims are €31 500 000 to €39 000 000, as its method gives.
 - The self-assessment's question 9 covers residents the annex binds on an opt-in, as core 4.1 rule 8 and 4.6 do.
 - The declaration of core 4.6 is the declaration on parallel actions in the template, the annexes and the vectors.

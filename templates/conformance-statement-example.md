@@ -18,8 +18,10 @@ VCRS 0.1.0-beta.4, core and Annex NL. The [conformance statement](conformance-st
 | A or better | 1 | 0.0038% to 0.0048% |
 | B or better | 3 | 0.0115% to 0.0143% |
 | C or better | 5 | 0.0192% to 0.0238% |
-| D, not counted | 2 | |
-| Not active | 1 | |
+| D, active | 2 | |
+| D, not active | 1 | |
+
+Each row from A to C counts the active records at that grade or better (core 6.2). A record that is not active is grade D (core 4.1 rule 1) and counts in the last row alone, so C or better and the two rows at D add up to the records in the snapshot.
 
 ## The snapshot
 

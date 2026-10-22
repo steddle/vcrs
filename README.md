@@ -16,12 +16,12 @@ Every record gets a grade, set by fixed rules from the facts on it:
 
 | Grade | A record is this grade when |
 |---|---|
-| D, not counted | Withdrawn, a duplicate, outside the class, anonymous, not told apart from a namesake, unconfirmed contact, or joined through a flow that didn't say what the claim is |
+| D, not counted | Withdrawn, a duplicate, outside the class, anonymous, not told apart from a namesake, unconfirmed contact, joined through a flow that didn't say what the claim is, or without an opt-in made in time where the annex requires one |
 | C, identified | A distinct, named person who confirmed a contact channel and joined through an informing flow |
 | B, evidenced | C, and a document or an outside source places them in the class |
 | A, corroborated | B, checked against an outside source, with identity verified through eIDAS or a scheme the annex names |
 
-The register as a whole claims one level, which sets what it keeps and how the auditor checks it: **Registered** (grade C counted, sample tracing by the auditor), **Identified** (grade B reported, full recomputation, regenerated before each hearing) or **Verified** (grade A reported, the reproduction test on the live system). [The core](core.md) holds the rules.
+The register as a whole claims one level, which sets what it keeps and how the auditor checks it: **Registered** (grade C or better counted, sample tracing by the auditor), **Identified** (grade C or better counted and grade B reported, full recomputation, regenerated before each hearing) or **Verified** (grade B or better counted and grade A reported, the reproduction test on the live system). [The core](core.md) holds the rules.
 
 ## Apply it
 

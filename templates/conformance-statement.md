@@ -18,8 +18,10 @@ VCRS 0.1.0-beta.4, core and Annex <XX>. One page, no personal data. The same con
 | A or better | | |
 | B or better | | |
 | C or better | | |
-| D, not counted | | |
-| Not active | | |
+| D, active | | |
+| D, not active | | |
+
+Each row from A to C counts the active records at that grade or better (core 6.2). A record that is not active is grade D (core 4.1 rule 1) and counts in the last row alone, so C or better and the two rows at D add up to the records in the snapshot.
 
 ## The snapshot
 
