@@ -1,5 +1,5 @@
 {
-    "vcrs": "0.1.0-beta.3",
+    "vcrs": "0.1.0-beta.4",
     "annex": "nl",
     "representative": { "name": "Stichting Voorbeeldclaim", "registration": "KvK 00000000" },
     "action": { "title": "Software that was sold and never delivered", "defendants": ["Example Motors B.V."], "court_reference": null, "directive": true },
@@ -22,8 +22,8 @@
         "as_of": "2026-09-01"
     },
     "claims": {
-        "low": 3150000,
-        "high": 3900000,
+        "low": 31500000,
+        "high": 39000000,
         "currency": "EUR",
         "method": "The price of package X, €1 500 per car, times the denominator"
     },

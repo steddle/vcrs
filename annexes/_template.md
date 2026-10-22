@@ -1,6 +1,6 @@
 # Annex XX: <country> (<regime>)
 
-VCRS 0.1.0-beta.3. Draft for consultation. Not legal advice. Law as read on <date>.
+VCRS 0.1.0-beta.4. Draft for consultation. Not legal advice. Law as read on <date>.
 
 ## 1. The regime
 
@@ -8,7 +8,7 @@ The instruments, with their official reference and the version read. Who may bri
 
 ## 2. Who is bound, and how they join
 
-Opt-in or opt-out, for residents and for non-residents. The act of joining: its form, where it is filed, its deadline, whether it can be withdrawn. Who holds the list: the representative, a court registry, a state portal. Who is bound only on an opt-in, people abroad (`opt_in_abroad` in the annex JSON), residents (`opt_in_residents`) or both, and whether the opt-in must carry a declaration on parallel claims (`parallel_declaration`). Whether people opt in during a window the court sets after the appointment (`opt_in_window`), what the export's `opt_in_opened_on` and `opt_in_closed_on` hold here, and the channel the law names for an opt-in (`opt_in_channel` in the annex JSON), which a channel the court sets, stated in the export, replaces.
+Opt-in or opt-out, for residents and for people abroad. The act of joining: its form, where it is filed, its deadline, whether it can be withdrawn. Who holds the list: the representative, a court registry, a state portal. Who is bound only on an opt-in, people abroad (`opt_in_abroad` in the annex JSON), residents (`opt_in_residents`) or both, and whether the opt-in must carry a declaration on parallel actions (`parallel_declaration`). Whether people opt in during a window the court sets after the appointment (`opt_in_window`), what the export's `opt_in_opened_on` and `opt_in_closed_on` hold here, and the channel the law names for an opt-in (`opt_in_channel` in the annex JSON). A channel the court sets, stated in the export, replaces it.
 
 ## 3. When the register is tested
 
@@ -16,7 +16,7 @@ The stage or stages at which a court or an administrator looks at the register (
 
 ## 4. Required items
 
-A register that claims a level in this jurisdiction meets every item, in two tables.
+A register that claims a level in this jurisdiction meets every item in the two tables below.
 
 ### What the law requires
 

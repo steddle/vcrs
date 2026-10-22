@@ -1,6 +1,6 @@
 # Annex PL: Poland (postępowanie grupowe)
 
-VCRS 0.1.0-beta.3. Draft for consultation. Not legal advice. Law and rulings as read on 19 and 21 October 2026 in the Dziennik Ustaw, on the Sąd Najwyższy's site, on the common courts' judgment portals, on the Urząd Ochrony Konkurencji i Konsumentów's register and in the European Commission's overview of notified eID schemes.
+VCRS 0.1.0-beta.4. Draft for consultation. Not legal advice. Law and rulings as read on 19 and 21 October 2026 in the Dziennik Ustaw, on the Sąd Najwyższy's site, on the common courts' judgment portals, on the Urząd Ochrony Konkurencji i Konsumentów's register and in the European Commission's overview of notified eID schemes.
 
 ## 1. The regime
 
@@ -54,7 +54,7 @@ A register that claims a level in a Polish action meets every item below. The fi
 | PL-10 | A withdrawal before the composition order is final is recorded `withdrawn`. After it a withdrawal has no effect and the record stays `active`, save a member's exit after a settlement in a podmiot upoważniony's action | 4.1 (1) | art. 17 ust. 3: 'Po uprawomocnieniu się postanowienia, o którym mowa w ust. 1, oświadczenie członka grupy o wystąpieniu z grupy jest bezskuteczne.'; art. 19a ust. 1; SA Łódź 4 July 2025, I ACa 202/25: 'Ustawa wyklucza zatem skuteczne wystąpienie z grupy po prawomocnym ustaleniu składu grupy.' |
 | PL-11 | A member whose claim the court discontinues after the composition order, having settled with the defendant or won a separate judgment, is recorded `excluded` with the day and the reason, and stays in the register | 4.1 (1), 5.3 | SA Łódź I ACa 202/25: 'Sąd Apelacyjny ostatecznie stanął na stanowisku, że zawarte ugody czy wydane wyroki muszą znaleźć odzwierciedlenie w treści rozstrzygnięcia.' |
 | PL-12 | The register yields the judgment's list: every member by name, told apart from namesakes, with the amount due to each, and an extract per member | 4.1 (6), 9 | art. 21 ust. 1: 'W sentencji wyroku należy wymienić wszystkich członków grupy lub podgrupy.'; art. 21 ust. 2: 'W wyroku zasądzającym świadczenie pieniężne należy ustalić, jaka kwota przypada każdemu członkowi grupy lub podgrupy.'; art. 22 |
-| PL-13 | In a podmiot upoważniony's action, any joining fee per member: no more than 5 % of the member's money claim and 2000 zł, or 1000 zł for a claim that is not for money, and no other charge to the member | 9 | art. 5a ust. 2: 'nie może przekraczać 5 % wartości dochodzonego przez członka grupy roszczenia pieniężnego, jednak nie może być wyższa niż 2000 zł, a w przypadku roszczenia niepieniężnego wysokość ustalonej opłaty nie może być wyższa niż 1000 zł'; art. 5b: the fee 'stanowi jedyny koszt, jaki konsument ponosi' |
+| PL-13 | In a podmiot upoważniony's action, any joining fee per member: no more than 5% of the member's money claim and 2 000 zł, or 1 000 zł for a claim that is not for money, and no other charge to the member | 9 | art. 5a ust. 2: 'nie może przekraczać 5 % wartości dochodzonego przez członka grupy roszczenia pieniężnego, jednak nie może być wyższa niż 2000 zł, a w przypadku roszczenia niepieniężnego wysokość ustalonej opłaty nie może być wyższa niż 1000 zł'; art. 5b: the fee 'stanowi jedyny koszt, jaki konsument ponosi' |
 
 ### What this standard requires
 

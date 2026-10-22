@@ -7,7 +7,7 @@ Steddle drafts and maintains VCRS: Holly Thackwray and Mischa Sigtermans, for St
 ## What Steddle never does under VCRS
 
 - Certify a register, or state that a register meets a level. An independent auditor checks a register (core, section 8) and the representative claims the level.
-- Make compliance depend on Steddle. The text, the schemas, the vectors and the validator are free to use, and a representative with a spreadsheet, a notary and an auditor can meet Level 1 without any Steddle product.
+- Make conformance depend on Steddle. The text, the schemas and the vectors are free to use, and a representative with a spreadsheet, a notary and an auditor can meet Level 1 without any Steddle product.
 
 ## How the text is held to the law
 
@@ -31,4 +31,4 @@ Steddle drafts and maintains VCRS: Holly Thackwray and Mischa Sigtermans, for St
 
 ## The review panel
 
-Changes to the standard text are approved by a review panel once one is seated. No operator of claimant registers, Steddle included, holds a majority on it. Until it is seated, Steddle publishes each change for comment before a release.
+Once a review panel is seated, it approves changes to the standard text. No operator of claimant registers, Steddle included, holds a majority on it. Until it is seated, Steddle publishes each change for comment before a release.

@@ -1,6 +1,6 @@
 # Annex FI: Finland (ryhmäkanne under the ryhmäkannelaki)
 
-VCRS 0.1.0-beta.3. Draft for consultation. Not legal advice. Law as read on 19 and 21 October 2026 on Finlex, the Kilpailu- ja kuluttajavirasto's publications and the European Commission's list of qualified entities and overview of notified eID schemes.
+VCRS 0.1.0-beta.4. Draft for consultation. Not legal advice. Law as read on 19 and 21 October 2026 on Finlex, the Kilpailu- ja kuluttajavirasto's publications and the European Commission's list of qualified entities and overview of notified eID schemes.
 
 ## 1. The regime
 
@@ -13,7 +13,7 @@ A collective damages action is a ryhmäkanne under the ryhmäkannelaki (444/2007
 
 ## 2. Who is bound, and how they join
 
-- **Opt-in, for everyone.** 'Määritelmän mukainen ryhmän jäsen, joka asetetussa määräajassa on toimittanut kantajalle kirjallisen ilmoituksen halukkuudestaan osallistua ryhmäkanteeseen, kuuluu ryhmään' (8 § 1 mom), and 'Tuomioistuimen ratkaisu sitoo niitä ryhmän jäseniä, joita tuomioistuin on ratkaisussaan ilmoittanut sen koskevan' (16 §). The act draws no line by residence, so residents and people abroad both opt in: `fi.json` sets `opt_in_abroad` and `opt_in_residents` to true, names the claimant as the channel, `qe`, and asks no declaration on parallel claims, which the act does not know.
+- **Opt-in, for everyone.** 'Määritelmän mukainen ryhmän jäsen, joka asetetussa määräajassa on toimittanut kantajalle kirjallisen ilmoituksen halukkuudestaan osallistua ryhmäkanteeseen, kuuluu ryhmään' (8 § 1 mom), and 'Tuomioistuimen ratkaisu sitoo niitä ryhmän jäseniä, joita tuomioistuin on ratkaisussaan ilmoittanut sen koskevan' (16 §). The act draws no line by residence, so residents and people abroad both opt in: `fi.json` sets `opt_in_abroad` and `opt_in_residents` to true, names the claimant as the channel, `qe`, and asks no declaration on parallel claims, which the act does not provide for.
 - **The window.** 'Lisäksi tuomioistuimen on asetettava määräaika ryhmään ilmoittautumiselle. Tuomioistuin voi erityisestä syystä pidentää määräaikaa' (6 § 1 mom). The court sets it after the action is filed and before the summons issues. `fi.json` sets `opt_in_window` to true. The export states as `opt_in_opened_on` the day the court set the period, and as `opt_in_closed_on` its last day as the court set or extended it. Until the period closes a record counts on its other facts; after it, a record counts only with a written notice that reached the claimant within the period.
 - **A late notice.** 'Jos määritelmän mukainen jäsen ilmoittautuu ryhmään asetetun määräajan jälkeen, mutta ennen kuin täsmennetty haastehakemus on toimitettu tuomioistuimelle, kantaja voi erityisestä syystä hyväksyä hänet ryhmän jäseneksi' (8 § 2 mom). The export states the court's period, so the validator does not count such a member (section 8).
 - **The form.** A written notice to the claimant. Since 1103/2022 it need not be signed: the government bill struck the signature because it 'ei ole nyky-yhteiskunnassa toimiva menettelytapa' (HE 111/2022 vp, p. 83).
@@ -30,7 +30,7 @@ A collective damages action is a ryhmäkanne under the ryhmäkannelaki (444/2007
 | Notice and period | The court tells the parties and sets the period for joining; the claimant notifies the known members by post or electronically, with how to join, the deadline and any fee | 6 § 1, 2 mom; 7 § 1 mom |
 | Joining | A written notice to the claimant inside the period, from a person within the definition, with any fee the claimant requires paid | 8 § 1 mom |
 | Refined summons | Each member's name, address and individualised claim, within one month of the period's end. The summons issues only after it | 9 §; 10 § 1 mom |
-| Preparation | A claim the claimant drops before the refined summons ends; after it, the member may go on alone. Withdrawals reach the court | 13 §; 15 § 1 mom |
+| Preparation | Before the refined summons, a claim the claimant drops ends; after it, the member may go on alone. Withdrawals reach the court | 13 §; 15 § 1 mom |
 | Main hearing | A member withdraws only with the defendant's consent, and not at all once the case is submitted for decision | 15 § 2 mom |
 | Judgment | Binds the members the court names in it, each with an award; the claimant tells the members | 16 §; 15 a § 1 mom |
 | Settlement | Binds the members once the court confirms it | HE 111/2022 vp, p. 32 |
@@ -64,7 +64,7 @@ A register that claims a level in a Finnish action meets every item below. The f
 ## 5. Recommended items
 
 - **The evidence behind each claim and its amount.** The judgment states what each member receives, and 'Viime kädessä tuomioistuin ratkaisisi ryhmän jäsenyyttä koskevan kysymyksen' (HE 154/2006 vp, on 8 §).
-- **For an electronic notice, the sender's identity and the document's integrity.** For the Kuluttaja-asiamies an electronic document meets the written form without a signature where it identifies the sender and its origin and integrity are not in doubt (HE 111/2022 vp, p. 83).
+- **For an electronic notice, the sender's identity and the document's integrity.** Where the Kuluttaja-asiamies is the claimant, an electronic notice to it meets the written form without a signature if it identifies the sender and its origin and integrity are not in doubt (HE 111/2022 vp, p. 83).
 - **Pre-registration kept apart from joining.** The Kuluttaja-asiamies ran a pre-registration in 2019 to see whether the group would be large enough, before any action was filed. Such support shows in the cross-section (6.3), and each person still joins within the court's period (FI-2).
 - **An enforcement mandate, and payee details.** Each member enforces their own award (HE 154/2006 vp, on 16 §), so where the claimant is to collect for members it needs a mandate, and a settlement paid through the claimant needs each member's account.
 - **A funding file ready for a 2 a § request.**

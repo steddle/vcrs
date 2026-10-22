@@ -1,8 +1,8 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://vcrs.org/schema/0.1.0-beta.3/record.schema.json",
+    "$id": "https://vcrs.org/schema/0.1.0-beta.4/record.schema.json",
     "title": "VCRS record",
-    "description": "One person's entry in a facts export: the facts that set its grade (VCRS 0.1.0-beta.3, section 4), without the personal data behind them.",
+    "description": "One person's entry in a facts export: the facts that set its grade (VCRS 0.1.0-beta.4, section 4), without the personal data behind them.",
     "type": "object",
     "required": [
         "id",
@@ -153,7 +153,7 @@
                     }
                 },
                 "checked_against": {
-                    "description": "The outside source membership was checked against, where basis is checked.",
+                    "description": "The source outside the person that membership was checked against, where basis is checked.",
                     "type": [
                         "string",
                         "null"
@@ -202,7 +202,7 @@
                             "$ref": "#/$defs/date"
                         },
                         "channel": {
-                            "description": "Where the opt-in went. Where the export states a court-set channel (opt_in_channel) or the annex names one, it holds that value as written, registry under Annex NL; any other value does not count.",
+                            "description": "Where the opt-in went. Where the export states a court-set channel (opt_in_channel) or the annex names one, it holds that value as written (registry under Annex NL); any other value does not count.",
                             "type": "string",
                             "minLength": 1
                         }

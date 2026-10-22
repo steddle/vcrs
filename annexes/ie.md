@@ -1,6 +1,6 @@
 # Annex IE: Ireland (representative action under the 2023 Act)
 
-VCRS 0.1.0-beta.3. Draft for consultation. Not legal advice. Law and rulings as read on 19 and 21 October 2026 on the electronic Irish Statute Book, the Courts Service's judgments, the British and Irish Legal Information Institute, the Department of Enterprise, Tourism and Employment's register of qualified entities and the European Commission's overview of notified eID schemes.
+VCRS 0.1.0-beta.4. Draft for consultation. Not legal advice. Law and rulings as read on 19 and 21 October 2026 on the electronic Irish Statute Book, the Courts Service's judgments, the British and Irish Legal Information Institute, the Department of Enterprise, Tourism and Employment's register of qualified entities and the European Commission's overview of notified eID schemes.
 
 ## 1. The regime
 
@@ -35,7 +35,7 @@ A collective damages action is a representative action for redress measures unde
 | Settlement | Binds 'the individual consumers represented in the representative action concerned'; where it names none, how the redress reaches each class | s. 30(3); O. 15 r. 46(b) |
 | Distribution | The names of those eligible for redress who have not obtained compensation by other means; no consumer compensated twice; each represented consumer told how to benefit | s. 25(4)(b); s. 26(3), (5) |
 
-**Reference dates.** The day the court deems the action admissible closes the book (s. 24(2)); the list is lodged 'as nearly as practicable prior to the hearing of an application under rule 42' (O. 15 r. 43(1)), and again before trial. For distribution, the day the QE hands the trader the list of those eligible (s. 25(4)(b)). The one judgment under the Act read concerns an action for an injunction alone: 'ICCL does not seek any redress measures in this action.' (ICCL v Microsoft, para. 25).
+**Reference dates.** The day the court deems the action admissible closes joining (s. 24(2)); the list is lodged 'as nearly as practicable prior to the hearing of an application under rule 42' (O. 15 r. 43(1)), and again before trial. For distribution, the day the QE hands the trader the list of those eligible (s. 25(4)(b)). The one judgment under the Act read concerns an action for an injunction alone: 'ICCL does not seek any redress measures in this action.' (ICCL v Microsoft, para. 25).
 
 ## 4. Required items
 
@@ -85,7 +85,7 @@ A recommendation, not a court's rule.
 ## 8. Unsettled
 
 - No action for redress under the Act had reached a written judgment by 21 October 2026, so no court has yet tested a list of notified consumers.
-- Whether the declaration under s. 25, which confirms compensation not received, is the declaration on parallel claims core 4.6 asks for. IE-10 adds representation elsewhere so that `parallel_declared` holds both.
+- Whether the declaration under s. 25, which confirms compensation not received, is the declaration on parallel actions core 4.6 asks for. IE-10 adds representation elsewhere so that `parallel_declared` holds both.
 - Whether the list lodged under O. 15 r. 43 may hold identifiers alone while s. 25(4) sends names to the trader.
 - Whether a notification an operator receives for the QE is a notification to the QE (s. 24(1)): no source read addresses an agent. Whether a vendor paid a fixed fee by the QE to run the register is caught by the rules on champerty: no court has said, and the Law Reform Commission's report on third-party litigation funding was not published by 21 October 2026.
 - The export states no opt-in window, since the opt-in is due from the start, so the validator does not test that a notification came before the court deemed the action admissible: IE-1 records a late one `excluded`, and the auditor checks it.

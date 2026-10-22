@@ -1,14 +1,18 @@
-<img src="art/banner.png" alt="VCRS: how a claimant register proves who stands behind the action" width="1600">
+<img src="art/banner.png" alt="VCRS: how a claimant register shows who stands behind the action" width="1600">
 
 # VCRS
 
 The Verified Claimant Register Standard: how a claimant register shows who stands behind a collective action.
 
-A court asks the party that brings a collective action who supports it, and later who gets paid. VCRS sets how a register answers: every record graded by fixed rules, every sign-up flow and document traceable, coverage measured against a stated class size at a stated date, and an independent auditor who reproduces the count without trusting the operator. A jurisdiction-neutral core, and one annex per jurisdiction with what its law and courts require and what the standard asks beyond them, each item cited.
-
 Drafted by [Steddle](https://steddle.com). Draft for consultation. Not legal advice. Read it at [vcrs.org](https://vcrs.org), where every section of the core has an address of its own.
 
+## What it is
+
+A court asks the party that brings a collective action who supports it, and later who gets paid. VCRS sets how a register answers: every record graded by fixed rules, every sign-up flow and document traceable, coverage measured against a stated class size at a stated date, and an independent auditor who checks the count without trusting the operator. A jurisdiction-neutral core, and one annex per jurisdiction with what its law and courts require and what the standard asks beyond them, each item cited.
+
 ## What it asks
+
+Every record gets a grade, set by fixed rules from the facts on it:
 
 | Grade | A record is this grade when |
 |---|---|
@@ -17,15 +21,15 @@ Drafted by [Steddle](https://steddle.com). Draft for consultation. Not legal adv
 | B, evidenced | C, and a document or an outside source places them in the class |
 | A, corroborated | B, checked against an outside source, with identity verified through eIDAS or a scheme the annex names |
 
-A register claims one level: **Registered** (grade C counted, sample tracing by the auditor), **Identified** (grade B reported, full recomputation, regenerated before each hearing) or **Verified** (grade A reported, the reproduction test on the live system). [The core](core.md) holds the rules.
+The register as a whole claims one level, which sets what it keeps and how the auditor checks it: **Registered** (grade C counted, sample tracing by the auditor), **Identified** (grade B reported, full recomputation, regenerated before each hearing) or **Verified** (grade A reported, the reproduction test on the live system). [The core](core.md) holds the rules.
 
 ## Apply it
 
 1. **Pick the annex and the level.** The annex for the court's country; the level its section 7 recommends for your action.
 2. **Define the class and its size.** The board approves a versioned class definition. State the denominator with its source, method and date.
 3. **Make the sign-up flow inform.** Every version states the representative, the defendant, the claim and the period, and is captured when it goes live.
-4. **Grade every record.** Export the facts ([`templates/records.csv`](templates/records.csv) for a spreadsheet, [`schema/export.schema.json`](schema/export.schema.json) for a system) and grade each record by section 4 of the core. The [test vectors](vectors) hold the grade each case must get.
-5. **Fix, audit, publish.** Anchor the snapshot root, have the board's auditor check it, and publish the [conformance statement](templates/conformance-statement.md).
+4. **Grade every record.** Export the facts ([`templates/records.csv`](templates/records.csv) for a spreadsheet, [`schema/export.schema.json`](schema/export.schema.json) for a system) and grade each record by section 4 of the core. The [test vectors](vectors) hold the grade each record must get.
+5. **Fix the snapshot, audit, publish.** Anchor the snapshot root, have the board's auditor check it, and publish the [conformance statement](templates/conformance-statement.md).
 
 The [self-assessment](checklist/self-assessment.md) is the same list as questions for the board.
 
@@ -56,11 +60,11 @@ The core's residence rule (4.6) follows the Representative Actions Directive, so
 
 ## Citing
 
-'VCRS 0.1.0-beta.3, core and Annex NL, <https://vcrs.org/v/0.1.0-beta.3>'. A released version stays unchanged at its own address, as core section 13 sets out. See [GOVERNANCE.md](GOVERNANCE.md) for how versions are released and how to comment.
+'VCRS 0.1.0-beta.4, core and Annex NL, <https://vcrs.org/v/0.1.0-beta.4>'. A released version stays unchanged at its own address, as core section 13 sets out. [The governance](GOVERNANCE.md) says how versions are released and how to comment.
 
 ## Changelog
 
-See [CHANGELOG.md](CHANGELOG.md).
+See [the changelog](CHANGELOG.md).
 
 ## Credits
 
@@ -69,4 +73,4 @@ See [CHANGELOG.md](CHANGELOG.md).
 
 ## License
 
-CC BY 4.0. See [LICENSE.txt](LICENSE.txt).
+CC BY 4.0. See [the licence](LICENSE.txt).

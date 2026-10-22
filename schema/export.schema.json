@@ -1,8 +1,8 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://vcrs.org/schema/0.1.0-beta.3/export.schema.json",
+    "$id": "https://vcrs.org/schema/0.1.0-beta.4/export.schema.json",
     "title": "VCRS facts export",
-    "description": "A claimant register in the open format of VCRS 0.1.0-beta.3, section 11.1: the facts that set each record's grade, without the personal data behind them.",
+    "description": "A claimant register in the open format of VCRS 0.1.0-beta.4, section 11.1: the facts that set each record's grade, without the personal data behind them.",
     "type": "object",
     "required": [
         "vcrs",
@@ -24,7 +24,7 @@
     "additionalProperties": false,
     "properties": {
         "vcrs": {
-            "const": "0.1.0-beta.3"
+            "const": "0.1.0-beta.4"
         },
         "annex": {
             "description": "The jurisdiction annex applied, by ISO 3166-1 alpha-2 code in lowercase.",
@@ -76,7 +76,7 @@
                     ]
                 },
                 "directive": {
-                    "description": "Whether the action is brought under the forum's transposition of Directive (EU) 2020/1828. An annex may bind people abroad only on an opt-in in such an action alone (section 4.6).",
+                    "description": "Whether the action is brought under the forum's transposition of Directive (EU) 2020/1828. An annex may bind people abroad on an opt-in only in such an action (section 4.6).",
                     "type": "boolean"
                 }
             }
@@ -145,7 +145,7 @@
             ]
         },
         "opt_in_residents": {
-            "description": "Whether residents of the forum opt in in this action, where the annex leaves it to the court or an approved agreement (section 4.6). Null where the annex decides.",
+            "description": "Whether, in this action, residents of the forum opt in, where the annex leaves it to the court or an approved agreement (section 4.6). Null where the annex decides.",
             "oneOf": [
                 {
                     "type": "null"

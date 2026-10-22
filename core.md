@@ -1,6 +1,6 @@
 # Verified Claimant Register Standard: core
 
-VCRS 0.1.0-beta.3, core. Draft for consultation. Not legal advice.
+VCRS 0.1.0-beta.4, core. Draft for consultation. Not legal advice.
 
 ## 1. Purpose and scope
 
@@ -58,7 +58,7 @@ A record is grade D when any of these holds at the reference date:
 5. It holds no name.
 6. It holds nothing that tells two people with the same name apart: a date of birth for a natural person, a registration number for a legal person.
 7. Its contact channel was never confirmed by the person.
-8. Where the annex binds people who live outside the forum, people who live in it, or both, only on an express opt-in: its residence is not held, where the opt-in turns on it; or, once the opt-in is due (4.6), the person must opt in and the record holds no opt-in made in time, or no declaration on parallel actions where the annex requires one.
+8. Where the annex binds people abroad, residents of the forum, or both, only on an express opt-in: its residence is not held, where the opt-in turns on it; or, once the opt-in is due (4.6), the person has to opt in and the record holds no opt-in made in time, or no declaration on parallel actions where the annex requires one.
 
 ### 4.2 Grade C: identified
 
@@ -75,21 +75,21 @@ The record must state that the evidence places the person inside the class defin
 
 ### 4.4 Grade A: corroborated
 
-Grade B, with membership corroborated against a source outside the person, and identity verified by a recognised method at assurance level substantial or high: an eIDAS electronic identification means notified at that level, or a scheme the annex names (a bank identification service, a national eID). For a legal person: a check against the business register, and the authority of the person acting for it.
+Grade B, with membership checked against a source outside the person, and identity verified by a recognised method at assurance level substantial or high: an eIDAS electronic identification means notified at that level, or a scheme the annex names (a bank identification service, a national eID). For a legal person: a check against the business register, and the authority of the person acting for it.
 
 ### 4.5 Deduplication
 
-Two records are duplicates when they name the same person, or claim on the same asset where the class definition allows one claim per asset. The operator keeps a deduplication key per record, a salted digest of the normalised identifying fields, so duplicates are found without exposing them. The later record is marked as the duplicate.
+Two records are duplicates when they name the same person, or claim on the same asset where the class definition allows one claim per asset. The operator keeps a deduplication key per record, a salted digest of the normalised identifying fields, so duplicates are found without exposing those fields. The operator marks the later record as the duplicate.
 
 ### 4.6 Residence and parallel actions
 
 Under the Representative Actions Directive, a person whose habitual residence is outside the member state of the court is bound only if they explicitly ask to be represented (Directive (EU) 2020/1828, art. 9(3)), and nobody is represented twice or paid twice on the same claim against the same trader (art. 9(4)). Where the law binds residents of the forum too only by an act of their own, the annex says so (`opt_in_residents`), and everyone in the class opts in. Where the court or an approved agreement chooses whether residents opt in, the annex leaves it to the action and the export states the choice (`opt_in_residents`); an export that leaves it unstated is read as binding residents on an opt-in, and meets no level. Where the annex binds people abroad, residents or both only on an opt-in:
 
 - Each record holds the person's country of habitual residence, the date it is established for, and its source, where the opt-in turns on residence.
-- Once the opt-in is due, the record of a person who must opt in holds it: when they made it, through which channel, and the action it names.
+- Once the opt-in is due, the record of a person who has to opt in holds it: when they made it, through which channel, and the action it names.
 - Where the annex requires it, that record also holds the person's declaration that they are not represented, and do not claim, elsewhere on the same claim.
 
-The annex says when the opt-in is due and through which channel. Where it binds people abroad on an opt-in only in an action brought under the forum's transposition of the Directive, the export states whether this action is one (`directive`). Where people abroad opt in during a window the court sets after it appoints the representative, the export states the days that window opened and closed (`opt_in_opened_on`, `opt_in_closed_on`), and a record that must opt in needs its opt-in only at a reference date after the window closed, made within the window and through the channel the court set, which the export states (`opt_in_channel`), or else the one the annex names. Until then this standard counts the record on its residence alone; the annex says whether a court is known to count that support, and the cross-section (6.3) can show people abroad apart from residents, so their support can be weighed either way. Where the court sets more than one term, the export states the first day of the first and, once it is set, the last day of the last, so the opt-in falls due only after the last term. Where the annex has no such window, the opt-in is due from the start, and the export states no window and no channel; an export that states either meets no level. Where the court applies opt-out to people abroad, the export states no window.
+The annex says when the opt-in is due and through which channel. Where it binds people abroad on an opt-in only in an action brought under the forum's transposition of the Directive, the export states whether this action is one (`directive`). Where people abroad opt in during a window the court sets after it appoints the representative, the export states the days that window opened and closed (`opt_in_opened_on`, `opt_in_closed_on`), and the record of a person who has to opt in needs the opt-in only at a reference date after the window closed, made within the window and through the channel the court set, which the export states (`opt_in_channel`), or else the one the annex names. Until then this standard counts the record on its residence alone; the annex says whether a court is known to count that support, and the cross-section (6.3) can show people abroad apart from residents, so their support can be weighed either way. Where the court sets more than one term, the export states the first day of the first and, once it is set, the last day of the last, so the opt-in falls due only after the last term. Where the annex has no such window, the opt-in is due from the start, and the export states no window and no channel; an export that states either meets no level. Where the court applies opt-out to people abroad, the export states no window.
 
 An electronic identification proves who a person is. In the EU Digital Identity Wallet residence is an optional attribute (Implementing Regulation (EU) 2024/2977, Annex, Table 2), so residence needs a source of its own.
 
@@ -156,7 +156,7 @@ Support from other organisations is recorded separately: who, when, in what form
 Courts test a register at a moment their law sets: at filing, at the admissibility ruling, at the hearing, at judgment, or at distribution. The annex names the moment.
 
 - The register is measured at a stated reference date.
-- Where the test is applied as things stand on the day of the ruling, the register is regenerated at a reference date shortly before each hearing, and withdrawals and objections up to that date are reflected.
+- Where the test is applied as things stand on the day of the ruling, the register is regenerated at a reference date shortly before each hearing, with every withdrawal, opt-out and exclusion up to that date.
 - Earlier snapshots stay available, so decay between two dates can be shown.
 
 ## 8. Independent check
@@ -246,8 +246,8 @@ A record below grade A states why it holds its grade: at grade D every rule of 4
 
 ## 12. Annexes
 
-An annex follows `annexes/_template.md`: who may bring an action, who is bound and how they join, when the register is tested, the Required items, split into what the law requires and what this standard requires beyond it, each with its source or reason, the Recommended items, the identification schemes that count as recognised for grade A, the level a typical action needs, and what is unsettled.
+An annex follows `annexes/_template.md`: who may bring an action; who is bound and how they join; when the register is tested; the Required items, split into what the law requires and what this standard requires beyond it, each with its source or reason; the Recommended items; the identification schemes that count as recognised for grade A; the level a typical action needs; and what is unsettled.
 
 ## 13. Citing this standard
 
-Cite the version, the core and the annex, with the version's own address: 'VCRS 0.1.0-beta.3, core and Annex NL, <https://vcrs.org/v/0.1.0-beta.3>'. A released version stays unchanged at that address, so a filing cites a text that does not change. A section is cited by its number after the address: https://vcrs.org/v/0.1.0-beta.3#4.6.
+Cite the version, the core and the annex, with the version's own address: 'VCRS 0.1.0-beta.4, core and Annex NL, <https://vcrs.org/v/0.1.0-beta.4>'. A released version stays unchanged at that address, so a filing cites a text that does not change. A section is cited by its number after the address: https://vcrs.org/v/0.1.0-beta.4#4.6.

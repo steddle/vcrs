@@ -10,11 +10,11 @@ For the board of a representative, before it claims a level. Each line is a yes 
 | 2 | Do we state the size of the class with its source, its method and its date, as a range where it is uncertain? | 6.1 |
 | 3 | Does every version of the sign-up flow state the representative, the defendant, the claim and the period before anyone joins? | 5.1 |
 | 4 | Is every version of the sign-up flow captured in full, in every language, with the dates it was live? | 5.1 |
-| 5 | Does every record name the flow version and the terms version it joined through? | 5.1, 5.2 |
-| 6 | Does every record we count hold a name, a date of birth (or a registration number for a company), and a contact channel the person confirmed? | 4.2 |
+| 5 | Does every record name the flow version it joined through and the terms version the person accepted? | 5.1, 5.2 |
+| 6 | Does every record we count hold a name, a date of birth (or a registration number for a legal person), and a contact channel the person confirmed? | 4.2 |
 | 7 | Do we keep a deduplication key per record, and mark the later of two records for one person as the duplicate? | 4.5 |
 | 8 | Are withdrawals, opt-outs and exclusions recorded with their date, and left out of the count? | 4.1 |
-| 9 | Where the annex binds people abroad only on an opt-in: does every record hold the person's residence and its source, and, once the opt-in is due, the record of everyone abroad their opt-in and, where the annex asks, their statement on parallel actions? | 4.6 |
+| 9 | Where the annex binds people abroad, residents or both only on an opt-in: does every record hold the person's residence and its source, where the opt-in turns on it, and, once the opt-in is due, does the record of everyone who has to opt in hold their opt-in and, where the annex asks, their declaration on parallel actions? | 4.6 |
 | 10 | Is every change to a record logged: what, when, by whom, why? | 5.3 |
 | 11 | At each reference date, do we fix the snapshot root and anchor it in time? | 5.4 |
 | 12 | Does the board commission an auditor, independent of the operator and the funder, who traces a sample from the register to the source records and back? | 8 |

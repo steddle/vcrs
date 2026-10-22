@@ -1,5 +1,26 @@
 # Changelog
 
+## [Unreleased]
+
+**Added**
+- An example conformance statement, `templates/conformance-statement-example.md`: the template filled in for the example register, its parties and its auditor fictional, with the same statement as JSON.
+
+**Changed**
+- The README says what VCRS is under a heading of its own, sets the grade of a record apart from the level the register as a whole claims, and links the governance, the changelog and the licence by name.
+- GOVERNANCE.md names the text, the schemas and the vectors as free to use.
+- The README and its banner say a register shows who stands behind the action, and that an independent auditor checks the count, which holds at every level.
+- The example register's represented claims are €31 500 000 to €39 000 000, as its method gives.
+- The self-assessment's question 9 covers residents the annex binds on an opt-in, as core 4.1 rule 8 and 4.6 do.
+- The declaration of core 4.6 is the declaration on parallel actions in the template, the annexes and the vectors.
+- Core 7: a register regenerated before a hearing holds every withdrawal, opt-out and exclusion up to its reference date.
+- Annex AT: no entity is admitted ad hoc for a single action, and the OGH rejected both appeals in provisional-measures proceedings as inadmissible.
+- Annex CZ: the court examines admissibility at any stage of the proceedings (§ 24 odst. 1), and checks the plaintiff's listing of its own motion.
+- Annex DE: the BayObLG tests similarity against the proof of entitlement, and signing up with the representative is no condition of the opt-in.
+- Annex FI: an electronic notice meets the written form without a signature where the Kuluttaja-asiamies is the claimant.
+- Annex NL: a count or a figure one court worked from is attributed to that court.
+- Annex PT: associations and foundations must meet LAP art. 3, and the TCRS recorded the point on jurisdiction as undisputed.
+- Wording across the core, the self-assessment, the annex template, the schema descriptions and every annex, for precision. No grade rule or level condition changes.
+
 ## [0.1.0-beta.3] - 2026-10-22
 
 **Changed**
