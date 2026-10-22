@@ -1,6 +1,6 @@
 # Verified Claimant Register Standard: core
 
-VCRS 0.1.0-beta.2, core. Draft for consultation. Not legal advice.
+VCRS 0.1.0-beta.3, core. Draft for consultation. Not legal advice.
 
 ## 1. Purpose and scope
 
@@ -250,4 +250,4 @@ An annex follows `annexes/_template.md`: who may bring an action, who is bound a
 
 ## 13. Citing this standard
 
-Cite the version, the core and the annex, with the version's own address: 'VCRS 0.1.0-beta.2, core and Annex NL, <https://vcrs.steddle.com/v/0.1.0-beta.2>'. A released version stays unchanged at that address, so a filing cites a text that does not change. A section is cited by its number after the address: https://vcrs.steddle.com/v/0.1.0-beta.2#4.6.
+Cite the version, the core and the annex, with the version's own address: 'VCRS 0.1.0-beta.3, core and Annex NL, <https://vcrs.org/v/0.1.0-beta.3>'. A released version stays unchanged at that address, so a filing cites a text that does not change. A section is cited by its number after the address: https://vcrs.org/v/0.1.0-beta.3#4.6.

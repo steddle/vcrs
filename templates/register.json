@@ -1,5 +1,5 @@
 {
-    "vcrs": "0.1.0-beta.2",
+    "vcrs": "0.1.0-beta.3",
     "annex": "nl",
     "representative": { "name": "Stichting Voorbeeldclaim", "registration": "KvK 00000000" },
     "action": { "title": "Software that was sold and never delivered", "defendants": ["Example Motors B.V."], "court_reference": null, "directive": true },

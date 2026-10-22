@@ -1,6 +1,6 @@
 # Annex DE: Germany (Verbandsklage under the VDuG)
 
-VCRS 0.1.0-beta.2. Draft for consultation. Not legal advice. Law and rulings as read on 19 and 21 October 2026 on gesetze-im-internet.de, the Bundestag, the Bundesamt für Justiz, the Bundesgerichtshof and the Official Journal of the European Union.
+VCRS 0.1.0-beta.3. Draft for consultation. Not legal advice. Law and rulings as read on 19 and 21 October 2026 on gesetze-im-internet.de, the Bundestag, the Bundesamt für Justiz, the Bundesgerichtshof and the Official Journal of the European Union.
 
 ## 1. The regime
 

@@ -6,7 +6,7 @@ The Verified Claimant Register Standard: how a claimant register shows who stand
 
 A court asks the party that brings a collective action who supports it, and later who gets paid. VCRS sets how a register answers: every record graded by fixed rules, every sign-up flow and document traceable, coverage measured against a stated class size at a stated date, and an independent auditor who reproduces the count without trusting the operator. A jurisdiction-neutral core, and one annex per jurisdiction with what its law and courts require and what the standard asks beyond them, each item cited.
 
-Drafted by [Steddle](https://steddle.com). Draft for consultation. Not legal advice. Read it at [vcrs.steddle.com](https://vcrs.steddle.com), where every section of the core has an address of its own.
+Drafted by [Steddle](https://steddle.com). Draft for consultation. Not legal advice. Read it at [vcrs.org](https://vcrs.org), where every section of the core has an address of its own.
 
 ## What it asks
 
@@ -56,7 +56,7 @@ The core's residence rule (4.6) follows the Representative Actions Directive, so
 
 ## Citing
 
-'VCRS 0.1.0-beta.2, core and Annex NL, <https://vcrs.steddle.com/v/0.1.0-beta.2>'. A released version stays unchanged at its own address, as core section 13 sets out. See [GOVERNANCE.md](GOVERNANCE.md) for how versions are released and how to comment.
+'VCRS 0.1.0-beta.3, core and Annex NL, <https://vcrs.org/v/0.1.0-beta.3>'. A released version stays unchanged at its own address, as core section 13 sets out. See [GOVERNANCE.md](GOVERNANCE.md) for how versions are released and how to comment.
 
 ## Changelog
 

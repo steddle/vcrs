@@ -1,6 +1,6 @@
 # Conformance statement
 
-VCRS 0.1.0-beta.2, core and Annex <XX>. One page, no personal data. The same content as JSON follows `schema/conformance.schema.json`.
+VCRS 0.1.0-beta.3, core and Annex <XX>. One page, no personal data. The same content as JSON follows `schema/conformance.schema.json`.
 
 | | |
 |---|---|

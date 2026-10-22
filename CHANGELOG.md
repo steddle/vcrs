@@ -1,5 +1,10 @@
 # Changelog
 
+## [Unreleased]
+
+**Changed**
+- The standard's address is vcrs.org: the citation and the addresses in core 13, each schema's `$id` and the README. 0.1.0-beta.1 and 0.1.0-beta.2 keep the addresses they were released under.
+
 ## [0.1.0-beta.2] - 2026-10-21
 
 **Added**

@@ -1,6 +1,6 @@
 # Annex IT: Italy (azione di classe and azione rappresentativa)
 
-VCRS 0.1.0-beta.2. Draft for consultation. Not legal advice. Law and rulings as read on 19 and 21 October 2026 on Normattiva, the Gazzetta Ufficiale, the Ministero della giustizia and its Portale dei servizi telematici, which publishes the tribunals' orders and judgments in class actions, the Corte d'Appello di Venezia, the Garante per la protezione dei dati personali and the Consiglio nazionale forense. Normattiva's (( )) amendment markers are left out of quotations.
+VCRS 0.1.0-beta.3. Draft for consultation. Not legal advice. Law and rulings as read on 19 and 21 October 2026 on Normattiva, the Gazzetta Ufficiale, the Ministero della giustizia and its Portale dei servizi telematici, which publishes the tribunals' orders and judgments in class actions, the Corte d'Appello di Venezia, the Garante per la protezione dei dati personali and the Consiglio nazionale forense. Normattiva's (( )) amendment markers are left out of quotations.
 
 ## 1. The regime
 
