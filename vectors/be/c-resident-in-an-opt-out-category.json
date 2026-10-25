@@ -1,0 +1,64 @@
+{
+    "description": "A resident of Belgium in the category a settlement binds unless they opt out (art. XVII.45 §3, 7° CDE): counted without an option",
+    "annex": "be",
+    "context": {
+        "reference_date": "2027-06-01",
+        "opt_in_terms": [
+            {
+                "opened_on": "2027-01-15",
+                "closed_on": "2027-05-14",
+                "channel": null
+            }
+        ],
+        "opt_in_residents": {
+            "property": false,
+            "moral": true
+        }
+    },
+    "flows": {
+        "f1": {
+            "informs": true,
+            "live_from": "2020-01-01",
+            "live_to": null
+        },
+        "f0": {
+            "informs": false,
+            "live_from": "2020-01-01",
+            "live_to": null
+        }
+    },
+    "record": {
+        "id": "r-0001",
+        "party": "natural",
+        "status": "active",
+        "joined_on": "2026-09-01",
+        "flow": "f1",
+        "terms": "t1",
+        "identity": {
+            "name": true,
+            "birth_date": true,
+            "contact_confirmed": true,
+            "verified": null
+        },
+        "membership": {
+            "basis": "declared",
+            "in_class": null,
+            "evidence": [],
+            "checked_against": null
+        },
+        "residence": {
+            "country": "BE",
+            "on": "2026-09-01",
+            "source": "declaration"
+        },
+        "duplicate_of": null,
+        "subgroup": "property"
+    },
+    "expected": {
+        "grade": "C",
+        "reasons": [
+            "declared_only"
+        ],
+        "digest": "sha256:667934ee22875087d0d2acb504a32f1a7f551a5d8dd31647732c160a6acee237"
+    }
+}

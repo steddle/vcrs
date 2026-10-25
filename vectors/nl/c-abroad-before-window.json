@@ -3,13 +3,19 @@
     "annex": "nl",
     "context": {
         "reference_date": "2026-10-12",
-        "opt_in_opened_on": null,
-        "opt_in_closed_on": null,
-        "opt_in_channel": null
+        "opt_in_terms": []
     },
     "flows": {
-        "f1": true,
-        "f0": false
+        "f1": {
+            "informs": true,
+            "live_from": "2020-01-01",
+            "live_to": null
+        },
+        "f0": {
+            "informs": false,
+            "live_from": "2020-01-01",
+            "live_to": null
+        }
     },
     "record": {
         "id": "r-0001",
@@ -40,6 +46,7 @@
         "grade": "C",
         "reasons": [
             "declared_only"
-        ]
+        ],
+        "digest": "sha256:6d8a017c2a8c6c354c85f21b430c0bbd0466cc51098e4703dcb3602a015f60db"
     }
 }

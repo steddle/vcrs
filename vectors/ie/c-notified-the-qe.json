@@ -2,8 +2,16 @@
     "description": "Notified the qualified entity on Form 3 and signed the declaration (s. 24(1), s. 25(1))",
     "annex": "ie",
     "flows": {
-        "f1": true,
-        "f0": false
+        "f1": {
+            "informs": true,
+            "live_from": "2020-01-01",
+            "live_to": null
+        },
+        "f0": {
+            "informs": false,
+            "live_from": "2020-01-01",
+            "live_to": null
+        }
     },
     "record": {
         "id": "r-0001",
@@ -31,7 +39,8 @@
         },
         "opt_in": {
             "on": "2026-09-01",
-            "channel": "qe"
+            "channel": "qe",
+            "action": "action-1"
         },
         "parallel_declared": true
     },
@@ -39,6 +48,7 @@
         "grade": "C",
         "reasons": [
             "declared_only"
-        ]
+        ],
+        "digest": "sha256:a046e5c32732ff3df6316259eb3928f2664c63ce3729be3174992719db3d0761"
     }
 }

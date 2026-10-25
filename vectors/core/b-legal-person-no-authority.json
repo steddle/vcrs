@@ -1,0 +1,52 @@
+{
+    "description": "A legal person checked against the business register, its representative's authority not checked",
+    "annex": null,
+    "flows": {
+        "f1": {
+            "informs": true,
+            "live_from": "2020-01-01",
+            "live_to": null
+        },
+        "f0": {
+            "informs": false,
+            "live_from": "2020-01-01",
+            "live_to": null
+        }
+    },
+    "record": {
+        "id": "r-0001",
+        "party": "legal",
+        "status": "active",
+        "joined_on": "2026-09-01",
+        "flow": "f1",
+        "terms": "t1",
+        "identity": {
+            "name": true,
+            "contact_confirmed": true,
+            "verified": {
+                "scheme": "eidas",
+                "assurance": "substantial",
+                "on": "2026-09-02"
+            },
+            "registration_number": true,
+            "register_check": {
+                "register": "business register",
+                "on": "2026-09-01"
+            }
+        },
+        "membership": {
+            "basis": "checked",
+            "in_class": true,
+            "evidence": [],
+            "checked_against": "business register"
+        },
+        "duplicate_of": null
+    },
+    "expected": {
+        "grade": "B",
+        "reasons": [
+            "authority_not_checked"
+        ],
+        "digest": "sha256:f0fde3a70f1c3a93a0bf2b8432bd3543955fe12d8658f1df3673b70d4ab58cb6"
+    }
+}

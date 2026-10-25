@@ -2,8 +2,16 @@
     "description": "Anonymous: no name held",
     "annex": null,
     "flows": {
-        "f1": true,
-        "f0": false
+        "f1": {
+            "informs": true,
+            "live_from": "2020-01-01",
+            "live_to": null
+        },
+        "f0": {
+            "informs": false,
+            "live_from": "2020-01-01",
+            "live_to": null
+        }
     },
     "record": {
         "id": "r-0001",
@@ -30,6 +38,7 @@
         "grade": "D",
         "reasons": [
             "no_name"
-        ]
+        ],
+        "digest": "sha256:4f26d8acc82b10960bec5a41e737674346baa1349b316a8bf9ab5adefd4250ca"
     }
 }

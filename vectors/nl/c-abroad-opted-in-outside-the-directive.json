@@ -1,0 +1,65 @@
+{
+    "description": "Resident in Belgium, opted in within the term, no declaration on parallel actions, in an action not brought under the Directive (art. 1018f lid 6 Rv, art. VI Implementatiewet)",
+    "annex": "nl",
+    "context": {
+        "reference_date": "2027-03-15",
+        "opt_in_terms": [
+            {
+                "opened_on": "2027-01-15",
+                "closed_on": "2027-03-01",
+                "channel": null
+            }
+        ],
+        "directive": false
+    },
+    "flows": {
+        "f1": {
+            "informs": true,
+            "live_from": "2020-01-01",
+            "live_to": null
+        },
+        "f0": {
+            "informs": false,
+            "live_from": "2020-01-01",
+            "live_to": null
+        }
+    },
+    "record": {
+        "id": "r-0001",
+        "party": "natural",
+        "status": "active",
+        "joined_on": "2026-09-01",
+        "flow": "f1",
+        "terms": "t1",
+        "identity": {
+            "name": true,
+            "birth_date": true,
+            "contact_confirmed": true,
+            "verified": null
+        },
+        "membership": {
+            "basis": "declared",
+            "in_class": null,
+            "evidence": [],
+            "checked_against": null
+        },
+        "residence": {
+            "country": "BE",
+            "on": "2026-09-01",
+            "source": "declaration"
+        },
+        "opt_in": {
+            "on": "2027-02-10",
+            "channel": "registry",
+            "action": "action-1"
+        },
+        "duplicate_of": null
+    },
+    "expected": {
+        "grade": "C",
+        "reasons": [
+            "declared_only"
+        ],
+        "digest": "sha256:37fe18d35a71e6faa0d5e628a9d871c83f084145720df50367a589eadf991756"
+    }
+}

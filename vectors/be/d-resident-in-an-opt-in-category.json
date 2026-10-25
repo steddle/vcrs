@@ -1,0 +1,64 @@
+{
+    "description": "A resident of Belgium in the category the same settlement binds only on an option, with none by the close of its term (art. XVII.45 §3, 7° CDE)",
+    "annex": "be",
+    "context": {
+        "reference_date": "2027-06-01",
+        "opt_in_terms": [
+            {
+                "opened_on": "2027-01-15",
+                "closed_on": "2027-05-14",
+                "channel": null
+            }
+        ],
+        "opt_in_residents": {
+            "property": false,
+            "moral": true
+        }
+    },
+    "flows": {
+        "f1": {
+            "informs": true,
+            "live_from": "2020-01-01",
+            "live_to": null
+        },
+        "f0": {
+            "informs": false,
+            "live_from": "2020-01-01",
+            "live_to": null
+        }
+    },
+    "record": {
+        "id": "r-0001",
+        "party": "natural",
+        "status": "active",
+        "joined_on": "2026-09-01",
+        "flow": "f1",
+        "terms": "t1",
+        "identity": {
+            "name": true,
+            "birth_date": true,
+            "contact_confirmed": true,
+            "verified": null
+        },
+        "membership": {
+            "basis": "declared",
+            "in_class": null,
+            "evidence": [],
+            "checked_against": null
+        },
+        "residence": {
+            "country": "BE",
+            "on": "2026-09-01",
+            "source": "declaration"
+        },
+        "duplicate_of": null,
+        "subgroup": "moral"
+    },
+    "expected": {
+        "grade": "D",
+        "reasons": [
+            "not_opted_in"
+        ],
+        "digest": "sha256:3d6be35c21ea0c63de7af5ece745fb3835b877acc584419f64bdf9a09c27316b"
+    }
+}

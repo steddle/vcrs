@@ -2,8 +2,16 @@
     "description": "Marked the duplicate of another record",
     "annex": null,
     "flows": {
-        "f1": true,
-        "f0": false
+        "f1": {
+            "informs": true,
+            "live_from": "2020-01-01",
+            "live_to": null
+        },
+        "f0": {
+            "informs": false,
+            "live_from": "2020-01-01",
+            "live_to": null
+        }
     },
     "record": {
         "id": "r-0001",
@@ -30,6 +38,7 @@
         "grade": "D",
         "reasons": [
             "duplicate"
-        ]
+        ],
+        "digest": "sha256:9590d37f1a82e1e6e9bde9e7646eb381c49d04842175fd589d1fa5b861028fdf"
     }
 }

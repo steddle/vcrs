@@ -2,8 +2,16 @@
     "description": "Signed up with the representative's site but gave no written declaration of joining (art. 1 ust. 3, art. 11 ust. 2 pkt 3)",
     "annex": "pl",
     "flows": {
-        "f1": true,
-        "f0": false
+        "f1": {
+            "informs": true,
+            "live_from": "2020-01-01",
+            "live_to": null
+        },
+        "f0": {
+            "informs": false,
+            "live_from": "2020-01-01",
+            "live_to": null
+        }
     },
     "record": {
         "id": "r-0001",
@@ -35,6 +43,7 @@
         "grade": "D",
         "reasons": [
             "not_opted_in"
-        ]
+        ],
+        "digest": "sha256:5ebe0def79d249bc8e5a886052eab18eeb905028c5c4182837292f801b365340"
     }
 }

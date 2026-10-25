@@ -1,0 +1,49 @@
+{
+    "description": "Withdrew after the reference date, so active at it",
+    "annex": null,
+    "context": {
+        "reference_date": "2026-10-12",
+        "opt_in_terms": []
+    },
+    "flows": {
+        "f1": {
+            "informs": true,
+            "live_from": "2020-01-01",
+            "live_to": null
+        },
+        "f0": {
+            "informs": false,
+            "live_from": "2020-01-01",
+            "live_to": null
+        }
+    },
+    "record": {
+        "id": "r-0001",
+        "party": "natural",
+        "status": "withdrawn",
+        "status_on": "2026-11-02",
+        "joined_on": "2026-09-01",
+        "flow": "f1",
+        "terms": "t1",
+        "identity": {
+            "name": true,
+            "birth_date": true,
+            "contact_confirmed": true,
+            "verified": null
+        },
+        "membership": {
+            "basis": "declared",
+            "in_class": null,
+            "evidence": [],
+            "checked_against": null
+        },
+        "duplicate_of": null
+    },
+    "expected": {
+        "grade": "C",
+        "reasons": [
+            "declared_only"
+        ],
+        "digest": "sha256:17c3206a378db705198da838419202f17c7eef4ae0cc89e8cd9fea50936f169c"
+    }
+}

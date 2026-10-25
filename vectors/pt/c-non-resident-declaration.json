@@ -3,14 +3,20 @@
     "annex": "pt",
     "context": {
         "reference_date": "2026-10-12",
-        "opt_in_opened_on": null,
-        "opt_in_closed_on": null,
-        "opt_in_channel": null,
+        "opt_in_terms": [],
         "directive": true
     },
     "flows": {
-        "f1": true,
-        "f0": false
+        "f1": {
+            "informs": true,
+            "live_from": "2020-01-01",
+            "live_to": null
+        },
+        "f0": {
+            "informs": false,
+            "live_from": "2020-01-01",
+            "live_to": null
+        }
     },
     "record": {
         "id": "r-0001",
@@ -38,13 +44,15 @@
         },
         "opt_in": {
             "on": "2026-09-03",
-            "channel": "web form of the association"
+            "channel": "web form of the association",
+            "action": "action-1"
         }
     },
     "expected": {
         "grade": "C",
         "reasons": [
             "declared_only"
-        ]
+        ],
+        "digest": "sha256:358416e121ee06758f195424ea031e2aa1dfc47ba67e8d5de126b16755c5dfb3"
     }
 }

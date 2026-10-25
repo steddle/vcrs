@@ -2,13 +2,22 @@
     "description": "The adherent revoked the mandate to the rappresentante comune, so the adhesion is void (art. 840-septies(7) c.p.c.)",
     "annex": "it",
     "flows": {
-        "f1": true,
-        "f0": false
+        "f1": {
+            "informs": true,
+            "live_from": "2020-01-01",
+            "live_to": null
+        },
+        "f0": {
+            "informs": false,
+            "live_from": "2020-01-01",
+            "live_to": null
+        }
     },
     "record": {
         "id": "r-0001",
         "party": "natural",
         "status": "withdrawn",
+        "status_on": "2026-09-01",
         "joined_on": "2026-09-01",
         "flow": "f1",
         "terms": "t1",
@@ -34,6 +43,7 @@
         "grade": "D",
         "reasons": [
             "not_active"
-        ]
+        ],
+        "digest": "sha256:ecc36508932f486975125b655f7adf9c37408e77c74a86449f74ea60c17828ca"
     }
 }

@@ -35,12 +35,43 @@
                 "excluded"
             ]
         },
+        "status_on": {
+            "description": "The day the status last changed, required for every status but active. A change dated after the reference date leaves the record active at it (section 4.1).",
+            "$ref": "#/$defs/date"
+        },
+        "status_reason": {
+            "description": "Why a record is excluded, where its status is excluded: late, joined after the deadline; refused, the court or the claimant refused the joining; defective, the joining was ineffective or left uncorrected; unpaid, a fee the law allows was not paid; ended, membership ended later, by law or by a settlement.",
+            "enum": [
+                "late",
+                "refused",
+                "defective",
+                "unpaid",
+                "ended"
+            ]
+        },
         "joined_on": {
             "$ref": "#/$defs/date"
         },
         "flow": {
             "description": "The flow version the person joined through.",
             "$ref": "#/$defs/id"
+        },
+        "confirmed": {
+            "description": "Where the person joined through a flow version that does not inform: the version they later confirmed through, and the day (section 5.1). The joining flow stays as it was.",
+            "type": "object",
+            "required": [
+                "flow",
+                "on"
+            ],
+            "additionalProperties": false,
+            "properties": {
+                "flow": {
+                    "$ref": "#/$defs/id"
+                },
+                "on": {
+                    "$ref": "#/$defs/date"
+                }
+            }
         },
         "terms": {
             "description": "The terms version the person accepted.",
@@ -104,6 +135,52 @@
                             }
                         }
                     ]
+                },
+                "register_check": {
+                    "description": "For a legal person: the business register its registration was checked against, and the day (section 4.4).",
+                    "type": "object",
+                    "required": [
+                        "register",
+                        "on"
+                    ],
+                    "additionalProperties": false,
+                    "properties": {
+                        "register": {
+                            "type": "string",
+                            "minLength": 1
+                        },
+                        "on": {
+                            "$ref": "#/$defs/date"
+                        }
+                    }
+                },
+                "authority": {
+                    "description": "For a legal person: the authority of the person acting for it, as checked (section 4.4). role: what the person is, such as a director or an attorney. basis: what gives the authority, such as the register's entry or a power of attorney. checked_against: the source it was checked against.",
+                    "type": "object",
+                    "required": [
+                        "role",
+                        "basis",
+                        "checked_against",
+                        "on"
+                    ],
+                    "additionalProperties": false,
+                    "properties": {
+                        "role": {
+                            "type": "string",
+                            "minLength": 1
+                        },
+                        "basis": {
+                            "type": "string",
+                            "minLength": 1
+                        },
+                        "checked_against": {
+                            "type": "string",
+                            "minLength": 1
+                        },
+                        "on": {
+                            "$ref": "#/$defs/date"
+                        }
+                    }
                 }
             }
         },
@@ -162,7 +239,7 @@
             }
         },
         "residence": {
-            "description": "The person's country of habitual residence, and the date it was established for (section 4.6).",
+            "description": "The person's country of habitual residence, the date it was established for, and its source (section 4.6). Where the export states a residence_on, the date is that one.",
             "type": "object",
             "required": [
                 "country",
@@ -178,37 +255,36 @@
                     "$ref": "#/$defs/date"
                 },
                 "source": {
-                    "description": "Where the residence comes from: the person's declaration, an identity document, a register.",
+                    "description": "Where the residence comes from: the person's declaration, an identity document, a register. A record whose opt-in turns on its residence holds it.",
                     "type": "string",
                     "minLength": 1
                 }
             }
         },
         "opt_in": {
-            "description": "The person's express statement that they want to be represented in this action, where the annex requires one (section 4.6).",
-            "oneOf": [
-                {
-                    "type": "null"
+            "description": "The person's express statement that they want to be represented in this action, where the annex requires one (section 4.6): when they made it, through which channel, and the action it names.",
+            "type": "object",
+            "required": [
+                "on",
+                "channel",
+                "action"
+            ],
+            "additionalProperties": false,
+            "properties": {
+                "on": {
+                    "$ref": "#/$defs/date"
                 },
-                {
-                    "type": "object",
-                    "required": [
-                        "on",
-                        "channel"
-                    ],
-                    "additionalProperties": false,
-                    "properties": {
-                        "on": {
-                            "$ref": "#/$defs/date"
-                        },
-                        "channel": {
-                            "description": "Where the opt-in went. Where the export states a court-set channel (opt_in_channel) or the annex names one, it holds that value as written (registry under Annex NL); any other value does not count.",
-                            "type": "string",
-                            "minLength": 1
-                        }
-                    }
+                "channel": {
+                    "description": "Where the opt-in went. Where the term or the annex names a channel, it holds that value as written (registry under Annex NL); any other value does not count.",
+                    "type": "string",
+                    "minLength": 1
+                },
+                "action": {
+                    "description": "The action the opt-in names, as the court refers to it. Where the export states the court's reference, an opt-in that names another does not count.",
+                    "type": "string",
+                    "minLength": 1
                 }
-            ]
+            }
         },
         "parallel_declared": {
             "description": "The person declared they are not represented in another action, and claim nowhere else, on the same claim against the same defendant (section 4.6).",
@@ -239,6 +315,16 @@
             "type": "string",
             "minLength": 1
         },
+        "parts": {
+            "description": "Where the claim falls under two laws, the parts the record belongs to (section 4.6).",
+            "type": "array",
+            "items": {
+                "type": "string",
+                "minLength": 1
+            },
+            "minItems": 1,
+            "uniqueItems": true
+        },
         "grade": {
             "description": "The grade the operator states. A validator recomputes it.",
             "enum": [
@@ -253,6 +339,36 @@
             "$ref": "#/$defs/digest"
         }
     },
+    "allOf": [
+        {
+            "if": {
+                "properties": {
+                    "status": {
+                        "const": "active"
+                    }
+                }
+            },
+            "else": {
+                "required": [
+                    "status_on"
+                ]
+            }
+        },
+        {
+            "if": {
+                "required": [
+                    "status_reason"
+                ]
+            },
+            "then": {
+                "properties": {
+                    "status": {
+                        "const": "excluded"
+                    }
+                }
+            }
+        }
+    ],
     "$defs": {
         "date": {
             "type": "string",

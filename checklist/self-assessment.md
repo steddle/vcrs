@@ -16,7 +16,7 @@ For the board of a representative, before it claims a level. Each line is a yes 
 | 8 | Are withdrawals, opt-outs and exclusions recorded with their date, and left out of the count? | 4.1 |
 | 9 | Where the annex binds people abroad, residents or both only on an opt-in: does every record hold the person's residence and its source, where the opt-in turns on it, and, once the opt-in is due, does the record of everyone who has to opt in hold their opt-in and, where the annex asks, their declaration on parallel actions? | 4.6 |
 | 10 | Is every change to a record logged: what, when, by whom, why? | 5.3 |
-| 11 | At each reference date, do we fix the snapshot root and anchor it in time? | 5.4 |
+| 11 | At each reference date, do we fix the snapshot root and the manifest, and anchor the manifest in time? | 5.4 |
 | 12 | Does the board commission an auditor, independent of the operator and the funder, who traces a sample from the register to the source records and back? | 8 |
 | 13 | Do we own the register, can we export it complete at any time at no extra cost, and can we replace the operator? | 9 |
 | 14 | Does the operator's fee depend neither on the outcome nor on the number of records? | 9 |
@@ -44,8 +44,8 @@ All of Level 2, and:
 | 22 | Does every evidence document carry a digest the record names? | 5.3 |
 | 23 | Do we report coverage per subgroup, or state that the class has none? | 6.4 |
 | 24 | Do we report how many records are grade A? | 10 |
-| 25 | Does the auditor run the reproduction test: read-only access to the live system, no export from the operator, every grade and the coverage recomputed, the snapshot root matched, a test sign-up through each live flow version? | 8 |
+| 25 | Does the auditor run the reproduction test: read-only access to the live system, no export from the operator, every grade and the coverage recomputed, the snapshot root and the manifest matched, a test sign-up through each live flow version? | 8 |
 
 ## What a validator checks
 
-A validator reading the facts export answers questions 3 to 9, 11 (the root, and whether it is anchored), 15 to 18, and 21 to 24. The rest the board answers, and the conformance statement attests.
+A validator reading the facts export answers questions 3 to 9, 11 (the root and the manifest, and whether the manifest is anchored), 15 to 18, and 21 to 24. The rest the board answers, and the conformance statement attests.

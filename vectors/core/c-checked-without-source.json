@@ -2,8 +2,16 @@
     "description": "Basis checked, but the outside source is not named",
     "annex": null,
     "flows": {
-        "f1": true,
-        "f0": false
+        "f1": {
+            "informs": true,
+            "live_from": "2020-01-01",
+            "live_to": null
+        },
+        "f0": {
+            "informs": false,
+            "live_from": "2020-01-01",
+            "live_to": null
+        }
     },
     "record": {
         "id": "r-0001",
@@ -30,6 +38,7 @@
         "grade": "C",
         "reasons": [
             "no_evidence"
-        ]
+        ],
+        "digest": "sha256:b5e8823016977e3be31bb399f2fe9c1caf22ba95d85a849264efde93d74e5e01"
     }
 }

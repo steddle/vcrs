@@ -1,0 +1,64 @@
+{
+    "vcrs": "0.1.0-beta.4",
+    "annex": "nl",
+    "level": "verified",
+    "draft": true,
+    "representative": "Stichting Voorbeeldclaim",
+    "action": {
+        "title": "Software that was sold and never delivered",
+        "defendants": [
+            "Example Motors B.V."
+        ],
+        "directive": true
+    },
+    "operator": "Stichting Voorbeeldclaim",
+    "reference_date": "2026-10-12",
+    "denominator": {
+        "low": 21000,
+        "high": 26000,
+        "source": "RDW open data, registrations of the models concerned, times the take rate of package X in the defendant's annual report",
+        "as_of": "2026-09-01"
+    },
+    "claims": {
+        "low": 31500000,
+        "high": 39000000,
+        "currency": "EUR",
+        "method": "The price of package X, €1 500 per car, times the denominator"
+    },
+    "counts": {
+        "A": 1,
+        "B": 2,
+        "C": 2,
+        "D": 2,
+        "inactive": 1
+    },
+    "coverage": {
+        "A": {
+            "records": 1,
+            "low": 0.0038,
+            "high": 0.0048
+        },
+        "B": {
+            "records": 3,
+            "low": 0.0115,
+            "high": 0.0143
+        },
+        "C": {
+            "records": 5,
+            "low": 0.0192,
+            "high": 0.0238
+        }
+    },
+    "snapshot": {
+        "root": "sha256:c5c5ab8d8c56c7dc71e1b26e22d95968dd938a032ae853a7ea49862a935b3937",
+        "manifest": "sha256:7d557ddf93acf24997bd7832ff46a9e9b97c38f001a8f3044a8e5fd4e8020023",
+        "records": 8,
+        "anchor": {
+            "method": "opentimestamps",
+            "reference": "snapshots/2026-10-12.ots",
+            "on": "2026-10-12"
+        }
+    },
+    "auditor": null,
+    "issued_on": "2026-10-13"
+}

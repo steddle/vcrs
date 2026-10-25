@@ -88,7 +88,7 @@ A recommendation, not a court's rule.
 - Whether the declaration under s. 25, which confirms compensation not received, is the declaration on parallel actions core 4.6 asks for. IE-10 adds representation elsewhere so that `parallel_declared` holds both.
 - Whether the list lodged under O. 15 r. 43 may hold identifiers alone while s. 25(4) sends names to the trader.
 - Whether a notification an operator receives for the QE is a notification to the QE (s. 24(1)): no source read addresses an agent. Whether a vendor paid a fixed fee by the QE to run the register is caught by the rules on champerty: no court has said, and the Law Reform Commission's report on third-party litigation funding was not published by 21 October 2026.
-- The export states no opt-in window, since the opt-in is due from the start, so the validator does not test that a notification came before the court deemed the action admissible: IE-1 records a late one `excluded`, and the auditor checks it.
+- The opt-in is due from the start. The export states the period up to the day the court deemed the action admissible as a term (`opt_in_terms`), and the validator does not count a notification dated after it. IE-1 also records a late one `excluded`, and the auditor checks it.
 - Proceedings commenced before 12 October 2026 run without O. 15 Part V. In ICCL v Microsoft the High Court deemed the action admissible on an ex parte application before the summons issued (para. 15).
 
 ## Sources

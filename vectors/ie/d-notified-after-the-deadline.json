@@ -1,0 +1,65 @@
+{
+    "description": "Notified the qualified entity after the court deemed the action admissible (s. 24(2)), dated in the export",
+    "annex": "ie",
+    "context": {
+        "reference_date": "2027-03-01",
+        "opt_in_terms": [
+            {
+                "opened_on": "2026-09-01",
+                "closed_on": "2027-01-20",
+                "channel": null
+            }
+        ]
+    },
+    "flows": {
+        "f1": {
+            "informs": true,
+            "live_from": "2020-01-01",
+            "live_to": null
+        },
+        "f0": {
+            "informs": false,
+            "live_from": "2020-01-01",
+            "live_to": null
+        }
+    },
+    "record": {
+        "id": "r-0001",
+        "party": "natural",
+        "status": "active",
+        "joined_on": "2026-09-01",
+        "flow": "f1",
+        "terms": "t1",
+        "identity": {
+            "name": true,
+            "birth_date": true,
+            "contact_confirmed": true,
+            "verified": null
+        },
+        "membership": {
+            "basis": "declared",
+            "in_class": null,
+            "evidence": [],
+            "checked_against": null
+        },
+        "residence": {
+            "country": "IE",
+            "on": "2026-09-01",
+            "source": "declaration"
+        },
+        "opt_in": {
+            "on": "2027-02-01",
+            "channel": "qe",
+            "action": "action-1"
+        },
+        "parallel_declared": true,
+        "duplicate_of": null
+    },
+    "expected": {
+        "grade": "D",
+        "reasons": [
+            "not_opted_in"
+        ],
+        "digest": "sha256:0049b19f88f4847782550d3351024de92535b5ebb2eff3b469c4a7ab60462e95"
+    }
+}

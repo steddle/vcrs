@@ -2,13 +2,22 @@
     "description": "Opted out",
     "annex": null,
     "flows": {
-        "f1": true,
-        "f0": false
+        "f1": {
+            "informs": true,
+            "live_from": "2020-01-01",
+            "live_to": null
+        },
+        "f0": {
+            "informs": false,
+            "live_from": "2020-01-01",
+            "live_to": null
+        }
     },
     "record": {
         "id": "r-0001",
         "party": "natural",
         "status": "opted_out",
+        "status_on": "2026-09-01",
         "joined_on": "2026-09-01",
         "flow": "f1",
         "terms": "t1",
@@ -30,6 +39,7 @@
         "grade": "D",
         "reasons": [
             "not_active"
-        ]
+        ],
+        "digest": "sha256:dabe510d025014c763c0cfd8e5dddcf0c2ee69eb37009f9b5204065d160adc3f"
     }
 }

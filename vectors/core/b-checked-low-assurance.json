@@ -2,8 +2,16 @@
     "description": "Checked; identity verified at assurance low only",
     "annex": null,
     "flows": {
-        "f1": true,
-        "f0": false
+        "f1": {
+            "informs": true,
+            "live_from": "2020-01-01",
+            "live_to": null
+        },
+        "f0": {
+            "informs": false,
+            "live_from": "2020-01-01",
+            "live_to": null
+        }
     },
     "record": {
         "id": "r-0001",
@@ -34,6 +42,7 @@
         "grade": "B",
         "reasons": [
             "assurance_too_low"
-        ]
+        ],
+        "digest": "sha256:54515c4fb16b815b0290a1daf0ba786d739d7a01f8aaa2e3c7cdda4e25370c1f"
     }
 }

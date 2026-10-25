@@ -2,8 +2,16 @@
     "description": "Checked against an outside source; identity not verified",
     "annex": null,
     "flows": {
-        "f1": true,
-        "f0": false
+        "f1": {
+            "informs": true,
+            "live_from": "2020-01-01",
+            "live_to": null
+        },
+        "f0": {
+            "informs": false,
+            "live_from": "2020-01-01",
+            "live_to": null
+        }
     },
     "record": {
         "id": "r-0001",
@@ -30,6 +38,7 @@
         "grade": "B",
         "reasons": [
             "identity_not_verified"
-        ]
+        ],
+        "digest": "sha256:a313274aeddd63d349cfe11651c26222cdef41ff4ce5a0a1c9dbf77659698199"
     }
 }

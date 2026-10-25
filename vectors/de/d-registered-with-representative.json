@@ -2,7 +2,11 @@
     "description": "Sent the registration to the representative instead of the Bundesamt für Justiz (§ 47(1) VDuG), and the window has closed",
     "annex": "de",
     "flows": {
-        "f1": true
+        "f1": {
+            "informs": true,
+            "live_from": "2020-01-01",
+            "live_to": null
+        }
     },
     "record": {
         "id": "r-0001",
@@ -35,19 +39,25 @@
         },
         "opt_in": {
             "on": "2027-01-20",
-            "channel": "representative"
+            "channel": "representative",
+            "action": "action-1"
         }
     },
     "expected": {
         "grade": "D",
         "reasons": [
             "not_opted_in"
-        ]
+        ],
+        "digest": "sha256:d00a2359f94823c96e0a9445994a9964b1ceb2649a94c04712ab815003149c97"
     },
     "context": {
         "reference_date": "2027-03-15",
-        "opt_in_opened_on": "2026-11-02",
-        "opt_in_closed_on": "2027-03-01",
-        "opt_in_channel": null
+        "opt_in_terms": [
+            {
+                "opened_on": "2026-11-02",
+                "closed_on": "2027-03-01",
+                "channel": null
+            }
+        ]
     }
 }

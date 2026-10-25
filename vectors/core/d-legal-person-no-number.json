@@ -2,8 +2,16 @@
     "description": "A legal person without a registration number",
     "annex": null,
     "flows": {
-        "f1": true,
-        "f0": false
+        "f1": {
+            "informs": true,
+            "live_from": "2020-01-01",
+            "live_to": null
+        },
+        "f0": {
+            "informs": false,
+            "live_from": "2020-01-01",
+            "live_to": null
+        }
     },
     "record": {
         "id": "r-0001",
@@ -30,6 +38,7 @@
         "grade": "D",
         "reasons": [
             "not_distinct"
-        ]
+        ],
+        "digest": "sha256:5f5319f9d671daea565e2cdae104e72cd1fe30077bc474a3152e461e072d37cf"
     }
 }

@@ -1,0 +1,61 @@
+{
+    "description": "Resident in the Netherlands on the day the court fixed for the residence test: bound unless they opt out",
+    "annex": "nl",
+    "context": {
+        "reference_date": "2027-03-15",
+        "opt_in_terms": [
+            {
+                "opened_on": "2027-01-15",
+                "closed_on": "2027-03-01",
+                "channel": null
+            }
+        ],
+        "directive": true,
+        "residence_on": "2027-01-20"
+    },
+    "flows": {
+        "f1": {
+            "informs": true,
+            "live_from": "2020-01-01",
+            "live_to": null
+        },
+        "f0": {
+            "informs": false,
+            "live_from": "2020-01-01",
+            "live_to": null
+        }
+    },
+    "record": {
+        "id": "r-0001",
+        "party": "natural",
+        "status": "active",
+        "joined_on": "2026-09-01",
+        "flow": "f1",
+        "terms": "t1",
+        "identity": {
+            "name": true,
+            "birth_date": true,
+            "contact_confirmed": true,
+            "verified": null
+        },
+        "membership": {
+            "basis": "declared",
+            "in_class": null,
+            "evidence": [],
+            "checked_against": null
+        },
+        "residence": {
+            "country": "NL",
+            "on": "2027-01-20",
+            "source": "declaration"
+        },
+        "duplicate_of": null
+    },
+    "expected": {
+        "grade": "C",
+        "reasons": [
+            "declared_only"
+        ],
+        "digest": "sha256:a0c9a31e743a0c963b1e7f602ca81936937c25284ff09e32ebf1c538dcafe3db"
+    }
+}

@@ -2,8 +2,16 @@
     "description": "In a member-led action, the declaration does not say whether the person joined another group action or sued over the same infringement (Annex PL, PL-14)",
     "annex": "pl",
     "flows": {
-        "f1": true,
-        "f0": false
+        "f1": {
+            "informs": true,
+            "live_from": "2020-01-01",
+            "live_to": null
+        },
+        "f0": {
+            "informs": false,
+            "live_from": "2020-01-01",
+            "live_to": null
+        }
     },
     "record": {
         "id": "r-0001",
@@ -31,13 +39,15 @@
         },
         "opt_in": {
             "on": "2026-09-01",
-            "channel": "representative"
+            "channel": "representative",
+            "action": "action-1"
         }
     },
     "expected": {
         "grade": "D",
         "reasons": [
             "no_parallel_declaration"
-        ]
+        ],
+        "digest": "sha256:b05cd8846a0cd781dbc60fe521103203b7d93cfb520b01415eb0188ee303de52"
     }
 }

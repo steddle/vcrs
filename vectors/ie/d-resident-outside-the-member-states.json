@@ -2,8 +2,16 @@
     "description": "Resident outside the Member States, so the person cannot notify (s. 24(1))",
     "annex": "ie",
     "flows": {
-        "f1": true,
-        "f0": false
+        "f1": {
+            "informs": true,
+            "live_from": "2020-01-01",
+            "live_to": null
+        },
+        "f0": {
+            "informs": false,
+            "live_from": "2020-01-01",
+            "live_to": null
+        }
     },
     "record": {
         "id": "r-0001",
@@ -31,7 +39,8 @@
         },
         "opt_in": {
             "on": "2026-09-01",
-            "channel": "qe"
+            "channel": "qe",
+            "action": "action-1"
         },
         "parallel_declared": true
     },
@@ -39,6 +48,7 @@
         "grade": "D",
         "reasons": [
             "outside_class"
-        ]
+        ],
+        "digest": "sha256:80923f74242dbee4995c678a9714898fb360d62567e42c017fe238431f0082c3"
     }
 }

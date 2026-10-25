@@ -2,13 +2,22 @@
     "description": "Withdrawn before the reference date",
     "annex": null,
     "flows": {
-        "f1": true,
-        "f0": false
+        "f1": {
+            "informs": true,
+            "live_from": "2020-01-01",
+            "live_to": null
+        },
+        "f0": {
+            "informs": false,
+            "live_from": "2020-01-01",
+            "live_to": null
+        }
     },
     "record": {
         "id": "r-0001",
         "party": "natural",
         "status": "withdrawn",
+        "status_on": "2026-09-01",
         "joined_on": "2026-09-01",
         "flow": "f1",
         "terms": "t1",
@@ -34,6 +43,7 @@
         "grade": "D",
         "reasons": [
             "not_active"
-        ]
+        ],
+        "digest": "sha256:d4eeba76a074e224c24dfae3d8401223b4bc62ee0b7f22e5ae1b5630bf5c7ebc"
     }
 }

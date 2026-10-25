@@ -3,13 +3,25 @@
     "annex": "fi",
     "context": {
         "reference_date": "2027-03-15",
-        "opt_in_opened_on": "2026-11-02",
-        "opt_in_closed_on": "2027-01-29",
-        "opt_in_channel": null
+        "opt_in_terms": [
+            {
+                "opened_on": "2026-11-02",
+                "closed_on": "2027-01-29",
+                "channel": null
+            }
+        ]
     },
     "flows": {
-        "f1": true,
-        "f0": false
+        "f1": {
+            "informs": true,
+            "live_from": "2020-01-01",
+            "live_to": null
+        },
+        "f0": {
+            "informs": false,
+            "live_from": "2020-01-01",
+            "live_to": null
+        }
     },
     "record": {
         "id": "r-0001",
@@ -37,13 +49,15 @@
         },
         "opt_in": {
             "on": "2026-11-20",
-            "channel": "qe"
+            "channel": "qe",
+            "action": "action-1"
         }
     },
     "expected": {
         "grade": "C",
         "reasons": [
             "declared_only"
-        ]
+        ],
+        "digest": "sha256:2b82b9b39ea4713bd5894200b61c00559bc2c8eb49457351f9414d2e1000d1f4"
     }
 }

@@ -1,0 +1,69 @@
+{
+    "description": "Filed a domanda di adesione in the term the judgment opened (art. 840-sexies(1)(e) c.p.c.)",
+    "annex": "it",
+    "context": {
+        "reference_date": "2028-06-01",
+        "opt_in_terms": [
+            {
+                "opened_on": "2026-11-15",
+                "closed_on": "2027-04-14",
+                "channel": null
+            },
+            {
+                "opened_on": "2027-12-15",
+                "closed_on": "2028-05-12",
+                "channel": null
+            }
+        ]
+    },
+    "flows": {
+        "f1": {
+            "informs": true,
+            "live_from": "2020-01-01",
+            "live_to": null
+        },
+        "f0": {
+            "informs": false,
+            "live_from": "2020-01-01",
+            "live_to": null
+        }
+    },
+    "record": {
+        "id": "r-0001",
+        "party": "natural",
+        "status": "active",
+        "joined_on": "2026-09-01",
+        "flow": "f1",
+        "terms": "t1",
+        "identity": {
+            "name": true,
+            "birth_date": true,
+            "contact_confirmed": true,
+            "verified": null
+        },
+        "membership": {
+            "basis": "declared",
+            "in_class": null,
+            "evidence": [],
+            "checked_against": null
+        },
+        "residence": {
+            "country": "IT",
+            "on": "2026-09-01",
+            "source": "declaration"
+        },
+        "opt_in": {
+            "on": "2028-01-10",
+            "channel": "pst",
+            "action": "action-1"
+        },
+        "duplicate_of": null
+    },
+    "expected": {
+        "grade": "C",
+        "reasons": [
+            "declared_only"
+        ],
+        "digest": "sha256:659d0cdb4648627de8c53a9c6e1300aa0b6f8fee3ed3f36b5001d5ba6b67ea16"
+    }
+}

@@ -2,8 +2,16 @@
     "description": "Signed up on the plaintiff's site and confirmed by mail, but made no signed přihláška (§ 33 odst. 1)",
     "annex": "cz",
     "flows": {
-        "f1": true,
-        "f0": false
+        "f1": {
+            "informs": true,
+            "live_from": "2020-01-01",
+            "live_to": null
+        },
+        "f0": {
+            "informs": false,
+            "live_from": "2020-01-01",
+            "live_to": null
+        }
     },
     "record": {
         "id": "r-0001",
@@ -39,6 +47,7 @@
         "grade": "D",
         "reasons": [
             "not_opted_in"
-        ]
+        ],
+        "digest": "sha256:902efa4d6d98cce5e928cf8337b720b0d401801663a0de8c28f24a49e4e9889c"
     }
 }

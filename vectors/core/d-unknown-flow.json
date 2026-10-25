@@ -2,8 +2,16 @@
     "description": "Names a flow version the register doesn't hold",
     "annex": null,
     "flows": {
-        "f1": true,
-        "f0": false
+        "f1": {
+            "informs": true,
+            "live_from": "2020-01-01",
+            "live_to": null
+        },
+        "f0": {
+            "informs": false,
+            "live_from": "2020-01-01",
+            "live_to": null
+        }
     },
     "record": {
         "id": "r-0001",
@@ -30,6 +38,7 @@
         "grade": "D",
         "reasons": [
             "uninformed_flow"
-        ]
+        ],
+        "digest": "sha256:73701489265728eb5fc5ec49af2fb25a1e277071a0ee94877ea4e599ca2363c4"
     }
 }

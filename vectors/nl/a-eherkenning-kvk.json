@@ -2,8 +2,16 @@
     "description": "A company checked against the Handelsregister, acting through eHerkenning",
     "annex": "nl",
     "flows": {
-        "f1": true,
-        "f0": false
+        "f1": {
+            "informs": true,
+            "live_from": "2020-01-01",
+            "live_to": null
+        },
+        "f0": {
+            "informs": false,
+            "live_from": "2020-01-01",
+            "live_to": null
+        }
     },
     "record": {
         "id": "r-0001",
@@ -19,6 +27,16 @@
                 "scheme": "eherkenning",
                 "assurance": "substantial",
                 "on": "2026-09-02"
+            },
+            "register_check": {
+                "register": "Kamer van Koophandel",
+                "on": "2026-09-01"
+            },
+            "authority": {
+                "role": "director",
+                "basis": "register entry",
+                "checked_against": "Kamer van Koophandel",
+                "on": "2026-09-01"
             },
             "registration_number": true
         },
@@ -36,6 +54,7 @@
     },
     "expected": {
         "grade": "A",
-        "reasons": []
+        "reasons": [],
+        "digest": "sha256:81265e13c0d42a12460f4e46b72a61827c75440343d0621dbbe2be3c095bf53d"
     }
 }

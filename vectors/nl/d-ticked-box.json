@@ -2,8 +2,16 @@
     "description": "A box the person ticked, no name held: the Stellantis and TPC pattern",
     "annex": "nl",
     "flows": {
-        "f1": true,
-        "f0": false
+        "f1": {
+            "informs": true,
+            "live_from": "2020-01-01",
+            "live_to": null
+        },
+        "f0": {
+            "informs": false,
+            "live_from": "2020-01-01",
+            "live_to": null
+        }
     },
     "record": {
         "id": "r-0001",
@@ -36,6 +44,7 @@
             "no_name",
             "not_distinct",
             "unconfirmed_contact"
-        ]
+        ],
+        "digest": "sha256:15e0354b4fb592870192864103fc7451c0cbb00e2c8e991119de4a53f960036f"
     }
 }

@@ -1,0 +1,69 @@
+{
+    "description": "Filed a domanda di adesione between the term after the admission order and the term after the judgment, when no term was open (artt. 840-quinquies(1), 840-sexies(1)(e) c.p.c.)",
+    "annex": "it",
+    "context": {
+        "reference_date": "2028-06-01",
+        "opt_in_terms": [
+            {
+                "opened_on": "2026-11-15",
+                "closed_on": "2027-04-14",
+                "channel": null
+            },
+            {
+                "opened_on": "2027-12-15",
+                "closed_on": "2028-05-12",
+                "channel": null
+            }
+        ]
+    },
+    "flows": {
+        "f1": {
+            "informs": true,
+            "live_from": "2020-01-01",
+            "live_to": null
+        },
+        "f0": {
+            "informs": false,
+            "live_from": "2020-01-01",
+            "live_to": null
+        }
+    },
+    "record": {
+        "id": "r-0001",
+        "party": "natural",
+        "status": "active",
+        "joined_on": "2026-09-01",
+        "flow": "f1",
+        "terms": "t1",
+        "identity": {
+            "name": true,
+            "birth_date": true,
+            "contact_confirmed": true,
+            "verified": null
+        },
+        "membership": {
+            "basis": "declared",
+            "in_class": null,
+            "evidence": [],
+            "checked_against": null
+        },
+        "residence": {
+            "country": "IT",
+            "on": "2026-09-01",
+            "source": "declaration"
+        },
+        "opt_in": {
+            "on": "2027-08-01",
+            "channel": "pst",
+            "action": "action-1"
+        },
+        "duplicate_of": null
+    },
+    "expected": {
+        "grade": "D",
+        "reasons": [
+            "not_opted_in"
+        ],
+        "digest": "sha256:fa5da802e73a8ba09319c524757d1136316fd9379ceed06d86b5c2ba0c8d933a"
+    }
+}

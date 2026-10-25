@@ -33,12 +33,15 @@ An annex may add Required items and tighten a grade. It never loosens the core.
 - **Coverage**: the number of active records at or above a grade, divided by the denominator (section 6).
 - **Reference date**: the date at which the register is measured.
 - **Snapshot**: the register's state at the reference date, fixed by a digest (section 5.4).
+- **Manifest**: the facts export with its records replaced by their number and the snapshot root, and without its anchor: one digest over the records and everything that grades them, which is what is anchored in time (section 5.4).
 - **Auditor**: an independent professional who checks the register (section 8).
 - **Facts export**: the register in the open format of section 11, holding the facts that set each grade and no more personal data than those facts need.
 
 ## 4. Record grades
 
 Every record carries one grade, set by fixed rules from the facts on the record. The same facts always give the same grade. A grade is never a model's judgement or an operator's discretion.
+
+A record is graded as it stood on the reference date. A fact dated after it does not count at it: a verification, a check, a confirmation, an opt-in or a change of status.
 
 | Grade | Name | A record is this grade when |
 |---|---|---|
@@ -51,14 +54,14 @@ Every record carries one grade, set by fixed rules from the facts on the record.
 
 A record is grade D when any of these holds at the reference date:
 
-1. It is not active: the person withdrew, opted out or was excluded.
-2. It joined through a flow version that does not state the representative, the defendant, the claim and the period it covers (section 5.1).
+1. It is not active: the person withdrew, opted out or was excluded, on or before the reference date.
+2. It joined through a flow version that does not state the representative, the defendant, the claim and the period it covers, and the person has not confirmed through one that does (section 5.1).
 3. It is a duplicate of another record.
 4. It falls outside the class definition on the facts held.
 5. It holds no name.
 6. It holds nothing that tells two people with the same name apart: a date of birth for a natural person, a registration number for a legal person.
 7. Its contact channel was never confirmed by the person.
-8. Where the annex binds people abroad, residents of the forum, or both, only on an express opt-in: its residence is not held, where the opt-in turns on it; or, once the opt-in is due (4.6), the person has to opt in and the record holds no opt-in made in time, or no declaration on parallel actions where the annex requires one.
+8. Where the annex binds people abroad, residents of the forum, or both, only on an express opt-in: its residence is not held, for the date the court fixed where it fixed one, where the opt-in turns on it; or, once the opt-in is due (4.6), the person has to opt in and the record holds no opt-in made in time, or no declaration on parallel actions where the annex requires one.
 
 ### 4.2 Grade C: identified
 
@@ -75,21 +78,25 @@ The record must state that the evidence places the person inside the class defin
 
 ### 4.4 Grade A: corroborated
 
-Grade B, with membership checked against a source outside the person, and identity verified by a recognised method at assurance level substantial or high: an eIDAS electronic identification means notified at that level, or a scheme the annex names (a bank identification service, a national eID). For a legal person: a check against the business register, and the authority of the person acting for it.
+Grade B, with membership checked against a source outside the person, and identity verified by a recognised method at assurance level substantial or high: an eIDAS electronic identification means notified at that level, or a scheme the annex names (a bank identification service, a national eID). For a legal person also: its registration checked against the business register, and the authority of the person acting for it checked against its source, each with its date.
 
 ### 4.5 Deduplication
 
-Two records are duplicates when they name the same person, or claim on the same asset where the class definition allows one claim per asset. The operator keeps a deduplication key per record, a salted digest of the normalised identifying fields, so duplicates are found without exposing those fields. The operator marks the later record as the duplicate.
+Two records are duplicates when they name the same person, or claim on the same asset where the class definition allows one claim per asset. The operator keeps a deduplication key per record, a salted digest of the normalised identifying fields, so duplicates are found without exposing those fields. The operator marks the later record as the duplicate: the original is the record that joined first or, where both joined on the same day, the one whose identifier comes first in byte order. A duplicate names its original, which is never itself a duplicate, and never names itself.
 
 ### 4.6 Residence and parallel actions
 
 Under the Representative Actions Directive, a person whose habitual residence is outside the member state of the court is bound only if they explicitly ask to be represented (Directive (EU) 2020/1828, art. 9(3)), and nobody is represented twice or paid twice on the same claim against the same trader (art. 9(4)). Where the law binds residents of the forum too only by an act of their own, the annex says so (`opt_in_residents`), and everyone in the class opts in. Where the court or an approved agreement chooses whether residents opt in, the annex leaves it to the action and the export states the choice (`opt_in_residents`); an export that leaves it unstated is read as binding residents on an opt-in, and meets no level. Where the annex binds people abroad, residents or both only on an opt-in:
 
 - Each record holds the person's country of habitual residence, the date it is established for, and its source, where the opt-in turns on residence.
-- Once the opt-in is due, the record of a person who has to opt in holds it: when they made it, through which channel, and the action it names.
+- Once the opt-in is due, the record of a person who has to opt in holds it: when they made it, through which channel, and the action it names, as the court refers to it where the export states the court's reference.
 - Where the annex requires it, that record also holds the person's declaration that they are not represented, and do not claim, elsewhere on the same claim.
 
-The annex says when the opt-in is due and through which channel. Where it binds people abroad on an opt-in only in an action brought under the forum's transposition of the Directive, the export states whether this action is one (`directive`). Where people abroad opt in during a window the court sets after it appoints the representative, the export states the days that window opened and closed (`opt_in_opened_on`, `opt_in_closed_on`), and the record of a person who has to opt in needs the opt-in only at a reference date after the window closed, made within the window and through the channel the court set, which the export states (`opt_in_channel`), or else the one the annex names. Until then this standard counts the record on its residence alone; the annex says whether a court is known to count that support, and the cross-section (6.3) can show people abroad apart from residents, so their support can be weighed either way. Where the court sets more than one term, the export states the first day of the first and, once it is set, the last day of the last, so the opt-in falls due only after the last term. Where the annex has no such window, the opt-in is due from the start, and the export states no window and no channel; an export that states either meets no level. Where the court applies opt-out to people abroad, the export states no window.
+The annex says when the opt-in is due and through which channel. Where it binds people abroad on an opt-in only in an action brought under the forum's transposition of the Directive, the export states whether this action is one (`directive`). Where the court or an approved agreement sets whether residents opt in per category, the export states it per subgroup.
+
+The export states the terms set for opting in (`opt_in_terms`): each with its first day, its last day once set, the channel the court set for it, and the subgroups it applies to where it applies to some alone. Where people opt in during terms the court sets after it appoints the representative, the record of a person who has to opt in needs the opt-in only at a reference date after the last term that applies to it closed, made within one of those terms and through its channel, or else the one the annex names; an opt-in made between two terms does not count. Until then this standard counts the record on its residence alone; the annex says whether a court is known to count that support, and the cross-section (6.3) can show people abroad apart from residents, so their support can be weighed either way. Where the annex has no such window, the opt-in is due from the start; where the law sets a deadline for it, the annex says whether the export states the deadline as a term, without a channel, since the law names the channel; where it does, an opt-in after it does not count. Where the court applies opt-out to people abroad, the export states no term.
+
+Where the court fixes the date residence is tested on, the export states it (`residence_on`), and each record's residence is established for that date. Where a claim falls under two laws, as a transitional rule may split it, the export states the parts (`parts`) and each record the parts it belongs to; the annex names the part its opt-in governs, and a record outside that part needs no opt-in.
 
 An electronic identification proves who a person is. In the EU Digital Identity Wallet residence is an optional attribute (Implementing Regulation (EU) 2024/2977, Annex, Table 2), so residence needs a source of its own.
 
@@ -101,7 +108,7 @@ Each record and each document can be traced to where it came from and shown to b
 
 - Every published flow version is captured in full, in every language, and dated from the day it went live to the day it was replaced.
 - A flow version informs when it states, before the person joins: the representative, the defendant, the claim, and the period the claim covers. A record that joined through a flow version that does not inform is grade D until the person confirms through one that does.
-- Each record names the flow version it joined through.
+- Each record names the flow version it joined through, which was live on the day it joined. A person who confirms through a later version keeps the one they joined through, and the record adds the confirming version and the day.
 
 ### 5.2 Terms
 
@@ -119,9 +126,10 @@ At each reference date the operator fixes the register's state:
 
 1. List every record as its identifier and its digest, separated by a space, one line per record, ordered by identifier in byte order.
 2. The snapshot root is the Merkle Tree Hash of RFC 9162 (Certificate Transparency Version 2.0), section 2.1.1, with SHA-256, over those lines in that order: each line, in UTF-8 and without its line break, is one entry.
-3. Anchor the root in time, by a notary, a qualified electronic timestamp under eIDAS, or a public timestamp such as OpenTimestamps.
+3. Fix the manifest: the facts export without its anchor, its records replaced by their number and the snapshot root (`records`: `count` and `root`). Its digest is SHA-256 over its canonical form (11.3). It commits to the records and to everything that grades them: the reference date, the annex, the action, the class, the denominator, the flow versions and the opt-in terms.
+4. Anchor the manifest's digest in time, on or after the reference date, by a notary, a qualified electronic timestamp under eIDAS, or a public timestamp such as OpenTimestamps.
 
-A person can be shown their own line with its position in the list, counted from 0, the number of lines, and its inclusion proof under RFC 9162, section 2.1.3. Anyone holding the root checks from these alone, as RFC 9162, section 2.1.3.2 sets out, that the record was in the register on that date, without seeing any other line.
+A person can be shown their own line with its position in the list, counted from 0, the number of lines, and its inclusion proof under RFC 9162, section 2.1.3. Anyone holding the root checks from these alone, as RFC 9162, section 2.1.3.2 sets out, that the record was in the register on that date, without seeing any other line. Anyone holding the manifest checks that it names that root and gives the anchored digest, and the anchor shows the manifest existed on its day. Neither shows that the facts behind a record are true: the auditor checks those against the source records (section 8).
 
 ## 6. Coverage
 
@@ -132,6 +140,8 @@ The register states the size of the class with its source, its method and its da
 ### 6.2 Coverage per grade
 
 Coverage is stated at each grade, counting active records at or above it, against both ends of the denominator. For example: 'Grade B or better: 41 200 of 2.1 million to 2.6 million (1.58% to 1.96%), denominator from the vehicle register, query of 1 September 2026, reference date 12 October 2026.'
+
+Coverage is a percentage of the denominator, rounded half up to four decimals.
 
 This standard sets no minimum percentage. Where a jurisdiction's courts have set or applied one, its annex says so.
 
@@ -158,6 +168,7 @@ Courts test a register at a moment their law sets: at filing, at the admissibili
 - The register is measured at a stated reference date.
 - Where the test is applied as things stand on the day of the ruling, the register is regenerated at a reference date shortly before each hearing, with every withdrawal, opt-out and exclusion up to that date.
 - Earlier snapshots stay available, so decay between two dates can be shown.
+- The facts export describes the register on its reference date. A change of status made later may stand in it with its date, and does not count at the reference date; every other fact is as it stood that day.
 
 ## 8. Independent check
 
@@ -169,11 +180,11 @@ What the auditor does depends on the level:
 
 | Level | The check |
 |---|---|
-| Registered | Trace a sample of records from the register back to their source records, and a sample of source records forward into the register. Confirm the snapshot root |
-| Identified | Recompute every record's grade and the coverage at each grade from the source records, and confirm the snapshot root |
-| Verified | The reproduction test: with read-only access to the live system and without an export from the operator, recompute the grade of every record and the coverage at each grade on the reference date, match the snapshot root, and complete test sign-ups through each live flow version |
+| Registered | Trace a sample of records from the register back to their source records, and a sample of source records forward into the register. Confirm the snapshot root and the manifest |
+| Identified | Recompute every record's grade and the coverage at each grade from the source records, and confirm the snapshot root and the manifest |
+| Verified | The reproduction test: with read-only access to the live system and without an export from the operator, recompute the grade of every record and the coverage at each grade on the reference date, match the snapshot root and the manifest, and complete test sign-ups through each live flow version |
 
-The auditor reports under a recognised standard for agreed-upon procedures or assurance (ISRS 4400 or ISAE 3000, or their national equivalent). The report names the reference date, the snapshot root, and the figures reproduced.
+The auditor reports under a recognised standard for agreed-upon procedures or assurance (ISRS 4400 or ISAE 3000, or their national equivalent). The report names the reference date, the snapshot root, the manifest's digest, and the figures reproduced.
 
 ## 9. The representative's control
 
@@ -204,21 +215,21 @@ A register claims one level. The representative chooses the level its class and 
 
 ### 11.1 The facts export
 
-The facts export is one JSON document: the register's metadata (representative, action and whether it is brought under the Directive, class definition, denominator, reference date, the opt-in window's days and channel, facets), its flow versions, its terms versions and its records. `schema/export.schema.json` defines it. It holds the facts that set each grade, not the personal data behind them: whether a name is held, not the name.
+The facts export is one JSON document: the register's metadata (representative, action and whether it is brought under the Directive, class definition, denominator, reference date, the opt-in terms, the residence date where a court fixed it, the parts of a claim that falls under two laws, facets), its flow versions, its terms versions, its records and the anchor of its manifest. `schema/export.schema.json` defines it. It holds the facts that set each grade, not the personal data behind them: whether a name is held, not the name.
 
 The facts export is what a validator reads, what a funder or court may be shown in aggregate, and what moves with the register when the operator changes. The auditor of section 8 reads the source records, not the export.
 
 ### 11.2 The conformance statement
 
-A representative that claims a level publishes a one-page statement: the level, the annex, the reference date, the denominator and its source, the count and coverage at each grade, the snapshot root and its anchor, and the auditor with the date of the report. No personal data. `schema/conformance.schema.json` defines it.
+A representative that claims a level publishes a one-page statement: the level, the annex, the reference date, the denominator and its source, the count and coverage at each grade, the snapshot root, the manifest's digest and its anchor, and the auditor with the date of the report. No personal data. Until the auditor has reported, the statement is a draft and says so. `schema/conformance.schema.json` defines it.
 
 ### 11.3 Canonical form and digests
 
-A record's canonical form is its JSON under RFC 8785 (JSON Canonicalization Scheme) without its `digest` member. Records hold no floating-point numbers, so the canonical form is the record with its keys sorted by their UTF-16 code units, no insignificant whitespace, in UTF-8. Digests are SHA-256, written `sha256:` followed by 64 lowercase hexadecimal characters, and so are the snapshot root and each node of an inclusion proof (5.4).
+An export is read as I-JSON (RFC 7493): a member name that appears twice in one object makes it invalid, since readers disagree on which value holds. A record's canonical form is its JSON under RFC 8785 (JSON Canonicalization Scheme) without its `digest` member: members sorted by their UTF-16 code units, no insignificant whitespace, UTF-8, and numbers written as RFC 8785 writes them. The manifest's canonical form is the manifest under RFC 8785. An optional member that holds nothing is left out, never written as null, so the same facts have one canonical form. Digests are SHA-256, written `sha256:` followed by 64 lowercase hexadecimal characters, and so are the snapshot root, the manifest's digest and each node of an inclusion proof (5.4).
 
 ### 11.4 Test vectors
 
-`vectors/` holds records with the grade they must get. An implementation of this standard grades every vector as stated. The vectors are the contract; any implementation, in any language, is checked against them.
+`vectors/` holds records with the grade they must get, its reasons, and the record's digest. A vector holds one record, the flow versions it may name (whether each informs, and from and to which day it was live), the annex, and the context it is graded in: the reference date and the action's opt-in settings, under the export's own names, with `directive` and `court_reference` for the action's. An implementation of this standard grades every vector as stated and gives every record the digest stated. The vectors are the contract; any implementation, in any language, is checked against them.
 
 ### 11.5 Reasons
 
@@ -243,6 +254,57 @@ A record below grade A states why it holds its grade: at grade D every rule of 4
 | `identity_not_verified` | B | 4.4 |
 | `assurance_too_low` | B | 4.4 |
 | `scheme_not_recognised` | B | 4.4 |
+| `register_not_checked` | B | 4.4 |
+| `authority_not_checked` | B | 4.4 |
+
+### 11.6 Findings
+
+A validator reports four outcomes, kept apart. An export that does not match its schema, or holds a member name twice, is not valid, and nothing more is read from it. A valid export may be not consistent: it cannot be read one way, as where an identifier repeats or a record names what the export does not hold. A consistent export may not verify: what it states, a grade, a digest, the root or the manifest, is not what its facts give. An export that is not consistent, or does not verify, meets no level. Otherwise each finding withholds the level whose condition it names, and the export's conditions hold up to the highest level no finding withholds.
+
+A validator never states that a register meets a level: the auditor's check and the representative's statement establish that (sections 8 and 11.2). Each finding is a code from this table, reported with the JSON pointer of where it was found.
+
+| Code | Outcome | What |
+|---|---|---|
+| `duplicate_record_id` | not consistent | Two records share an identifier |
+| `duplicate_flow_id` | not consistent | Two flow versions share an identifier |
+| `duplicate_terms_id` | not consistent | Two terms versions share an identifier |
+| `unknown_flow` | not consistent | A record joined or confirmed through a flow version the export does not hold |
+| `unknown_terms` | not consistent | A record names a terms version the export does not hold |
+| `unknown_original` | not consistent | A duplicate names an original the export does not hold |
+| `duplicate_of_itself` | not consistent | A record is marked a duplicate of itself |
+| `original_is_duplicate` | not consistent | A duplicate's original is itself marked a duplicate |
+| `original_is_later` | not consistent | A duplicate's original joined after it (4.5) |
+| `unmarked_duplicates` | not consistent | Active records share a deduplication key, and none is marked a duplicate |
+| `joined_after_reference_date` | not consistent | A record joined after the reference date |
+| `joined_outside_flow` | not consistent | A record joined on a day its flow version was not live (5.1) |
+| `confirmed_before_joining` | not consistent | A record's confirmation predates its joining |
+| `flow_dates_inverted` | not consistent | A flow version was replaced before it went live |
+| `denominator_inverted` | not consistent | The denominator's low end is above its high end |
+| `claims_inverted` | not consistent | The represented claims' low end is above their high end |
+| `residents_unstated` | not consistent | The annex leaves residents' opt-in to the action, and the export does not state it, or not for a record's subgroup (4.6) |
+| `opt_in_terms_without_opt_in` | not consistent | The export states opt-in terms, and the action binds nobody on an opt-in |
+| `term_channel_without_window` | not consistent | An opt-in term states a channel where the annex has no window, so the law names the channel (4.6) |
+| `opt_in_term_inverted` | not consistent | An opt-in term closes before it opens |
+| `unknown_subgroup` | not consistent | A term or the residents' opt-in names a subgroup the export does not declare |
+| `parts_unstated` | not consistent | The export splits the claim into parts, and a record states none |
+| `unknown_part` | not consistent | A record belongs to a part the export does not state |
+| `anchored_before_reference_date` | not consistent | The anchor is dated before the reference date it fixes |
+| `grade_differs` | not verified | A record states a grade its facts do not give |
+| `digest_differs` | not verified | A record states a digest its canonical form does not give |
+| `root_differs` | not verified | The anchored root is not the root of the records |
+| `manifest_differs` | not verified | The anchored manifest is not the manifest of the export |
+| `not_anchored` | registered | The manifest is not anchored (5.4) |
+| `flow_not_captured` | registered | A flow version an active record names was not captured (5.1) |
+| `residence_unsourced` | registered | A residence the opt-in turns on has no source (4.6) |
+| `opt_in_names_other_action` | registered | An opt-in names the action otherwise than the court's reference (4.6) |
+| `flow_without_digest` | identified | A captured flow version an active record names has no digest (5.1) |
+| `terms_without_digest` | identified | A terms version an active record names has no digest (5.2) |
+| `record_without_digest` | identified | A record has no digest (5.3) |
+| `no_facets` | identified | The export declares no facets of the class (6.3) |
+| `facet_value_undeclared` | identified | A counted record has no declared value for a facet (6.3) |
+| `flow_not_witnessed` | verified | A flow version an active record names was not witnessed by a bailiff or notary (5.1) |
+| `subgroups_undeclared` | verified | The export does not declare its subgroups, or that it has none (6.4) |
+| `subgroup_undeclared` | verified | A counted record has no declared subgroup (6.4) |
 
 ## 12. Annexes
 

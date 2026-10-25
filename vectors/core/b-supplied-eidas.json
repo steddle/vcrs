@@ -2,8 +2,16 @@
     "description": "Supplied evidence and verified identity, but membership not checked against an outside source",
     "annex": null,
     "flows": {
-        "f1": true,
-        "f0": false
+        "f1": {
+            "informs": true,
+            "live_from": "2020-01-01",
+            "live_to": null
+        },
+        "f0": {
+            "informs": false,
+            "live_from": "2020-01-01",
+            "live_to": null
+        }
     },
     "record": {
         "id": "r-0001",
@@ -39,6 +47,7 @@
         "grade": "B",
         "reasons": [
             "not_checked"
-        ]
+        ],
+        "digest": "sha256:c23172e99eadc72c2b6624b4847e64a8ca8137cf16a2c636e78752b082b05bdf"
     }
 }

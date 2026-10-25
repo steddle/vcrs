@@ -2,13 +2,22 @@
     "description": "Excluded by the representative",
     "annex": null,
     "flows": {
-        "f1": true,
-        "f0": false
+        "f1": {
+            "informs": true,
+            "live_from": "2020-01-01",
+            "live_to": null
+        },
+        "f0": {
+            "informs": false,
+            "live_from": "2020-01-01",
+            "live_to": null
+        }
     },
     "record": {
         "id": "r-0001",
         "party": "natural",
         "status": "excluded",
+        "status_on": "2026-09-01",
         "joined_on": "2026-09-01",
         "flow": "f1",
         "terms": "t1",
@@ -30,6 +39,7 @@
         "grade": "D",
         "reasons": [
             "not_active"
-        ]
+        ],
+        "digest": "sha256:4ace45d96678c121b5701bb1421b0ced6a0f5848caabc2e37508f205db6bda26"
     }
 }

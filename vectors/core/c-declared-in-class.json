@@ -2,8 +2,16 @@
     "description": "Declared membership stays C even where the declaration places the person in the class",
     "annex": null,
     "flows": {
-        "f1": true,
-        "f0": false
+        "f1": {
+            "informs": true,
+            "live_from": "2020-01-01",
+            "live_to": null
+        },
+        "f0": {
+            "informs": false,
+            "live_from": "2020-01-01",
+            "live_to": null
+        }
     },
     "record": {
         "id": "r-0001",
@@ -30,6 +38,7 @@
         "grade": "C",
         "reasons": [
             "declared_only"
-        ]
+        ],
+        "digest": "sha256:f8938b28af0a3016726c936ff93ad3f3ed3e2dad62eece70350e6a8d705ccf94"
     }
 }

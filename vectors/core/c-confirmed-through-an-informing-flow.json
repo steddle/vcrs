@@ -1,0 +1,52 @@
+{
+    "description": "Joined through a flow version that did not inform, then confirmed through one that does, before the reference date",
+    "annex": null,
+    "context": {
+        "reference_date": "2026-10-12",
+        "opt_in_terms": []
+    },
+    "flows": {
+        "f1": {
+            "informs": true,
+            "live_from": "2020-01-01",
+            "live_to": null
+        },
+        "f0": {
+            "informs": false,
+            "live_from": "2020-01-01",
+            "live_to": null
+        }
+    },
+    "record": {
+        "id": "r-0001",
+        "party": "natural",
+        "status": "active",
+        "joined_on": "2026-09-01",
+        "flow": "f0",
+        "confirmed": {
+            "flow": "f1",
+            "on": "2026-09-20"
+        },
+        "terms": "t1",
+        "identity": {
+            "name": true,
+            "birth_date": true,
+            "contact_confirmed": true,
+            "verified": null
+        },
+        "membership": {
+            "basis": "declared",
+            "in_class": null,
+            "evidence": [],
+            "checked_against": null
+        },
+        "duplicate_of": null
+    },
+    "expected": {
+        "grade": "C",
+        "reasons": [
+            "declared_only"
+        ],
+        "digest": "sha256:9ce7be2c82f93b6b0fc8562d299954fb634cb6b296e796e7500b59d9ce7895d3"
+    }
+}

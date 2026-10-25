@@ -2,7 +2,7 @@
     "vcrs": "0.1.0-beta.4",
     "annex": "nl",
     "representative": { "name": "Stichting Voorbeeldclaim", "registration": "KvK 00000000" },
-    "action": { "title": "Software that was sold and never delivered", "defendants": ["Example Motors B.V."], "court_reference": null, "directive": true },
+    "action": { "title": "Software that was sold and never delivered", "defendants": ["Example Motors B.V."], "directive": true },
     "operator": "Stichting Voorbeeldclaim",
     "class": {
         "definition": "Every person who bought a car with package X in the Netherlands between 1 January 2021 and 30 June 2026.",
@@ -10,9 +10,7 @@
         "approved_on": "2026-08-15"
     },
     "reference_date": "2026-10-12",
-    "opt_in_opened_on": null,
-    "opt_in_closed_on": null,
-    "opt_in_channel": null,
+    "opt_in_terms": [],
     "opt_in_residents": null,
     "denominator": {
         "low": 21000,
@@ -39,7 +37,8 @@
         "method": "opentimestamps",
         "reference": "snapshots/2026-10-12.ots",
         "on": "2026-10-12",
-        "root": "sha256:bd16f0dd9c9205fe559998e18a1424442e40f79e0d2f2696c5e9ce986da80cf2"
+        "root": "sha256:c5c5ab8d8c56c7dc71e1b26e22d95968dd938a032ae853a7ea49862a935b3937",
+        "manifest": "sha256:7d557ddf93acf24997bd7832ff46a9e9b97c38f001a8f3044a8e5fd4e8020023"
     },
     "flows": [
         {

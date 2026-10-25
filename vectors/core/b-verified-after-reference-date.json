@@ -1,0 +1,52 @@
+{
+    "description": "Identity verified through eIDAS only after the reference date",
+    "annex": null,
+    "context": {
+        "reference_date": "2026-10-12",
+        "opt_in_terms": []
+    },
+    "flows": {
+        "f1": {
+            "informs": true,
+            "live_from": "2020-01-01",
+            "live_to": null
+        },
+        "f0": {
+            "informs": false,
+            "live_from": "2020-01-01",
+            "live_to": null
+        }
+    },
+    "record": {
+        "id": "r-0001",
+        "party": "natural",
+        "status": "active",
+        "joined_on": "2026-09-01",
+        "flow": "f1",
+        "terms": "t1",
+        "identity": {
+            "name": true,
+            "birth_date": true,
+            "contact_confirmed": true,
+            "verified": {
+                "scheme": "eidas",
+                "assurance": "substantial",
+                "on": "2026-11-02"
+            }
+        },
+        "membership": {
+            "basis": "checked",
+            "in_class": true,
+            "evidence": [],
+            "checked_against": "vehicle register"
+        },
+        "duplicate_of": null
+    },
+    "expected": {
+        "grade": "B",
+        "reasons": [
+            "identity_not_verified"
+        ],
+        "digest": "sha256:41d2e901946b2396c803f19137ffcaf305fb17d64eb24bccb5185198b7f5f631"
+    }
+}

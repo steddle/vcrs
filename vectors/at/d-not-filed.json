@@ -2,8 +2,16 @@
     "description": "Signed up with the qualified entity and declared, but no claim or Beitritt was filed for them (§ 628(1) ZPO)",
     "annex": "at",
     "flows": {
-        "f1": true,
-        "f0": false
+        "f1": {
+            "informs": true,
+            "live_from": "2020-01-01",
+            "live_to": null
+        },
+        "f0": {
+            "informs": false,
+            "live_from": "2020-01-01",
+            "live_to": null
+        }
     },
     "record": {
         "id": "r-0001",
@@ -35,6 +43,7 @@
         "grade": "D",
         "reasons": [
             "not_opted_in"
-        ]
+        ],
+        "digest": "sha256:850785b6f5ecc48f0c370346966f936480fbae69406f6841e5deeccb61d5b0d9"
     }
 }

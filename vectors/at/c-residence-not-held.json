@@ -2,8 +2,16 @@
     "description": "Joined through the qualified entity with the declaration; residence not held, which decides nothing where everyone opts in",
     "annex": "at",
     "flows": {
-        "f1": true,
-        "f0": false
+        "f1": {
+            "informs": true,
+            "live_from": "2020-01-01",
+            "live_to": null
+        },
+        "f0": {
+            "informs": false,
+            "live_from": "2020-01-01",
+            "live_to": null
+        }
     },
     "record": {
         "id": "r-0001",
@@ -27,7 +35,8 @@
         "duplicate_of": null,
         "opt_in": {
             "on": "2026-09-15",
-            "channel": "qe"
+            "channel": "qe",
+            "action": "action-1"
         },
         "parallel_declared": true
     },
@@ -35,6 +44,7 @@
         "grade": "C",
         "reasons": [
             "declared_only"
-        ]
+        ],
+        "digest": "sha256:60473d5b0a96f1680887c82196308168d750f41b26065ea60230f832d2c743ec"
     }
 }

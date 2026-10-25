@@ -1,0 +1,52 @@
+{
+    "description": "Checked against a register whose name holds quotes, a backslash, a tab, a control character and characters beyond the Basic Multilingual Plane, with facets whose names sort by UTF-16 code units",
+    "annex": null,
+    "flows": {
+        "f1": {
+            "informs": true,
+            "live_from": "2020-01-01",
+            "live_to": null
+        },
+        "f0": {
+            "informs": false,
+            "live_from": "2020-01-01",
+            "live_to": null
+        }
+    },
+    "record": {
+        "id": "r-0001",
+        "party": "natural",
+        "status": "active",
+        "joined_on": "2026-09-01",
+        "flow": "f1",
+        "terms": "t1",
+        "identity": {
+            "name": true,
+            "birth_date": true,
+            "contact_confirmed": true,
+            "verified": null
+        },
+        "membership": {
+            "basis": "checked",
+            "in_class": true,
+            "evidence": [],
+            "checked_against": "Kraftfahrt-Bundesamt ✓ 😀 \"quoted\" \\ / tab\tend \u0007 é €"
+        },
+        "duplicate_of": null,
+        "facets": {
+            "région": "nord",
+            "€": "x",
+            "😀": "astral",
+            "ﬀ": "ligature",
+            "a": "z",
+            "\u0001": "control"
+        }
+    },
+    "expected": {
+        "grade": "B",
+        "reasons": [
+            "identity_not_verified"
+        ],
+        "digest": "sha256:a2c3edfd37a13ef8d4d3294424dd62a5b53212d8974b62cf8e1fc6c7fb9a5d63"
+    }
+}

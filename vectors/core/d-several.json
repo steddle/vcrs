@@ -2,13 +2,22 @@
     "description": "Every rule of 4.1 that applies is reported, in the order of 4.1",
     "annex": null,
     "flows": {
-        "f1": true,
-        "f0": false
+        "f1": {
+            "informs": true,
+            "live_from": "2020-01-01",
+            "live_to": null
+        },
+        "f0": {
+            "informs": false,
+            "live_from": "2020-01-01",
+            "live_to": null
+        }
     },
     "record": {
         "id": "r-0001",
         "party": "natural",
         "status": "withdrawn",
+        "status_on": "2026-09-01",
         "joined_on": "2026-09-01",
         "flow": "f0",
         "terms": "t1",
@@ -33,6 +42,7 @@
             "uninformed_flow",
             "no_name",
             "unconfirmed_contact"
-        ]
+        ],
+        "digest": "sha256:694662e70740f00867926ef57e5e0078e3f8e362b8d2e9dd37e096a5e79cddda"
     }
 }

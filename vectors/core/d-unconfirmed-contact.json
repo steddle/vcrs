@@ -2,8 +2,16 @@
     "description": "Contact channel never confirmed",
     "annex": null,
     "flows": {
-        "f1": true,
-        "f0": false
+        "f1": {
+            "informs": true,
+            "live_from": "2020-01-01",
+            "live_to": null
+        },
+        "f0": {
+            "informs": false,
+            "live_from": "2020-01-01",
+            "live_to": null
+        }
     },
     "record": {
         "id": "r-0001",
@@ -30,6 +38,7 @@
         "grade": "D",
         "reasons": [
             "unconfirmed_contact"
-        ]
+        ],
+        "digest": "sha256:0ae157665173f53f5d120b2fe7544038e5116e6960e2d46f6cae38023881c0f2"
     }
 }

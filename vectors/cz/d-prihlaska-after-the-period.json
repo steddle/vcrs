@@ -2,13 +2,22 @@
     "description": "A přihláška made after the joining period had ended (§ 31 odst. 1, § 34 odst. 2)",
     "annex": "cz",
     "flows": {
-        "f1": true,
-        "f0": false
+        "f1": {
+            "informs": true,
+            "live_from": "2020-01-01",
+            "live_to": null
+        },
+        "f0": {
+            "informs": false,
+            "live_from": "2020-01-01",
+            "live_to": null
+        }
     },
     "record": {
         "id": "r-0001",
         "party": "natural",
         "status": "excluded",
+        "status_on": "2026-09-01",
         "joined_on": "2026-09-01",
         "flow": "f1",
         "terms": "t1",
@@ -36,13 +45,15 @@
         },
         "opt_in": {
             "on": "2027-03-10",
-            "channel": "plaintiff"
+            "channel": "plaintiff",
+            "action": "action-1"
         }
     },
     "expected": {
         "grade": "D",
         "reasons": [
             "not_active"
-        ]
+        ],
+        "digest": "sha256:9c4cff9c09e7671696a7cab041028aa6986bbc9fa50338d082413b30f090afab"
     }
 }

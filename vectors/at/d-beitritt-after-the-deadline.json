@@ -1,0 +1,65 @@
+{
+    "description": "A Beitritt filed after the three months from the publication of the admission (§ 628(3) ZPO), dated in the export",
+    "annex": "at",
+    "context": {
+        "reference_date": "2027-03-01",
+        "opt_in_terms": [
+            {
+                "opened_on": "2026-09-01",
+                "closed_on": "2027-01-31",
+                "channel": null
+            }
+        ]
+    },
+    "flows": {
+        "f1": {
+            "informs": true,
+            "live_from": "2020-01-01",
+            "live_to": null
+        },
+        "f0": {
+            "informs": false,
+            "live_from": "2020-01-01",
+            "live_to": null
+        }
+    },
+    "record": {
+        "id": "r-0001",
+        "party": "natural",
+        "status": "active",
+        "joined_on": "2026-09-01",
+        "flow": "f1",
+        "terms": "t1",
+        "identity": {
+            "name": true,
+            "birth_date": true,
+            "contact_confirmed": true,
+            "verified": null
+        },
+        "membership": {
+            "basis": "declared",
+            "in_class": null,
+            "evidence": [],
+            "checked_against": null
+        },
+        "residence": {
+            "country": "AT",
+            "on": "2026-09-01",
+            "source": "declaration"
+        },
+        "opt_in": {
+            "on": "2027-02-10",
+            "channel": "qe",
+            "action": "action-1"
+        },
+        "parallel_declared": true,
+        "duplicate_of": null
+    },
+    "expected": {
+        "grade": "D",
+        "reasons": [
+            "not_opted_in"
+        ],
+        "digest": "sha256:383214351a89560ee18b4e089d212ef2fef1dd3e35663caa84350f6e604730c1"
+    }
+}

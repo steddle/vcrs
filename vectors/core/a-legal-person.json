@@ -2,8 +2,16 @@
     "description": "A legal person: registration number, checked against the business register, identified through eIDAS",
     "annex": null,
     "flows": {
-        "f1": true,
-        "f0": false
+        "f1": {
+            "informs": true,
+            "live_from": "2020-01-01",
+            "live_to": null
+        },
+        "f0": {
+            "informs": false,
+            "live_from": "2020-01-01",
+            "live_to": null
+        }
     },
     "record": {
         "id": "r-0001",
@@ -20,6 +28,16 @@
                 "assurance": "substantial",
                 "on": "2026-09-02"
             },
+            "register_check": {
+                "register": "business register",
+                "on": "2026-09-01"
+            },
+            "authority": {
+                "role": "director",
+                "basis": "register entry",
+                "checked_against": "business register",
+                "on": "2026-09-01"
+            },
             "registration_number": true
         },
         "membership": {
@@ -32,6 +50,7 @@
     },
     "expected": {
         "grade": "A",
-        "reasons": []
+        "reasons": [],
+        "digest": "sha256:bf6e743cb13a248989d487eeb64865cdc764f358f0396011d926a719160d9cfa"
     }
 }

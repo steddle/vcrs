@@ -29,7 +29,7 @@ The register as a whole claims one level, which sets what it keeps and how the a
 2. **Define the class and its size.** The board approves a versioned class definition. State the denominator with its source, method and date.
 3. **Make the sign-up flow inform.** Every version states the representative, the defendant, the claim and the period, and is captured when it goes live.
 4. **Grade every record.** Export the facts ([`templates/records.csv`](templates/records.csv) for a spreadsheet, [`schema/export.schema.json`](schema/export.schema.json) for a system) and grade each record by section 4 of the core. The [test vectors](vectors) hold the grade each record must get.
-5. **Fix the snapshot, audit, publish.** Anchor the snapshot root, have the board's auditor check it, and publish the [conformance statement](templates/conformance-statement.md).
+5. **Fix the snapshot, audit, publish.** Anchor the snapshot's manifest (core 5.4), have the board's auditor check it, and publish the [conformance statement](templates/conformance-statement.md), filled in as [the example](templates/conformance-statement-example.md) shows.
 
 The [self-assessment](checklist/self-assessment.md) is the same list as questions for the board.
 
@@ -38,8 +38,9 @@ The [self-assessment](checklist/self-assessment.md) is the same list as question
 - [`core.md`](core.md): the core, the same in every jurisdiction
 - [`annexes/`](annexes): one annex per jurisdiction, as markdown and as JSON, and the [template](annexes/_template.md) a new one follows
 - [`schema/`](schema): the facts export, one record, and the conformance statement, in JSON Schema 2020-12
-- [`vectors/`](vectors): records with the grade they must get; any implementation in any language is checked against them
+- [`vectors/`](vectors): records with the grade they must get, its reasons and the record's digest; any implementation in any language is checked against them
 - [`checklist/`](checklist), [`templates/`](templates): for a board applying it by hand
+- The example register, fictional, its timestamp included: its records ([`records.csv`](templates/records.csv)) and facts ([`register.json`](templates/register.json)), the same as one JSON export ([`export.json`](templates/export.json)), its manifest ([`manifest.json`](templates/manifest.json)), an inclusion proof that holds ([`proof.json`](templates/proof.json)) and one altered that does not ([`proof-altered.json`](templates/proof-altered.json)), a draft statement ([`statement-draft.json`](templates/statement-draft.json)), [its conformance statement](templates/conformance-statement-example.md), and every outcome a check must give ([`expected.json`](templates/expected.json))
 
 ## Jurisdictions
 

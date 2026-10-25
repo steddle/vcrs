@@ -1,6 +1,6 @@
 # Conformance statement: an example
 
-VCRS 0.1.0-beta.4, core and Annex NL. The [conformance statement](conformance-statement.md) filled in for the example register in [register.json](register.json) and [records.csv](records.csv). The representative, the defendant, the operator and the auditor are fictional. The figures are the example register's: eight records against a class of 21 000 to 26 000, so its coverage is a fraction of a percent.
+VCRS 0.1.0-beta.4, core and Annex NL. The [conformance statement](conformance-statement.md) filled in for the example register in [register.json](register.json) and [records.csv](records.csv). The representative, the defendant, the operator, the auditor and the anchor's timestamp are fictional. The figures are the example register's: eight records against a class of 21 000 to 26 000, so its coverage is a fraction of a percent.
 
 | | |
 |---|---|
@@ -28,7 +28,8 @@ Each row from A to C counts the active records at that grade or better (core 6.2
 | | |
 |---|---|
 | Records in the snapshot | 8 |
-| Snapshot root | sha256:bd16f0dd9c9205fe559998e18a1424442e40f79e0d2f2696c5e9ce986da80cf2 |
+| Snapshot root | sha256:c5c5ab8d8c56c7dc71e1b26e22d95968dd938a032ae853a7ea49862a935b3937 |
+| Manifest | sha256:7d557ddf93acf24997bd7832ff46a9e9b97c38f001a8f3044a8e5fd4e8020023 |
 | Anchored by | OpenTimestamps, snapshots/2026-10-12.ots, 2026-10-12 |
 
 ## The independent check
@@ -51,13 +52,13 @@ The same statement, as [`schema/conformance.schema.json`](../schema/conformance.
     "vcrs": "0.1.0-beta.4",
     "annex": "nl",
     "level": "verified",
+    "draft": false,
     "representative": "Stichting Voorbeeldclaim",
     "action": {
         "title": "Software that was sold and never delivered",
         "defendants": [
             "Example Motors B.V."
         ],
-        "court_reference": null,
         "directive": true
     },
     "operator": "Stichting Voorbeeldclaim",
@@ -99,7 +100,8 @@ The same statement, as [`schema/conformance.schema.json`](../schema/conformance.
         }
     },
     "snapshot": {
-        "root": "sha256:bd16f0dd9c9205fe559998e18a1424442e40f79e0d2f2696c5e9ce986da80cf2",
+        "root": "sha256:c5c5ab8d8c56c7dc71e1b26e22d95968dd938a032ae853a7ea49862a935b3937",
+        "manifest": "sha256:7d557ddf93acf24997bd7832ff46a9e9b97c38f001a8f3044a8e5fd4e8020023",
         "records": 8,
         "anchor": {
             "method": "opentimestamps",

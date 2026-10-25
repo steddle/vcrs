@@ -89,7 +89,7 @@ A recommendation, not a court's rule.
 - Consumers resident abroad joining an action at the Handelsgericht Wien: no text or ruling beyond § 5(5) QEG for qualified entities of other Member States.
 - What 'dieselben Tatfragen' in § 628(1) adds to § 624(1): the OGH found no separate meaning (9 Ob 111/25a [14]); the OLG Wien read it as a description.
 - Whether the court may examine joiners' documents after admission, and what proof the defendant may demand per joiner.
-- The export states no opt-in window, since the consumers named in the claim opt in at filing, so the validator does not test that a Beitritt fell within the three months of § 628(3): AT-6 records a late one `excluded`, and the auditor checks it.
+- The opt-in is due from the start, since the consumers named in the claim opt in at filing. The export states the three months of § 628(3), or the shorter window the QE set, as a term (`opt_in_terms`), and the validator does not count a Beitritt dated after it. AT-6 also records a late one `excluded`, and the auditor checks the day against the court's file.
 
 ## Sources
 

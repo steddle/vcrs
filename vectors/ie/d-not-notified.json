@@ -2,8 +2,16 @@
     "description": "Signed up with the qualified entity's site and signed the declaration, but never notified it on Form 3 (s. 24(4))",
     "annex": "ie",
     "flows": {
-        "f1": true,
-        "f0": false
+        "f1": {
+            "informs": true,
+            "live_from": "2020-01-01",
+            "live_to": null
+        },
+        "f0": {
+            "informs": false,
+            "live_from": "2020-01-01",
+            "live_to": null
+        }
     },
     "record": {
         "id": "r-0001",
@@ -35,6 +43,7 @@
         "grade": "D",
         "reasons": [
             "not_opted_in"
-        ]
+        ],
+        "digest": "sha256:ca6d2c6382c0af4600590919cfb3a265a9b56bae3da185e1a863efde909ee7f7"
     }
 }

@@ -1,0 +1,89 @@
+{
+    "records": {
+        "r-0001": {
+            "grade": "A",
+            "reasons": [],
+            "digest": "sha256:7455813e083dfc3809f963b2b1d9945b15cf62ec5984d14f20904e1450097f7e"
+        },
+        "r-0002": {
+            "grade": "B",
+            "reasons": [
+                "not_checked",
+                "identity_not_verified"
+            ],
+            "digest": "sha256:0e9f41e50af2dcf85aa40ad4ee64fcbf99b650c806c5bb0f90e85d2fbadc3b60"
+        },
+        "r-0003": {
+            "grade": "B",
+            "reasons": [
+                "identity_not_verified"
+            ],
+            "digest": "sha256:71d8c23fa020c433d65e57042be5f5cb523f8e8bec371d53d94c44dab971f8a9"
+        },
+        "r-0004": {
+            "grade": "C",
+            "reasons": [
+                "declared_only"
+            ],
+            "digest": "sha256:d2f28fc7d32ec1778f899cb1ed260883c385e28fdab66a8a14380a7093f79349"
+        },
+        "r-0005": {
+            "grade": "C",
+            "reasons": [
+                "declared_only"
+            ],
+            "digest": "sha256:9be0e156e457fc936bb512eb12a5c229cc5b959fd5e39d065998d4261138fb79"
+        },
+        "r-0006": {
+            "grade": "D",
+            "reasons": [
+                "duplicate"
+            ],
+            "digest": "sha256:bbd0cdd78f9992a51712cc875e3491a29cf53b54f50bd99b2f9ed171f18d672e"
+        },
+        "r-0007": {
+            "grade": "D",
+            "reasons": [
+                "not_distinct"
+            ],
+            "digest": "sha256:b142db05a9ecff0b9899036bf0ac59a27f2aa745534d39e219a2569c07560f49"
+        },
+        "r-0008": {
+            "grade": "D",
+            "reasons": [
+                "not_active"
+            ],
+            "digest": "sha256:ea38126338033c26d46cfbde0d00bfaa5230683ad76790760f01fcc9f063ca5b"
+        }
+    },
+    "counts": {
+        "A": 1,
+        "B": 2,
+        "C": 2,
+        "D": 2,
+        "inactive": 1
+    },
+    "coverage": {
+        "A": {
+            "records": 1,
+            "low": 0.0038,
+            "high": 0.0048
+        },
+        "B": {
+            "records": 3,
+            "low": 0.0115,
+            "high": 0.0143
+        },
+        "C": {
+            "records": 5,
+            "low": 0.0192,
+            "high": 0.0238
+        }
+    },
+    "root": "sha256:c5c5ab8d8c56c7dc71e1b26e22d95968dd938a032ae853a7ea49862a935b3937",
+    "manifest": "sha256:7d557ddf93acf24997bd7832ff46a9e9b97c38f001a8f3044a8e5fd4e8020023",
+    "consistent": true,
+    "verified": true,
+    "level": "verified",
+    "findings": []
+}

@@ -2,8 +2,16 @@
     "description": "Notified the qualified entity but signed no declaration (s. 25(3))",
     "annex": "ie",
     "flows": {
-        "f1": true,
-        "f0": false
+        "f1": {
+            "informs": true,
+            "live_from": "2020-01-01",
+            "live_to": null
+        },
+        "f0": {
+            "informs": false,
+            "live_from": "2020-01-01",
+            "live_to": null
+        }
     },
     "record": {
         "id": "r-0001",
@@ -31,13 +39,15 @@
         },
         "opt_in": {
             "on": "2026-09-01",
-            "channel": "qe"
+            "channel": "qe",
+            "action": "action-1"
         }
     },
     "expected": {
         "grade": "D",
         "reasons": [
             "no_parallel_declaration"
-        ]
+        ],
+        "digest": "sha256:ece488035ea443d09877dbdd3ca6de7873d238ccc3dc395982f0524be1ecbeec"
     }
 }

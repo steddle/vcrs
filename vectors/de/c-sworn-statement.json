@@ -3,12 +3,20 @@
     "annex": "de",
     "context": {
         "reference_date": "2027-03-15",
-        "opt_in_opened_on": "2026-11-02",
-        "opt_in_closed_on": "2027-03-01",
-        "opt_in_channel": null
+        "opt_in_terms": [
+            {
+                "opened_on": "2026-11-02",
+                "closed_on": "2027-03-01",
+                "channel": null
+            }
+        ]
     },
     "flows": {
-        "f1": true
+        "f1": {
+            "informs": true,
+            "live_from": "2020-01-01",
+            "live_to": null
+        }
     },
     "record": {
         "id": "r-0002",
@@ -36,13 +44,15 @@
         },
         "opt_in": {
             "on": "2027-01-20",
-            "channel": "bfj"
+            "channel": "bfj",
+            "action": "action-1"
         }
     },
     "expected": {
         "grade": "C",
         "reasons": [
             "declared_only"
-        ]
+        ],
+        "digest": "sha256:f019f185b6fde3201c9ca560df5050383629009250870c935a4f483d398a4c91"
     }
 }

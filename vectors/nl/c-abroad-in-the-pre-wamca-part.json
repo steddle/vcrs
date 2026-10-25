@@ -1,0 +1,67 @@
+{
+    "description": "Resident in Belgium, in the part of a split claim on events before 15 November 2016 alone, no opt-in after the term closed: the opt-in of art. 1018f lid 5 Rv governs the WAMCA part only (art. 119a Overgangswet NBW)",
+    "annex": "nl",
+    "context": {
+        "reference_date": "2027-03-15",
+        "opt_in_terms": [
+            {
+                "opened_on": "2027-01-15",
+                "closed_on": "2027-03-01",
+                "channel": null
+            }
+        ],
+        "directive": true,
+        "parts": [
+            "pre_wamca",
+            "wamca"
+        ]
+    },
+    "flows": {
+        "f1": {
+            "informs": true,
+            "live_from": "2020-01-01",
+            "live_to": null
+        },
+        "f0": {
+            "informs": false,
+            "live_from": "2020-01-01",
+            "live_to": null
+        }
+    },
+    "record": {
+        "id": "r-0001",
+        "party": "natural",
+        "status": "active",
+        "joined_on": "2026-09-01",
+        "flow": "f1",
+        "terms": "t1",
+        "identity": {
+            "name": true,
+            "birth_date": true,
+            "contact_confirmed": true,
+            "verified": null
+        },
+        "membership": {
+            "basis": "declared",
+            "in_class": null,
+            "evidence": [],
+            "checked_against": null
+        },
+        "residence": {
+            "country": "BE",
+            "on": "2026-09-01",
+            "source": "declaration"
+        },
+        "duplicate_of": null,
+        "parts": [
+            "pre_wamca"
+        ]
+    },
+    "expected": {
+        "grade": "C",
+        "reasons": [
+            "declared_only"
+        ],
+        "digest": "sha256:2261a9dfda0b45260df995cf08b67d60369e262501ad61f9199809c323cdae51"
+    }
+}

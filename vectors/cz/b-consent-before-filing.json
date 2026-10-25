@@ -2,8 +2,16 @@
     "description": "Written consent to the action given before it was filed, which counts as a přihláška (§ 31 odst. 2)",
     "annex": "cz",
     "flows": {
-        "f1": true,
-        "f0": false
+        "f1": {
+            "informs": true,
+            "live_from": "2020-01-01",
+            "live_to": null
+        },
+        "f0": {
+            "informs": false,
+            "live_from": "2020-01-01",
+            "live_to": null
+        }
     },
     "record": {
         "id": "r-0001",
@@ -36,7 +44,8 @@
         },
         "opt_in": {
             "on": "2026-05-04",
-            "channel": "plaintiff"
+            "channel": "plaintiff",
+            "action": "action-1"
         }
     },
     "expected": {
@@ -44,6 +53,7 @@
         "reasons": [
             "not_checked",
             "identity_not_verified"
-        ]
+        ],
+        "digest": "sha256:274de486e0b75ecdad0c5d6c045e59bcddd9e5bd895cfe3099331fe83c757c24"
     }
 }

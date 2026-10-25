@@ -2,13 +2,22 @@
     "description": "Struck from the list on the plaintiff's motion, since membership was not at least probable (§ 41)",
     "annex": "cz",
     "flows": {
-        "f1": true,
-        "f0": false
+        "f1": {
+            "informs": true,
+            "live_from": "2020-01-01",
+            "live_to": null
+        },
+        "f0": {
+            "informs": false,
+            "live_from": "2020-01-01",
+            "live_to": null
+        }
     },
     "record": {
         "id": "r-0001",
         "party": "natural",
         "status": "excluded",
+        "status_on": "2026-09-01",
         "joined_on": "2026-09-01",
         "flow": "f1",
         "terms": "t1",
@@ -36,13 +45,15 @@
         },
         "opt_in": {
             "on": "2026-09-01",
-            "channel": "plaintiff"
+            "channel": "plaintiff",
+            "action": "action-1"
         }
     },
     "expected": {
         "grade": "D",
         "reasons": [
             "not_active"
-        ]
+        ],
+        "digest": "sha256:e8b205ce8e9454df8863fab25d70fa15bf685d2bd6c494e28a99eb32615da6f7"
     }
 }

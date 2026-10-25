@@ -2,8 +2,16 @@
     "description": "Evidence the person supplied places them in the class; identity not verified",
     "annex": null,
     "flows": {
-        "f1": true,
-        "f0": false
+        "f1": {
+            "informs": true,
+            "live_from": "2020-01-01",
+            "live_to": null
+        },
+        "f0": {
+            "informs": false,
+            "live_from": "2020-01-01",
+            "live_to": null
+        }
     },
     "record": {
         "id": "r-0001",
@@ -36,6 +44,7 @@
         "reasons": [
             "not_checked",
             "identity_not_verified"
-        ]
+        ],
+        "digest": "sha256:63ba1f3ea66c80e1706a3d94a1695e109d06e04333be07a6e74def8ca8effad6"
     }
 }

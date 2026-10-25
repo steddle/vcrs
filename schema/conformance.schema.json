@@ -8,6 +8,7 @@
         "vcrs",
         "annex",
         "level",
+        "draft",
         "representative",
         "action",
         "operator",
@@ -35,6 +36,10 @@
                 "verified"
             ]
         },
+        "draft": {
+            "description": "True until the auditor has reported and the auditor's part is filled in (section 11.2).",
+            "type": "boolean"
+        },
         "representative": {
             "type": "string",
             "minLength": 1
@@ -60,10 +65,8 @@
                     "minItems": 1
                 },
                 "court_reference": {
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "type": "string",
+                    "minLength": 1
                 },
                 "directive": {
                     "description": "Whether the action is brought under the forum's transposition of Directive (EU) 2020/1828 (section 4.6).",
@@ -193,12 +196,18 @@
             "type": "object",
             "required": [
                 "root",
+                "manifest",
                 "records",
                 "anchor"
             ],
             "additionalProperties": false,
             "properties": {
                 "root": {
+                    "type": "string",
+                    "pattern": "^sha256:[0-9a-f]{64}$"
+                },
+                "manifest": {
+                    "description": "The digest of the manifest that commits to the root and to the export's context, which is what the anchor fixes in time (section 5.4).",
                     "type": "string",
                     "pattern": "^sha256:[0-9a-f]{64}$"
                 },
@@ -275,6 +284,31 @@
             "$ref": "#/$defs/date"
         }
     },
+    "allOf": [
+        {
+            "if": {
+                "properties": {
+                    "draft": {
+                        "const": true
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "auditor": {
+                        "type": "null"
+                    }
+                }
+            },
+            "else": {
+                "properties": {
+                    "auditor": {
+                        "type": "object"
+                    }
+                }
+            }
+        }
+    ],
     "$defs": {
         "date": {
             "type": "string",

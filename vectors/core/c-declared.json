@@ -2,8 +2,16 @@
     "description": "Named, distinct, contact confirmed, informed; membership on the person's word alone",
     "annex": null,
     "flows": {
-        "f1": true,
-        "f0": false
+        "f1": {
+            "informs": true,
+            "live_from": "2020-01-01",
+            "live_to": null
+        },
+        "f0": {
+            "informs": false,
+            "live_from": "2020-01-01",
+            "live_to": null
+        }
     },
     "record": {
         "id": "r-0001",
@@ -30,6 +38,7 @@
         "grade": "C",
         "reasons": [
             "declared_only"
-        ]
+        ],
+        "digest": "sha256:796c87eed95849e5df2f25b5859940e31e4d291e07d8ff8d0bdb0d7e551a0fc7"
     }
 }

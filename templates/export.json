@@ -1,0 +1,369 @@
+{
+    "vcrs": "0.1.0-beta.4",
+    "annex": "nl",
+    "representative": {
+        "name": "Stichting Voorbeeldclaim",
+        "registration": "KvK 00000000"
+    },
+    "action": {
+        "title": "Software that was sold and never delivered",
+        "defendants": [
+            "Example Motors B.V."
+        ],
+        "directive": true
+    },
+    "operator": "Stichting Voorbeeldclaim",
+    "class": {
+        "definition": "Every person who bought a car with package X in the Netherlands between 1 January 2021 and 30 June 2026.",
+        "version": "1",
+        "approved_on": "2026-08-15"
+    },
+    "reference_date": "2026-10-12",
+    "opt_in_terms": [],
+    "opt_in_residents": null,
+    "denominator": {
+        "low": 21000,
+        "high": 26000,
+        "source": "RDW open data, registrations of the models concerned, times the take rate of package X in the defendant's annual report",
+        "method": "Register count times a published rate",
+        "as_of": "2026-09-01"
+    },
+    "claims": {
+        "low": 31500000,
+        "high": 39000000,
+        "currency": "EUR",
+        "method": "The price of package X, €1 500 per car, times the denominator"
+    },
+    "facets": {
+        "region": {
+            "noord": 0.3,
+            "midden": 0.45,
+            "zuid": 0.25
+        },
+        "period": {
+            "2021-2023": 0.55,
+            "2024-2026": 0.45
+        }
+    },
+    "subgroups": [],
+    "organisations": [
+        {
+            "name": "Vereniging Voorbeeld Rijders",
+            "on": "2026-09-20",
+            "form": "Letter of support"
+        }
+    ],
+    "anchor": {
+        "method": "opentimestamps",
+        "reference": "snapshots/2026-10-12.ots",
+        "on": "2026-10-12",
+        "root": "sha256:c5c5ab8d8c56c7dc71e1b26e22d95968dd938a032ae853a7ea49862a935b3937",
+        "manifest": "sha256:7d557ddf93acf24997bd7832ff46a9e9b97c38f001a8f3044a8e5fd4e8020023"
+    },
+    "flows": [
+        {
+            "id": "f1",
+            "live_from": "2026-09-01",
+            "live_to": null,
+            "locales": [
+                "nl",
+                "en"
+            ],
+            "states": {
+                "representative": true,
+                "defendant": true,
+                "claim": true,
+                "period": true
+            },
+            "capture": {
+                "digest": "sha256:5f2b0c6c1f5e3e7a1d6c8b9a0e4f3d2c1b0a9f8e7d6c5b4a3f2e1d0c9b8a7f6e",
+                "witnessed": {
+                    "by": "bailiff",
+                    "on": "2026-09-01",
+                    "reference": "Proces-verbaal 2026-0912"
+                }
+            }
+        }
+    ],
+    "terms": [
+        {
+            "id": "t1",
+            "digest": "sha256:0d4f6c2a8e1b3f5a7c9e0b2d4f6a8c1e3b5d7f9a0c2e4b6d8f1a3c5e7b9d0f2a"
+        }
+    ],
+    "records": [
+        {
+            "id": "r-0001",
+            "party": "natural",
+            "status": "active",
+            "joined_on": "2026-09-01",
+            "flow": "f1",
+            "terms": "t1",
+            "identity": {
+                "name": true,
+                "contact_confirmed": true,
+                "verified": {
+                    "scheme": "idin",
+                    "assurance": "substantial",
+                    "on": "2026-09-01"
+                },
+                "birth_date": true
+            },
+            "membership": {
+                "basis": "checked",
+                "in_class": true,
+                "evidence": [],
+                "checked_against": "RDW kentekenregister"
+            },
+            "duplicate_of": null,
+            "residence": {
+                "country": "NL",
+                "on": "2026-09-01",
+                "source": "declaration"
+            },
+            "dedupe_key": "4f1c0a9be27d33e1",
+            "facets": {
+                "region": "noord",
+                "period": "2021-2023"
+            },
+            "grade": "A",
+            "digest": "sha256:7455813e083dfc3809f963b2b1d9945b15cf62ec5984d14f20904e1450097f7e"
+        },
+        {
+            "id": "r-0002",
+            "party": "natural",
+            "status": "active",
+            "joined_on": "2026-09-02",
+            "flow": "f1",
+            "terms": "t1",
+            "identity": {
+                "name": true,
+                "contact_confirmed": true,
+                "verified": null,
+                "birth_date": true
+            },
+            "membership": {
+                "basis": "supplied",
+                "in_class": true,
+                "evidence": [
+                    {
+                        "type": "invoice",
+                        "digest": "sha256:9b74c9897bac770ffc029102a200c5de0c0b5a2a6a4f0e0a9ae6a1b3e0c7d1f2"
+                    }
+                ],
+                "checked_against": null
+            },
+            "duplicate_of": null,
+            "residence": {
+                "country": "NL",
+                "on": "2026-09-02",
+                "source": "declaration"
+            },
+            "dedupe_key": "7d2e91c04ab8f5a6",
+            "facets": {
+                "region": "midden",
+                "period": "2024-2026"
+            },
+            "grade": "B",
+            "digest": "sha256:0e9f41e50af2dcf85aa40ad4ee64fcbf99b650c806c5bb0f90e85d2fbadc3b60"
+        },
+        {
+            "id": "r-0003",
+            "party": "natural",
+            "status": "active",
+            "joined_on": "2026-09-02",
+            "flow": "f1",
+            "terms": "t1",
+            "identity": {
+                "name": true,
+                "contact_confirmed": true,
+                "verified": null,
+                "birth_date": true
+            },
+            "membership": {
+                "basis": "checked",
+                "in_class": true,
+                "evidence": [],
+                "checked_against": "RDW kentekenregister"
+            },
+            "duplicate_of": null,
+            "residence": {
+                "country": "NL",
+                "on": "2026-09-02",
+                "source": "declaration"
+            },
+            "dedupe_key": "c0a83e19f7d2b456",
+            "facets": {
+                "region": "zuid",
+                "period": "2021-2023"
+            },
+            "grade": "B",
+            "digest": "sha256:71d8c23fa020c433d65e57042be5f5cb523f8e8bec371d53d94c44dab971f8a9"
+        },
+        {
+            "id": "r-0004",
+            "party": "natural",
+            "status": "active",
+            "joined_on": "2026-09-03",
+            "flow": "f1",
+            "terms": "t1",
+            "identity": {
+                "name": true,
+                "contact_confirmed": true,
+                "verified": null,
+                "birth_date": true
+            },
+            "membership": {
+                "basis": "declared",
+                "in_class": null,
+                "evidence": [],
+                "checked_against": null
+            },
+            "duplicate_of": null,
+            "residence": {
+                "country": "NL",
+                "on": "2026-09-03",
+                "source": "declaration"
+            },
+            "dedupe_key": "e5b7d0c3a9f18246",
+            "facets": {
+                "region": "noord",
+                "period": "2024-2026"
+            },
+            "grade": "C",
+            "digest": "sha256:d2f28fc7d32ec1778f899cb1ed260883c385e28fdab66a8a14380a7093f79349"
+        },
+        {
+            "id": "r-0005",
+            "party": "natural",
+            "status": "active",
+            "joined_on": "2026-09-04",
+            "flow": "f1",
+            "terms": "t1",
+            "identity": {
+                "name": true,
+                "contact_confirmed": true,
+                "verified": null,
+                "birth_date": true
+            },
+            "membership": {
+                "basis": "declared",
+                "in_class": true,
+                "evidence": [],
+                "checked_against": null
+            },
+            "duplicate_of": null,
+            "residence": {
+                "country": "BE",
+                "on": "2026-09-04",
+                "source": "declaration"
+            },
+            "dedupe_key": "1a9c4e7f0b3d5826",
+            "facets": {
+                "region": "zuid",
+                "period": "2024-2026"
+            },
+            "grade": "C",
+            "digest": "sha256:9be0e156e457fc936bb512eb12a5c229cc5b959fd5e39d065998d4261138fb79"
+        },
+        {
+            "id": "r-0006",
+            "party": "natural",
+            "status": "active",
+            "joined_on": "2026-09-05",
+            "flow": "f1",
+            "terms": "t1",
+            "identity": {
+                "name": true,
+                "contact_confirmed": true,
+                "verified": null,
+                "birth_date": true
+            },
+            "membership": {
+                "basis": "declared",
+                "in_class": null,
+                "evidence": [],
+                "checked_against": null
+            },
+            "duplicate_of": "r-0004",
+            "residence": {
+                "country": "NL",
+                "on": "2026-09-05",
+                "source": "declaration"
+            },
+            "dedupe_key": "e5b7d0c3a9f18246",
+            "facets": {
+                "region": "noord",
+                "period": "2024-2026"
+            },
+            "grade": "D",
+            "digest": "sha256:bbd0cdd78f9992a51712cc875e3491a29cf53b54f50bd99b2f9ed171f18d672e"
+        },
+        {
+            "id": "r-0007",
+            "party": "natural",
+            "status": "active",
+            "joined_on": "2026-09-06",
+            "flow": "f1",
+            "terms": "t1",
+            "identity": {
+                "name": true,
+                "contact_confirmed": true,
+                "verified": null,
+                "birth_date": false
+            },
+            "membership": {
+                "basis": "declared",
+                "in_class": null,
+                "evidence": [],
+                "checked_against": null
+            },
+            "duplicate_of": null,
+            "residence": {
+                "country": "NL",
+                "on": "2026-09-06",
+                "source": "declaration"
+            },
+            "facets": {
+                "region": "midden",
+                "period": "2021-2023"
+            },
+            "grade": "D",
+            "digest": "sha256:b142db05a9ecff0b9899036bf0ac59a27f2aa745534d39e219a2569c07560f49"
+        },
+        {
+            "id": "r-0008",
+            "party": "legal",
+            "status": "withdrawn",
+            "status_on": "2026-09-20",
+            "joined_on": "2026-09-06",
+            "flow": "f1",
+            "terms": "t1",
+            "identity": {
+                "name": true,
+                "contact_confirmed": true,
+                "verified": null,
+                "registration_number": true
+            },
+            "membership": {
+                "basis": "declared",
+                "in_class": null,
+                "evidence": [],
+                "checked_against": null
+            },
+            "duplicate_of": null,
+            "residence": {
+                "country": "NL",
+                "on": "2026-09-06",
+                "source": "declaration"
+            },
+            "dedupe_key": "b3f60d2e9c7a1485",
+            "facets": {
+                "region": "zuid",
+                "period": "2021-2023"
+            },
+            "grade": "D",
+            "digest": "sha256:ea38126338033c26d46cfbde0d00bfaa5230683ad76790760f01fcc9f063ca5b"
+        }
+    ]
+}

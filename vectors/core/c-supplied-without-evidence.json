@@ -2,8 +2,16 @@
     "description": "Basis supplied, but no document is stored",
     "annex": null,
     "flows": {
-        "f1": true,
-        "f0": false
+        "f1": {
+            "informs": true,
+            "live_from": "2020-01-01",
+            "live_to": null
+        },
+        "f0": {
+            "informs": false,
+            "live_from": "2020-01-01",
+            "live_to": null
+        }
     },
     "record": {
         "id": "r-0001",
@@ -30,6 +38,7 @@
         "grade": "C",
         "reasons": [
             "no_evidence"
-        ]
+        ],
+        "digest": "sha256:373306cde6ecfce1f748a8e94f102e8b58d926d8b17e4dfdd391e88717301454"
     }
 }

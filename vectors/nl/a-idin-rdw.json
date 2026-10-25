@@ -2,8 +2,16 @@
     "description": "Vehicle checked against the RDW register, identity through iDIN",
     "annex": "nl",
     "flows": {
-        "f1": true,
-        "f0": false
+        "f1": {
+            "informs": true,
+            "live_from": "2020-01-01",
+            "live_to": null
+        },
+        "f0": {
+            "informs": false,
+            "live_from": "2020-01-01",
+            "live_to": null
+        }
     },
     "record": {
         "id": "r-0001",
@@ -36,6 +44,7 @@
     },
     "expected": {
         "grade": "A",
-        "reasons": []
+        "reasons": [],
+        "digest": "sha256:c28d6a561ef56bec4a41f4f8073606f4991f0330468baa1d3fd441b3e58170c3"
     }
 }

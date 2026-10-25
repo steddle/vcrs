@@ -79,7 +79,7 @@ A recommendation, not a court's rule.
 - No appellate ruling under the act was found by 21 October 2026.
 - Whether a bank identity or another electronic signature short of a qualified one meets § 5 of the decree. The form names a datová schránka or a qualified electronic signature.
 - Whether a přihláška an operator receives for the plaintiff is made 'u žalobce' (§ 32 odst. 1). No source read addresses an agent.
-- The validator tests that a record holds an opt-in, not how it was signed, nor its channel, since the law allows two, nor the deadline, since the export states no window. CZ-2 and CZ-4 set them, and the auditor checks each.
+- The validator tests that a record holds an opt-in and, where the export states the joining period as a term (`opt_in_terms`), that it was made within it; not how it was signed, nor its channel, since the law allows two. CZ-2 and CZ-4 set them, and the auditor checks each.
 - Whether members who inspect the court's file see one another's identity data.
 
 ## Sources

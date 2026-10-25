@@ -2,13 +2,22 @@
     "description": "In an azione di classe the adherent did not pay the fondo spese the judgment set, so the adhesion is void by law (art. 840-sexies(3) c.p.c.)",
     "annex": "it",
     "flows": {
-        "f1": true,
-        "f0": false
+        "f1": {
+            "informs": true,
+            "live_from": "2020-01-01",
+            "live_to": null
+        },
+        "f0": {
+            "informs": false,
+            "live_from": "2020-01-01",
+            "live_to": null
+        }
     },
     "record": {
         "id": "r-0001",
         "party": "natural",
         "status": "excluded",
+        "status_on": "2026-09-01",
         "joined_on": "2026-09-01",
         "flow": "f1",
         "terms": "t1",
@@ -34,6 +43,7 @@
         "grade": "D",
         "reasons": [
             "not_active"
-        ]
+        ],
+        "digest": "sha256:0b83a50b1458cf9d75f55aed139f99dc9fd003c04206929c92025c93ac9098a3"
     }
 }

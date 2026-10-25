@@ -2,8 +2,16 @@
     "description": "Joined through a flow version that doesn't state the claim",
     "annex": null,
     "flows": {
-        "f1": true,
-        "f0": false
+        "f1": {
+            "informs": true,
+            "live_from": "2020-01-01",
+            "live_to": null
+        },
+        "f0": {
+            "informs": false,
+            "live_from": "2020-01-01",
+            "live_to": null
+        }
     },
     "record": {
         "id": "r-0001",
@@ -30,6 +38,7 @@
         "grade": "D",
         "reasons": [
             "uninformed_flow"
-        ]
+        ],
+        "digest": "sha256:5a194f8965db379ab9bcee7d2bcca00034518c1dfeb7b96c9251b9867ad60acb"
     }
 }

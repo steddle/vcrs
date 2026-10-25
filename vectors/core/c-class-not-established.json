@@ -2,8 +2,16 @@
     "description": "Evidence stored, but the facts held don't decide class membership",
     "annex": null,
     "flows": {
-        "f1": true,
-        "f0": false
+        "f1": {
+            "informs": true,
+            "live_from": "2020-01-01",
+            "live_to": null
+        },
+        "f0": {
+            "informs": false,
+            "live_from": "2020-01-01",
+            "live_to": null
+        }
     },
     "record": {
         "id": "r-0001",
@@ -35,6 +43,7 @@
         "grade": "C",
         "reasons": [
             "class_not_established"
-        ]
+        ],
+        "digest": "sha256:d0a2bdfb28a9a5147cd05bbd79935b2783854112841d6dd8d767afa4252fd991"
     }
 }

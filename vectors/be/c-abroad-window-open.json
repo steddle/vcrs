@@ -3,14 +3,26 @@
     "annex": "be",
     "context": {
         "reference_date": "2027-03-01",
-        "opt_in_opened_on": "2027-01-15",
-        "opt_in_closed_on": "2027-05-14",
-        "opt_in_channel": null,
+        "opt_in_terms": [
+            {
+                "opened_on": "2027-01-15",
+                "closed_on": "2027-05-14",
+                "channel": null
+            }
+        ],
         "opt_in_residents": false
     },
     "flows": {
-        "f1": true,
-        "f0": false
+        "f1": {
+            "informs": true,
+            "live_from": "2020-01-01",
+            "live_to": null
+        },
+        "f0": {
+            "informs": false,
+            "live_from": "2020-01-01",
+            "live_to": null
+        }
     },
     "record": {
         "id": "r-0001",
@@ -41,6 +53,7 @@
         "grade": "C",
         "reasons": [
             "declared_only"
-        ]
+        ],
+        "digest": "sha256:133fff5e7d6e7bb3c6aea6fbed9012955de69806c98470300652bef1a8574e01"
     }
 }

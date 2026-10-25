@@ -1,0 +1,62 @@
+{
+    "description": "A legal person whose representative's authority was checked only after the reference date",
+    "annex": null,
+    "context": {
+        "reference_date": "2026-10-12",
+        "opt_in_terms": []
+    },
+    "flows": {
+        "f1": {
+            "informs": true,
+            "live_from": "2020-01-01",
+            "live_to": null
+        },
+        "f0": {
+            "informs": false,
+            "live_from": "2020-01-01",
+            "live_to": null
+        }
+    },
+    "record": {
+        "id": "r-0001",
+        "party": "legal",
+        "status": "active",
+        "joined_on": "2026-09-01",
+        "flow": "f1",
+        "terms": "t1",
+        "identity": {
+            "name": true,
+            "contact_confirmed": true,
+            "verified": {
+                "scheme": "eidas",
+                "assurance": "substantial",
+                "on": "2026-09-02"
+            },
+            "registration_number": true,
+            "register_check": {
+                "register": "business register",
+                "on": "2026-09-01"
+            },
+            "authority": {
+                "role": "director",
+                "basis": "register entry",
+                "checked_against": "business register",
+                "on": "2026-11-02"
+            }
+        },
+        "membership": {
+            "basis": "checked",
+            "in_class": true,
+            "evidence": [],
+            "checked_against": "business register"
+        },
+        "duplicate_of": null
+    },
+    "expected": {
+        "grade": "B",
+        "reasons": [
+            "authority_not_checked"
+        ],
+        "digest": "sha256:2532042818665e4813fb4de20950f5ebfa7dcf85d1bcac0d4130b7a9e7787f65"
+    }
+}

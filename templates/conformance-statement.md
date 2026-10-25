@@ -29,6 +29,7 @@ Each row from A to C counts the active records at that grade or better (core 6.2
 |---|---|
 | Records in the snapshot | |
 | Snapshot root | sha256:<64 hex> |
+| Manifest | sha256:<64 hex> |
 | Anchored by | <notary, qualified timestamp or OpenTimestamps>, <reference>, <date> |
 
 ## The independent check
