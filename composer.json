@@ -1,0 +1,6 @@
+{
+    "name": "steddle/vcrs",
+    "description": "The Verified Claimant Register Standard: the text, the annexes, the schemas, the test vectors and the templates.",
+    "license": "CC-BY-4.0",
+    "homepage": "https://vcrs.org"
+}
