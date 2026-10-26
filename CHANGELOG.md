@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased]
+## [0.1.0-beta.4] - 2026-10-26
 
 **Added**
 - The manifest (core 5.4): the export without its anchor, its records replaced by their number and the snapshot root. Its digest is what is anchored, so the reference date, the annex, the action, the class, the denominator, the flow versions and the opt-in terms are fixed with the records.
