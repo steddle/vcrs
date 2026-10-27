@@ -2,6 +2,8 @@
 
 VCRS 0.1.0-beta.5. Draft for consultation. Not legal advice. Law and rulings as read on 19, 21 and 27 October 2026 on the Rechtsinformationssystem des Bundes (RIS), the Parlament's site, the Bundeskartellanwalt's publications and the Official Journal of the European Union.
 
+Written by Holly Thackwray and Mischa Sigtermans for Steddle. Not yet reviewed by counsel admitted in Austria.
+
 ## 1. The regime
 
 A collective damages action is a Verbandsklage auf Abhilfe under §§ 623 to 635 ZPO and the Qualifizierte-Einrichtungen-Gesetz (QEG), both enacted by the Verbandsklagen-Richtlinie-Umsetzungs-Novelle (BGBl. I Nr. 85/2024), in force since 18 July 2024. The ZPO rules apply to actions filed after the day the act was published: § 636(4) ZPO 'ist auf Verfahren anzuwenden, in denen die Klage nach dem Tag der Kundmachung eingebracht wird'.

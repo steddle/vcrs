@@ -2,6 +2,8 @@
 
 VCRS 0.1.0-beta.5. Draft for consultation. Not legal advice. Law and rulings as read on 19, 21 and 27 October 2026 in the Sbírka zákonů (e-Sbírka), the Ministerstvo spravedlnosti's rejstřík hromadných řízení and the Městský soud v Praze's documents published in it, the Ministerstvo průmyslu a obchodu's list of authorised persons and the European Commission's overview of notified eID schemes.
 
+Written by Holly Thackwray and Mischa Sigtermans for Steddle. Not yet reviewed by counsel admitted in Czechia.
+
 ## 1. The regime
 
 A collective damages action is a hromadná žaloba under the zákon č. 179/2024 Sb., o hromadném občanském řízení soudním, in force since 1 July 2024, which transposes Directive (EU) 2020/1828 and applies to disputes between consumers and a trader (§ 4). 'Podle tohoto zákona lze projednat a rozhodnout spory o práva nebo oprávněné zájmy, které vznikly po dni 24. listopadu 2020.' (§ 92 odst. 1).

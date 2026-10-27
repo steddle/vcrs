@@ -2,6 +2,8 @@
 
 VCRS 0.1.0-beta.5. Draft for consultation. Not legal advice. Law and rulings as read on 19 and 21 October 2026 on the electronic Irish Statute Book, the Courts Service's judgments, the British and Irish Legal Information Institute, the Department of Enterprise, Tourism and Employment's register of qualified entities and the European Commission's overview of notified eID schemes.
 
+Written by Holly Thackwray and Mischa Sigtermans for Steddle. Not yet reviewed by counsel admitted in Ireland.
+
 ## 1. The regime
 
 A collective damages action is a representative action for redress measures under the Representative Actions for the Protection of the Collective Interests of Consumers Act 2023 (No. 22 of 2023), in force since 30 April 2024 (S.I. No. 181/2024). It reaches actions and infringements from the Directive's date of application: the Act 'applies to representative actions brought on or after 25 June 2023 in respect of infringements by traders occurring on or after that date that harm or may harm the collective interests of consumers' (s. 5(1)). An infringement is 'an infringement of a relevant enactment' (s. 2(1)): the European acts and provisions specified in Annex I to the Directive, the Acts, provisions and statutory instruments the Schedule lists, and instruments made under the Acts in its Part 1. A claim on other law has no representative action for redress under the Act. In proceedings commenced from 12 October 2026, Order 15, rules 40 to 46 of the Rules of the Superior Courts set the procedure: 'These Rules shall apply in proceedings commenced from the date on which these Rules come into operation' (S.I. No. 488/2026, r. 2).

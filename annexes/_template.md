@@ -2,6 +2,8 @@
 
 VCRS 0.1.0-beta.5. Draft for consultation. Not legal advice. Law as read on <date>.
 
+Written by <names>. Reviewed by <counsel admitted in the jurisdiction>, on <date>; until such a review: Not yet reviewed by counsel admitted in <jurisdiction>.
+
 ## 1. The regime
 
 The instruments, with their official reference and the version read. Who may bring a collective action, and on what terms.

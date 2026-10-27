@@ -2,6 +2,8 @@
 
 VCRS 0.1.0-beta.5. Draft for consultation. Not legal advice. Law as read on 19 and 21 October 2026 on Finlex, the Kilpailu- ja kuluttajavirasto's publications and the European Commission's list of qualified entities and overview of notified eID schemes.
 
+Written by Holly Thackwray and Mischa Sigtermans for Steddle. Not yet reviewed by counsel admitted in Finland.
+
 ## 1. The regime
 
 A collective damages action is a ryhmäkanne under the ryhmäkannelaki (444/2007), which transposes the Directive as amended by 1103/2022, in force since 25 June 2023. 'Tätä lakia sovelletaan kuluttaja-asiamiehen toimivallan mukaisessa laajuudessa kuluttajan ja elinkeinonharjoittajan välisen riita-asian käsittelyyn ryhmäkanteena' (1 § 1 mom), and to the claims for redress of Directive (EU) 2020/1828 (1 § 2 mom). Actions pending on that day keep the earlier rules: 'Ennen tämän lain voimaantuloa vireillä olleiden asioiden käsittelyyn sovelletaan tämän lain voimaan tullessa voimassa olleita säännöksiä' (1103/2022, voimaantulosäännös), and before it only the Kuluttaja-asiamies could sue.

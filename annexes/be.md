@@ -2,6 +2,8 @@
 
 VCRS 0.1.0-beta.5. Draft for consultation. Not legal advice. Law and rulings as read on 19 and 21 October 2026 on Justel, the Moniteur belge, the Cour constitutionnelle, the Chambre des représentants, the SPF Economie and the Conseil central de l'économie.
 
+Written by Holly Thackwray and Mischa Sigtermans for Steddle. Not yet reviewed by counsel admitted in Belgium.
+
 ## 1. The regime
 
 A collective damages action is an action en réparation collective (rechtsvordering tot collectief herstel) under Livre XVII, Titre 2 of the Code de droit économique (CDE), arts. XVII.35 to XVII.70, in the consolidated text to 4 August 2026. French and Dutch are both official: this annex quotes the statute in French, and the Dutch stands at the same article.

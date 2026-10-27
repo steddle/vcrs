@@ -2,6 +2,8 @@
 
 VCRS 0.1.0-beta.5. Draft for consultation. Not legal advice. Law and rulings as read on 19, 21, 23 and 27 October 2026: statutes from the BWB, rulings from rechtspraak.nl, each quote checked against the publisher's text.
 
+Written by Holly Thackwray and Mischa Sigtermans for Steddle. Not yet reviewed by counsel admitted in the Netherlands.
+
 ## 1. The regime
 
 A collective action is brought under art. 3:305a BW and art. 1018b to 1018m Rv (the WAMCA, in force since 1 January 2020) by a stichting or vereniging whose statutes cover the interests. Ad hoc and commercially initiated foundations may sue ('De WAMCA biedt uitdrukkelijk ruimte voor ad hoc organisaties en commerciële organisaties', Rb Amsterdam 27 May 2026, ECLI:NL:RBAMS:2026:6440, ro. 6.47); who started the case invites critical review, not a bar (Rb Noord-Holland 23 July 2025, ECLI:NL:RBNHO:2025:8944, ro. 4.32).

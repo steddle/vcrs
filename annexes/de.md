@@ -2,6 +2,8 @@
 
 VCRS 0.1.0-beta.5. Draft for consultation. Not legal advice. Law and rulings as read on 19, 21 and 27 October 2026 on gesetze-im-internet.de, the Bundestag, the Bundesamt für Justiz, the Bundesgerichtshof and the Official Journal of the European Union.
 
+Written by Holly Thackwray and Mischa Sigtermans for Steddle. Not yet reviewed by counsel admitted in Germany.
+
 ## 1. The regime
 
 A collective damages action is a Verbandsklage under the Verbraucherrechtedurchsetzungsgesetz (VDuG), Art. 1 of the Verbandsklagenrichtlinienumsetzungsgesetz (BGBl. 2023 I Nr. 272), in force since 13 October 2023. It is an Abhilfeklage, for payment or another remedy to consumers, or a Musterfeststellungsklage, for findings on which the claims of consumers depend. A Musterfeststellungsklage filed before 13 October 2023 runs under §§ 606 to 614 ZPO in their 2018 version; this annex covers actions under the VDuG.

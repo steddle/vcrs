@@ -27,7 +27,7 @@ Steddle drafts and maintains VCRS: Holly Thackwray and Mischa Sigtermans, for St
 
 - Comments arrive as issues in this repository, or by email to hello@steddle.com for anyone who prefers it. Each emailed comment is logged as an issue, with the sender's consent to be named or not.
 - A draft goes out for consultation to foundations, funders, defendants' counsel, auditors and academics before it is released.
-- Each annex names who wrote it and who reviewed it.
+- Each annex names who wrote it, and who reviewed it once counsel admitted in its jurisdiction has. Until then it says that no such counsel has reviewed it.
 
 ## The review panel
 

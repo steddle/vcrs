@@ -2,6 +2,8 @@
 
 VCRS 0.1.0-beta.5. Draft for consultation. Not legal advice. Law and rulings as read on 19, 21 and 27 October 2026 on the Diário da República, the consolidated database of the Procuradoria-Geral Regional de Lisboa, dgsi.pt and the Direção-Geral do Consumidor.
 
+Written by Holly Thackwray and Mischa Sigtermans for Steddle. Not yet reviewed by counsel admitted in Portugal.
+
 ## 1. The regime
 
 A collective damages action for consumers runs as an ação popular under Lei n.º 83/95 (the LAP) and, for actions filed from 6 December 2023 within its scope, under Decreto-Lei n.º 114-A/2023, which transposes the Representative Actions Directive and leaves the LAP as subsidiary law (art. 21). Competition damages follow Lei n.º 23/2018, art. 19.
