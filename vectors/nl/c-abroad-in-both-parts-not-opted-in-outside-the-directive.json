@@ -1,5 +1,5 @@
 {
-    "description": "Resident in Belgium, in both parts of a split claim in an action outside the Directive, no opt-in after the term closed: D, since the opt-in of art. 1018f lid 5 Rv can exclude them, and C in the part before 15 November 2016, which the opt-in does not govern (art. 119a Overgangswet NBW)",
+    "description": "Resident in Belgium, in both parts of a split claim in an action outside the Directive, no opt-in after the term closed: C, since the opt-in of art. 1018f lid 5 Rv governs the WAMCA part alone (HR 2026:1551 ro. 3.2.6), and D in that part",
     "annex": "nl",
     "context": {
         "reference_date": "2027-03-15",
@@ -59,9 +59,9 @@
         ]
     },
     "expected": {
-        "grade": "D",
+        "grade": "C",
         "reasons": [
-            "not_opted_in"
+            "declared_only"
         ],
         "parts": {
             "pre_wamca": {

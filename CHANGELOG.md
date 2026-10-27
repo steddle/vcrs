@@ -11,7 +11,7 @@
 **Changed**
 - Core 1: what a court asks of a register, and when, differs per jurisdiction, and the annex says what role the register plays there.
 - Core 4.1: why rule 6 asks a date of birth even where identity is verified.
-- Core 4.6: in a split claim the opt-in governs its own part alone. A record in that part and in another is graded with it, and counts in the other part at the grade it holds there without the opt-in. A vector states such a record's grade per part (`expected.parts`, core 11.4), as `vectors/nl/d-abroad-in-the-wamca-part-not-opted-in.json` and a new one for an action outside the Directive do.
+- Core 4.6: in a split claim the opt-in governs its own part alone. A record in that part and in another counts in each at the grade it holds there, and is graded without the opt-in, or with it where the annex states that the law leaves open whether the opt-in governs the other part too (`opt_in_part_unsettled` in the annex JSON). A vector states such a record's grade per part (`expected.parts`, core 11.4), as `vectors/nl/d-abroad-in-the-wamca-part-not-opted-in.json` and `vectors/nl/c-abroad-in-both-parts-not-opted-in-outside-the-directive.json` do.
 - Core 9: the open format of section 11 carries the facts that set each grade; the source records, the evidence, the flow captures and the change log go with them, complete and readable without the operator's systems, in a form the representative and the operator fix when the operator starts. The self-assessment's question 13 asks the same.
 - Core 9: a fee that does not depend on the number of records is this standard's own condition, with its reason.
 - Core 10: the annex recommends a level, and that recommendation is not a court's rule.
@@ -22,7 +22,7 @@
 - Every annex quotation that was shortened with '(...)' quotes the publisher's text literally, as one passage or as separate passages joined by the annex's own words (Annexes AT, CZ, DE, IT, NL and PT). Annex NL-5 keeps the court's qualifier that the date of birth was asked on enrolment through SOMI's websites, and NL-4 says what the Hoge Raad faulted the Hof for.
 - Each annex and the annex template say who wrote the annex and whether counsel admitted in its jurisdiction has reviewed it; GOVERNANCE says the same.
 - Annex NL-9: the foundation supplies the figures in the writ, or at the latest in reply to an express defence, as Rb Noord-Holland 2025:8944 ro. 4.50 and 4.52 say.
-- Annex NL-16: the export states the size of each part as `denominator.parts`, and a person in both parts counts in the `pre_wamca` part without the opt-in.
+- Annex NL-16: the export states the size of each part as `denominator.parts`, and a person in both parts counts in the `pre_wamca` part without the opt-in. Such a person is graded with the opt-in only in an action under the Directive (`opt_in_part_unsettled`: `directive`).
 
 ## [0.1.0-beta.4] - 2026-10-26
 
