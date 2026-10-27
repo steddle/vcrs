@@ -23,6 +23,8 @@ VCRS 0.1.0-beta.5, core and Annex <XX>. One page, no personal data. The same con
 
 Each row from A to C counts the active records at that grade or better (core 6.2). A record that is not active is grade D (core 4.1 rule 1) and counts in the last row alone, so C or better and the two rows at D add up to the records in the snapshot.
 
+These figures describe the representative's register. They do not establish whom the law or the court treats as represented or bound: that follows from the applicable law and the court's orders (the annex, section 2).
+
 ## The snapshot
 
 | | |

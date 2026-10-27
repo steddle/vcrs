@@ -8,6 +8,7 @@
 - Core 9: the open format of section 11 carries the facts that set each grade; the source records, the evidence, the flow captures and the change log go with them in a form the representative and the operator agree.
 - Core 9: a fee that does not depend on the number of records is this standard's own condition, with its reason.
 - Core 10: the annex recommends a level, and that recommendation is not a court's rule.
+- The conformance statement says its figures describe the representative's register, not whom the law or the court treats as represented or bound.
 - Core 11.1 and the descriptions of the export and record schemas: the records keep pseudonymous identifiers, so the export is personal data for whoever can link them to the source records.
 
 ## [0.1.0-beta.4] - 2026-10-26
