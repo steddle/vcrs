@@ -1,5 +1,5 @@
 {
-    "description": "Resident in Belgium, in both parts of a split claim, no opt-in or declaration after the term closed (art. 1018f lid 5 and 6 Rv)",
+    "description": "Resident in Belgium, in both parts of a split claim, no opt-in or declaration after the term closed: graded C, and D in the WAMCA part alone, which the opt-in of art. 1018f lid 5 and 6 Rv governs (art. 119a Overgangswet NBW)",
     "annex": "nl",
     "context": {
         "reference_date": "2027-03-15",
@@ -59,11 +59,25 @@
         ]
     },
     "expected": {
-        "grade": "D",
+        "grade": "C",
         "reasons": [
-            "not_opted_in",
-            "no_parallel_declaration"
+            "declared_only"
         ],
+        "parts": {
+            "pre_wamca": {
+                "grade": "C",
+                "reasons": [
+                    "declared_only"
+                ]
+            },
+            "wamca": {
+                "grade": "D",
+                "reasons": [
+                    "not_opted_in",
+                    "no_parallel_declaration"
+                ]
+            }
+        },
         "digest": "sha256:d0943e4a4c55ee6fae33b2e9f65d4a77c259fc8c58b85f5806e46ab87575f823"
     }
 }
