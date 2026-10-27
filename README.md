@@ -61,7 +61,7 @@ The core's residence rule (4.6) follows the Representative Actions Directive, so
 
 ## Citing
 
-'VCRS 0.1.0-beta.4, core and Annex NL, <https://vcrs.org/v/0.1.0-beta.4>'. A released version stays unchanged at its own address, as core section 13 sets out. [The governance](GOVERNANCE.md) says how versions are released and how to comment.
+'VCRS 0.1.0-beta.5, core and Annex NL, <https://vcrs.org/v/0.1.0-beta.5>'. A released version stays unchanged at its own address, as core section 13 sets out. [The governance](GOVERNANCE.md) says how versions are released and how to comment.
 
 ## Changelog
 

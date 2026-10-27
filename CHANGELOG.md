@@ -1,5 +1,7 @@
 # Changelog
 
+## [Unreleased]
+
 ## [0.1.0-beta.4] - 2026-10-26
 
 **Added**

@@ -1,8 +1,8 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://vcrs.org/schema/0.1.0-beta.4/record.schema.json",
+    "$id": "https://vcrs.org/schema/0.1.0-beta.5/record.schema.json",
     "title": "VCRS record",
-    "description": "One person's entry in a facts export: the facts that set its grade (VCRS 0.1.0-beta.4, section 4), without the personal data behind them.",
+    "description": "One person's entry in a facts export: the facts that set its grade (VCRS 0.1.0-beta.5, section 4), without the personal data behind them.",
     "type": "object",
     "required": [
         "id",

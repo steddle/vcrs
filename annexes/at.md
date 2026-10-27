@@ -1,6 +1,6 @@
 # Annex AT: Austria (Verbandsklage auf Abhilfe)
 
-VCRS 0.1.0-beta.4. Draft for consultation. Not legal advice. Law and rulings as read on 19 and 21 October 2026 on the Rechtsinformationssystem des Bundes (RIS), the Parlament's site, the Bundeskartellanwalt's publications and the Official Journal of the European Union.
+VCRS 0.1.0-beta.5. Draft for consultation. Not legal advice. Law and rulings as read on 19 and 21 October 2026 on the Rechtsinformationssystem des Bundes (RIS), the Parlament's site, the Bundeskartellanwalt's publications and the Official Journal of the European Union.
 
 ## 1. The regime
 
