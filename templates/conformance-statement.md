@@ -48,7 +48,7 @@ Where the class has subgroups (core 6.4) or the claim is split into parts (core 
 | | |
 |---|---|
 | Auditor | <firm> |
-| Standard | <ISRS 4400, Standaard 4400N or equivalent> |
+| Standard | <ISRS 4400 or Standaard 4400N for agreed-upon procedures, ISAE 3000 or its national equivalent for assurance> |
 | Engagement | <agreed-upon procedures, which report what the auditor found and give no assurance, or an assurance engagement, which ends in the auditor's conclusion> |
 | Check | <sample tracing, full recomputation or reproduction test> |
 | Report dated | <YYYY-MM-DD> |

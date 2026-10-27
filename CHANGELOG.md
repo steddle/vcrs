@@ -6,7 +6,7 @@
 - A denominator of its own for each subgroup and each part of a split claim (`denominator.subgroups`, `denominator.parts`; core 4.6, 6.4), with the coverage of each in the check's report and the conformance statement (`subgroups`, `parts`). A part without its size withholds every level (`part_without_denominator`), a subgroup without its denominator withholds Verified (`subgroup_without_denominator`), and a size for a subgroup or part the export does not declare, or one inverted, makes the export not consistent.
 - A vector for an opt-in that names the action otherwise than the court's reference, which keeps its grade (`vectors/nl/c-abroad-opted-in-naming-another-action.json`).
 - The conformance statement counts the records at grade C whose evidence does not establish class membership (`membership_not_established`, reason `class_not_established`), and core 11.2 asks for it.
-- The conformance statement names the auditor's engagement (`auditor.engagement`: `agreed_upon_procedures` or `assurance`), and core 8 says what each gives.
+- The conformance statement names the auditor's engagement (`auditor.engagement`: `agreed_upon_procedures` or `assurance`), its standard row offers ISAE 3000 for an assurance engagement, and core 8 says what each gives.
 
 **Changed**
 - Core 1: what a court asks of a register, and when, differs per jurisdiction, and the annex says what role the register plays there.
@@ -19,8 +19,9 @@
 - The descriptions of `opt_in.action` and `action.court_reference` in the record and export schemas: an opt-in that names another action leaves the grade as it is and withholds every level, as core 11.6 says.
 - The conformance statement says its figures describe the representative's register, not whom the law or the court treats as represented or bound.
 - The self-assessment's question 2 asks for the size of each part of a split claim, and question 23 for each subgroup's denominator.
-- Every annex quotation that was shortened with '(...)' quotes the publisher's text literally, as one passage or as separate passages joined by the annex's own words (Annexes AT, CZ, DE, IT, NL and PT). Annex NL-5 keeps the court's qualifier that the date of birth was asked on enrolment through SOMI's websites, and NL-4 says what the Hoge Raad faulted the Hof for.
+- Every annex quotation that was shortened with '(...)' quotes the publisher's text literally, as one passage or as separate passages joined by the annex's own words (Annexes AT, CZ, DE, IT, NL and PT). Annex NL-5 keeps the court's qualifier that the date of birth was asked on enrolment through SOMI's websites and gives both of the court's reasons, and NL-4 says what the Hoge Raad faulted the Hof for.
 - Each annex and the annex template say who wrote the annex and whether counsel admitted in its jurisdiction has reviewed it; GOVERNANCE says the same.
+- Annex CZ: of its own motion the court checks only that the plaintiff is on the list of persons authorised to bring a collective action (3 C 10/2024-10, para. 18).
 - Annex NL-9: the foundation supplies the figures in the writ, or at the latest in reply to an express defence, as Rb Noord-Holland 2025:8944 ro. 4.50 and 4.52 say.
 - Annex NL-16: the export states the size of each part as `denominator.parts`, and a person in the `pre_wamca` part counts there without the opt-in, and is graded overall with it only in an action under the Directive (`opt_in_part_unsettled`: `directive`).
 

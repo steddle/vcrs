@@ -285,7 +285,7 @@
                     "minLength": 1
                 },
                 "standard": {
-                    "description": "The professional standard the report was made under, e.g. ISRS 4400 or Standaard 4400N.",
+                    "description": "The professional standard the report was made under, e.g. ISRS 4400 or Standaard 4400N for agreed-upon procedures, ISAE 3000 for assurance.",
                     "type": "string",
                     "minLength": 1
                 },
