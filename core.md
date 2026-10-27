@@ -63,6 +63,8 @@ A record is grade D when any of these holds at the reference date:
 7. Its contact channel was never confirmed by the person.
 8. Where the annex binds people abroad, residents of the forum, or both, only on an express opt-in: its residence is not held, for the date the court fixed where it fixed one, where the opt-in turns on it; or, once the opt-in is due (4.6), the person has to opt in and the record holds no opt-in made in time, or no declaration on parallel actions where the annex requires one.
 
+Rule 6 asks a date of birth even where identity is verified (4.4): with the name, it tells two people apart without a national identification number. The person identification data of the EU Digital Identity Wallet always include it (Implementing Regulation (EU) 2024/2977, Annex, Table 1).
+
 ### 4.2 Grade C: identified
 
 A distinct, named person who confirmed a contact channel and joined through an informing flow. Class membership may rest on the person's own declaration.
