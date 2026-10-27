@@ -2,6 +2,9 @@
 
 ## [Unreleased]
 
+**Added**
+- The conformance statement names the auditor's engagement (`auditor.engagement`: `agreed_upon_procedures` or `assurance`), and core 8 says what each gives.
+
 **Changed**
 - Core 4.1: why rule 6 asks a date of birth even where identity is verified.
 - Core 1: what a court asks of a register, and when, differs per jurisdiction, and the annex says what role the register plays there.

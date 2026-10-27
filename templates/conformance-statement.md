@@ -40,6 +40,7 @@ These figures describe the representative's register. They do not establish whom
 |---|---|
 | Auditor | <firm> |
 | Standard | <ISRS 4400, Standaard 4400N or equivalent> |
+| Engagement | <agreed-upon procedures, which report what the auditor found and give no assurance, or an assurance engagement, which ends in the auditor's conclusion> |
 | Check | <sample tracing, full recomputation or reproduction test> |
 | Report dated | <YYYY-MM-DD> |
 

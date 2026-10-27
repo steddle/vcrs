@@ -40,6 +40,7 @@ These figures describe the representative's register. They do not establish whom
 |---|---|
 | Auditor | Voorbeeld Accountants |
 | Standard | Standaard 4400N |
+| Engagement | Agreed-upon procedures: the report states what the auditor found and gives no assurance |
 | Check | Reproduction test |
 | Report dated | 2026-10-14 |
 
@@ -114,6 +115,7 @@ The same statement, as [`schema/conformance.schema.json`](../schema/conformance.
     "auditor": {
         "firm": "Voorbeeld Accountants",
         "standard": "Standaard 4400N",
+        "engagement": "agreed_upon_procedures",
         "report_date": "2026-10-14",
         "check": "reproduction_test"
     },

@@ -186,7 +186,7 @@ What the auditor does depends on the level:
 | Identified | Recompute every record's grade and the coverage at each grade from the source records, and confirm the snapshot root and the manifest |
 | Verified | The reproduction test: with read-only access to the live system and without an export from the operator, recompute the grade of every record and the coverage at each grade on the reference date, match the snapshot root and the manifest, and complete test sign-ups through each live flow version |
 
-The auditor reports under a recognised standard for agreed-upon procedures or assurance (ISRS 4400 or ISAE 3000, or their national equivalent). The report names the reference date, the snapshot root, the manifest's digest, and the figures reproduced.
+The auditor reports under a recognised standard for agreed-upon procedures or assurance (ISRS 4400 or ISAE 3000, or their national equivalent). An agreed-upon procedures engagement reports the procedures and what they found, and gives no assurance; an assurance engagement ends in the auditor's conclusion. The report names the reference date, the snapshot root, the manifest's digest, and the figures reproduced, and the conformance statement says which of the two engagements it was.
 
 ## 9. The representative's control
 
@@ -223,7 +223,7 @@ The facts export is what a validator reads, what a funder or court may be shown 
 
 ### 11.2 The conformance statement
 
-A representative that claims a level publishes a one-page statement: the level, the annex, the reference date, the denominator and its source, the count and coverage at each grade, the snapshot root, the manifest's digest and its anchor, and the auditor with the date of the report. No personal data. Until the auditor has reported, the statement is a draft and says so. `schema/conformance.schema.json` defines it.
+A representative that claims a level publishes a one-page statement: the level, the annex, the reference date, the denominator and its source, the count and coverage at each grade, the snapshot root, the manifest's digest and its anchor, and the auditor with the kind of engagement and the date of the report. No personal data. Until the auditor has reported, the statement is a draft and says so. `schema/conformance.schema.json` defines it.
 
 ### 11.3 Canonical form and digests
 
