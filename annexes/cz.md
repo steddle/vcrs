@@ -1,6 +1,6 @@
 # Annex CZ: Czech Republic (hromadné řízení)
 
-VCRS 0.1.0-beta.6. Draft for consultation. Not legal advice. Law and rulings as read on 19, 21 and 27 October 2026 in the Sbírka zákonů (e-Sbírka), the Ministerstvo spravedlnosti's rejstřík hromadných řízení and the Městský soud v Praze's documents published in it, the Ministerstvo průmyslu a obchodu's list of authorised persons and the European Commission's overview of notified eID schemes.
+VCRS 0.1.0-beta.5. Draft for consultation. Not legal advice. Law and rulings as read on 19, 21 and 27 October 2026 in the Sbírka zákonů (e-Sbírka), the Ministerstvo spravedlnosti's rejstřík hromadných řízení and the Městský soud v Praze's documents published in it, the Ministerstvo průmyslu a obchodu's list of authorised persons and the European Commission's overview of notified eID schemes.
 
 Written by Holly Thackwray and Mischa Sigtermans for Steddle. Not yet reviewed by counsel admitted in Czechia.
 

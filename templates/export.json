@@ -1,5 +1,5 @@
 {
-    "vcrs": "0.1.0-beta.6",
+    "vcrs": "0.1.0-beta.5",
     "annex": "nl",
     "representative": {
         "name": "Stichting Voorbeeldclaim",
@@ -58,7 +58,7 @@
         "reference": "snapshots/2026-10-12.ots",
         "on": "2026-10-12",
         "root": "sha256:c5c5ab8d8c56c7dc71e1b26e22d95968dd938a032ae853a7ea49862a935b3937",
-        "manifest": "sha256:3d94a663d062005d2e7ea39af5eb4e7462184d419a93053578a4f31f38a7649e"
+        "manifest": "sha256:3a8aad97f3913f7dd6c6ceee305a58098681f5bb5abf1d7cc7c1e1eb84765c64"
     },
     "flows": [
         {
