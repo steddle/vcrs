@@ -4,17 +4,17 @@
 
 **Added**
 - A denominator of its own for each subgroup and each part of a split claim (`denominator.subgroups`, `denominator.parts`; core 4.6, 6.4), with the coverage of each in the check's report and the conformance statement (`subgroups`, `parts`). A part without its size withholds every level (`part_without_denominator`), a subgroup without its denominator withholds Verified (`subgroup_without_denominator`), and a size for a subgroup or part the export does not declare, or one inverted, makes the export not consistent.
-- A vector for an opt-in that names the action otherwise than the court's reference: the grade stands (`vectors/nl/c-abroad-opted-in-naming-another-action.json`).
+- A vector for an opt-in that names the action otherwise than the court's reference, which keeps its grade (`vectors/nl/c-abroad-opted-in-naming-another-action.json`).
 - The conformance statement counts the records at grade C whose evidence does not establish class membership (`membership_not_established`, reason `class_not_established`), and core 11.2 asks for it.
 - The conformance statement names the auditor's engagement (`auditor.engagement`: `agreed_upon_procedures` or `assurance`), and core 8 says what each gives.
 
 **Changed**
 - Core 1: what a court asks of a register, and when, differs per jurisdiction, and the annex says what role the register plays there.
 - Core 4.1: why rule 6 asks a date of birth even where identity is verified.
-- Core 4.6: in a split claim the opt-in governs its own part alone. A record in that part and in another counts in each at the grade it holds there, and is graded without the opt-in, or with it where the annex states that the law leaves open whether the opt-in governs the other part too (`opt_in_part_unsettled` in the annex JSON). A vector states such a record's grade per part (`expected.parts`, core 11.4), as `vectors/nl/d-abroad-in-the-wamca-part-not-opted-in.json` and `vectors/nl/c-abroad-in-both-parts-not-opted-in-outside-the-directive.json` do.
+- Core 4.6: in a split claim the opt-in governs its own part alone. A record in that part and in another counts in each at the grade it holds there, and is graded overall without the opt-in, or with it where the annex states that the law leaves open whether the opt-in governs the other part too (`opt_in_part_unsettled` in the annex JSON). A vector states such a record's grade per part (`expected.parts`, core 11.4), as `vectors/nl/d-abroad-in-the-wamca-part-not-opted-in.json` and `vectors/nl/c-abroad-in-both-parts-not-opted-in-outside-the-directive.json` do.
 - Core 9: the open format of section 11 carries the facts that set each grade; the source records, the evidence, the flow captures and the change log go with them, complete and readable without the operator's systems, in a form the representative and the operator fix when the operator starts. The self-assessment's question 13 asks the same.
 - Core 9: a fee that does not depend on the number of records is this standard's own condition, with its reason.
-- Core 10: the annex recommends a level, and that recommendation is not a court's rule.
+- Core 10: the level an annex names is a recommendation, not a court's rule, as the annexes say.
 - Core 11.1 and the descriptions of the export and record schemas: the records keep pseudonymous identifiers, so the export is personal data for whoever can link them to the source records.
 - The descriptions of `opt_in.action` and `action.court_reference` in the record and export schemas: an opt-in that names another action leaves the grade as it is and withholds every level, as core 11.6 says.
 - The conformance statement says its figures describe the representative's register, not whom the law or the court treats as represented or bound.

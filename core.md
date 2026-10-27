@@ -98,7 +98,7 @@ The annex says when the opt-in is due and through which channel. Where it binds 
 
 The export states the terms set for opting in (`opt_in_terms`): each with its first day, its last day once set, the channel the court set for it, and the subgroups it applies to where it applies to some alone. Where people opt in during terms the court sets after it appoints the representative, the record of a person who has to opt in needs the opt-in only at a reference date after the last term that applies to it closed, made within one of those terms and through its channel, or else the one the annex names; an opt-in made between two terms does not count. Until then this standard counts the record on its residence alone; the annex says whether a court is known to count that support, and the cross-section (6.3) can show people abroad apart from residents, so their support can be weighed either way. Where the annex has no such window, the opt-in is due from the start; where the law sets a deadline for it, the annex says whether the export states the deadline as a term, without a channel, since the law names the channel; where it does, an opt-in after it does not count. Where the court applies opt-out to people abroad, the export states no term.
 
-Where the court fixes the date residence is tested on, the export states it (`residence_on`), and each record's residence is established for that date. Where a claim falls under two laws, as a transitional rule may split it, the export states the parts (`parts`), the size of each (`denominator.parts`), and each record the parts it belongs to; a person whose claim falls in both parts counts in the size and the coverage of each. The annex names the part its opt-in governs, and whether the law leaves open that the opt-in governs the other parts too (`opt_in_part_unsettled`). A record outside that part needs no opt-in. A record in it and in another part counts in that part at the grade the opt-in gives it, and in the other at the grade it holds without the opt-in. Its own grade is the one without the opt-in; where the law leaves open whether the opt-in governs the other part too, it is the one with it, so the register never counts a person the opt-in may exclude.
+Where the court fixes the date residence is tested on, the export states it (`residence_on`), and each record's residence is established for that date. Where a claim falls under two laws, as a transitional rule may split it, the export states the parts (`parts`), the size of each (`denominator.parts`), and each record the parts it belongs to; a person whose claim falls in both parts counts in the size and the coverage of each. The annex names the part its opt-in governs, and whether the law leaves open that the opt-in governs the other parts too (`opt_in_part_unsettled`). A record outside that part needs no opt-in. A record in it and in another part counts in that part at the grade the opt-in gives it, and in the other at the grade it holds without the opt-in. Its grade overall is the one without the opt-in, or the one with it where the law leaves that open, so the register never counts a person the opt-in may exclude.
 
 An electronic identification proves who a person is. In the EU Digital Identity Wallet residence is an optional attribute (Implementing Regulation (EU) 2024/2977, Annex, Table 2), so residence needs a source of its own.
 
@@ -199,7 +199,7 @@ The register serves the representative, and stays under its control whoever runs
 
 ## 10. Levels
 
-A register claims one level. The representative chooses the level its class and claim need; the annex recommends the level a typical action there needs, a recommendation and not a court's rule.
+A register claims one level. The representative chooses the level its class and claim need; the annex names the level a typical action there needs, a recommendation, not a court's rule.
 
 | | Level 1: Registered | Level 2: Identified | Level 3: Verified |
 |---|---|---|---|
@@ -223,7 +223,7 @@ The facts export is what a validator reads, what a funder or court may be shown 
 
 ### 11.2 The conformance statement
 
-A representative that claims a level publishes a one-page statement: the level, the annex, the reference date, the denominator and its source, the count and coverage at each grade, and per subgroup and per part where the class has them, how many records at grade C rest on evidence that does not establish class membership, the snapshot root, the manifest's digest and its anchor, and the auditor with the kind of engagement and the date of the report. No personal data. Until the auditor has reported, the statement is a draft and says so. `schema/conformance.schema.json` defines it.
+A representative that claims a level publishes a one-page statement: the level, the annex, the reference date, the denominator and its source, the count and coverage at each grade, overall and per subgroup and part where the class has them, the number of records at grade C whose evidence does not establish class membership, the snapshot root, the manifest's digest and its anchor, and the auditor with the kind of engagement and the date of the report. No personal data. Until the auditor has reported, the statement is a draft and says so. `schema/conformance.schema.json` defines it.
 
 ### 11.3 Canonical form and digests
 
