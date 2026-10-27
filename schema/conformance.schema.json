@@ -16,6 +16,7 @@
         "denominator",
         "counts",
         "coverage",
+        "membership_not_established",
         "snapshot",
         "auditor",
         "issued_on"
@@ -191,6 +192,11 @@
                     "$ref": "#/$defs/share"
                 }
             }
+        },
+        "membership_not_established": {
+            "description": "Active records at grade C whose evidence does not establish that the person is in the class (section 4.3, reason class_not_established). They count at C or better.",
+            "type": "integer",
+            "minimum": 0
         },
         "snapshot": {
             "type": "object",

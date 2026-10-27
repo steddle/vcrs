@@ -18,10 +18,11 @@ VCRS 0.1.0-beta.5, core and Annex NL. The [conformance statement](conformance-st
 | A or better | 1 | 0.0038% to 0.0048% |
 | B or better | 3 | 0.0115% to 0.0143% |
 | C or better | 5 | 0.0192% to 0.0238% |
+| C, membership not established | 0 | |
 | D, active | 2 | |
 | D, not active | 1 | |
 
-Each row from A to C counts the active records at that grade or better (core 6.2). A record that is not active is grade D (core 4.1 rule 1) and counts in the last row alone, so C or better and the two rows at D add up to the records in the snapshot.
+Each row from A to C counts the active records at that grade or better (core 6.2). A record that is not active is grade D (core 4.1 rule 1) and counts in the last row alone, so C or better and the two rows at D add up to the records in the snapshot. The row C, membership not established counts the records at grade C whose evidence does not establish that the person is in the class (core 4.3); they are part of C or better.
 
 These figures describe the representative's register. They do not establish whom the law or the court treats as represented or bound: that follows from the applicable law and the court's orders (the annex, section 2).
 
@@ -102,6 +103,7 @@ The same statement, as [`schema/conformance.schema.json`](../schema/conformance.
             "high": 0.0238
         }
     },
+    "membership_not_established": 0,
     "snapshot": {
         "root": "sha256:c5c5ab8d8c56c7dc71e1b26e22d95968dd938a032ae853a7ea49862a935b3937",
         "manifest": "sha256:3a8aad97f3913f7dd6c6ceee305a58098681f5bb5abf1d7cc7c1e1eb84765c64",

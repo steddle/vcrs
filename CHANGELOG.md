@@ -3,6 +3,7 @@
 ## [Unreleased]
 
 **Added**
+- The conformance statement counts the records at grade C whose evidence does not establish class membership (`membership_not_established`, reason `class_not_established`), and core 11.2 asks for it.
 - The conformance statement names the auditor's engagement (`auditor.engagement`: `agreed_upon_procedures` or `assurance`), and core 8 says what each gives.
 
 **Changed**

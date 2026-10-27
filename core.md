@@ -223,7 +223,7 @@ The facts export is what a validator reads, what a funder or court may be shown 
 
 ### 11.2 The conformance statement
 
-A representative that claims a level publishes a one-page statement: the level, the annex, the reference date, the denominator and its source, the count and coverage at each grade, the snapshot root, the manifest's digest and its anchor, and the auditor with the kind of engagement and the date of the report. No personal data. Until the auditor has reported, the statement is a draft and says so. `schema/conformance.schema.json` defines it.
+A representative that claims a level publishes a one-page statement: the level, the annex, the reference date, the denominator and its source, the count and coverage at each grade, how many records at grade C rest on evidence that does not establish class membership, the snapshot root, the manifest's digest and its anchor, and the auditor with the kind of engagement and the date of the report. No personal data. Until the auditor has reported, the statement is a draft and says so. `schema/conformance.schema.json` defines it.
 
 ### 11.3 Canonical form and digests
 
