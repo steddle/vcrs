@@ -3,11 +3,13 @@
 ## [Unreleased]
 
 **Added**
+- A vector for an opt-in that names the action otherwise than the court's reference: the grade stands (`vectors/nl/c-abroad-opted-in-naming-another-action.json`).
 - The conformance statement counts the records at grade C whose evidence does not establish class membership (`membership_not_established`, reason `class_not_established`), and core 11.2 asks for it.
 - The conformance statement names the auditor's engagement (`auditor.engagement`: `agreed_upon_procedures` or `assurance`), and core 8 says what each gives.
 
 **Changed**
 - Core 4.1: why rule 6 asks a date of birth even where identity is verified.
+- The descriptions of `opt_in.action` and `action.court_reference` in the record and export schemas: an opt-in that names another action leaves the grade as it is and withholds every level, as core 11.6 says.
 - Core 1: what a court asks of a register, and when, differs per jurisdiction, and the annex says what role the register plays there.
 - Core 9: the open format of section 11 carries the facts that set each grade; the source records, the evidence, the flow captures and the change log go with them in a form the representative and the operator agree.
 - Core 9: a fee that does not depend on the number of records is this standard's own condition, with its reason.

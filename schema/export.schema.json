@@ -68,7 +68,7 @@
                     "minItems": 1
                 },
                 "court_reference": {
-                    "description": "The court's reference for the action, once it has one. An opt-in that names another action does not count (section 4.6).",
+                    "description": "The court's reference for the action, once it has one. An opt-in that names another action leaves the grade as it is and withholds every level (sections 4.6 and 11.6, finding opt_in_names_other_action).",
                     "type": "string",
                     "minLength": 1
                 },

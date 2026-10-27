@@ -1,0 +1,66 @@
+{
+    "description": "Resident in Belgium, opted in and declared no parallel action, the opt-in naming the action otherwise than the court's reference: the grade stands, and the finding opt_in_names_other_action withholds every level (core 4.6, 11.6)",
+    "annex": "nl",
+    "context": {
+        "reference_date": "2027-03-15",
+        "opt_in_terms": [
+            {
+                "opened_on": "2027-01-15",
+                "closed_on": "2027-03-01",
+                "channel": null
+            }
+        ],
+        "directive": true,
+        "court_reference": "action-2"
+    },
+    "flows": {
+        "f1": {
+            "informs": true,
+            "live_from": "2020-01-01",
+            "live_to": null
+        },
+        "f0": {
+            "informs": false,
+            "live_from": "2020-01-01",
+            "live_to": null
+        }
+    },
+    "record": {
+        "id": "r-0001",
+        "party": "natural",
+        "status": "active",
+        "joined_on": "2026-09-01",
+        "flow": "f1",
+        "terms": "t1",
+        "identity": {
+            "name": true,
+            "birth_date": true,
+            "contact_confirmed": true,
+            "verified": null
+        },
+        "membership": {
+            "basis": "declared",
+            "in_class": null,
+            "evidence": [],
+            "checked_against": null
+        },
+        "duplicate_of": null,
+        "residence": {
+            "country": "BE",
+            "on": "2026-09-01"
+        },
+        "opt_in": {
+            "on": "2027-02-10",
+            "channel": "registry",
+            "action": "action-1"
+        },
+        "parallel_declared": true
+    },
+    "expected": {
+        "grade": "C",
+        "reasons": [
+            "declared_only"
+        ],
+        "digest": "sha256:746a8b9f2ac7ac951da74f4216f151f0e86cc83276c84179884d764e5ec36fde"
+    }
+}

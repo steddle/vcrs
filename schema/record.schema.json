@@ -280,7 +280,7 @@
                     "minLength": 1
                 },
                 "action": {
-                    "description": "The action the opt-in names, as the court refers to it. Where the export states the court's reference, an opt-in that names another does not count.",
+                    "description": "The action the opt-in names, as the court refers to it. Where the export states the court's reference, an opt-in that names another leaves the grade as it is and withholds every level (sections 4.6 and 11.6, finding opt_in_names_other_action).",
                     "type": "string",
                     "minLength": 1
                 }
