@@ -215,7 +215,7 @@ A register claims one level. The representative chooses the level its class and 
 
 ### 11.1 The facts export
 
-The facts export is one JSON document: the register's metadata (representative, action and whether it is brought under the Directive, class definition, denominator, reference date, the opt-in terms, the residence date where a court fixed it, the parts of a claim that falls under two laws, facets), its flow versions, its terms versions, its records and the anchor of its manifest. `schema/export.schema.json` defines it. It holds the facts that set each grade, not the personal data behind them: whether a name is held, not the name.
+The facts export is one JSON document: the register's metadata (representative, action and whether it is brought under the Directive, class definition, denominator, reference date, the opt-in terms, the residence date where a court fixed it, the parts of a claim that falls under two laws, facets), its flow versions, its terms versions, its records and the anchor of its manifest. `schema/export.schema.json` defines it. It holds the facts that set each grade, not the personal data behind them: whether a name is held, not the name. Its records keep their pseudonymous identifiers, so for whoever can link them to the source records, the representative first, the export is still personal data.
 
 The facts export is what a validator reads, what a funder or court may be shown in aggregate, and what moves with the register when the operator changes. The auditor of section 8 reads the source records, not the export.
 
