@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased]
+## [0.1.0-beta.5] - 2026-10-27
 
 **Added**
 - A denominator of its own for each subgroup and each part of a split claim (`denominator.subgroups`, `denominator.parts`; core 4.6, 6.4), with the coverage of each in the check's report and the conformance statement (`subgroups`, `parts`). A part without its size withholds every level (`part_without_denominator`), a subgroup without its denominator withholds Verified (`subgroup_without_denominator`), and a size for a subgroup or part the export does not declare, or one inverted, makes the export not consistent.
