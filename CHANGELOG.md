@@ -11,7 +11,7 @@
 **Changed**
 - Core 1: what a court asks of a register, and when, differs per jurisdiction, and the annex says what role the register plays there.
 - Core 4.1: why rule 6 asks a date of birth even where identity is verified.
-- Core 4.6: in a split claim the opt-in counts in the part it governs alone. A record in that part and in another is graded without it, and counts in the part the opt-in governs at the grade the opt-in gives it there. A vector states such a record's grade per part (`expected.parts`, core 11.4); `vectors/nl/d-abroad-in-the-wamca-part-not-opted-in.json` is `c-abroad-in-both-parts-not-opted-in.json`, beside one for an action outside the Directive.
+- Core 4.6: in a split claim the opt-in governs its own part alone. A record in that part and in another is graded with it, and counts in the other part at the grade it holds there without the opt-in. A vector states such a record's grade per part (`expected.parts`, core 11.4), as `vectors/nl/d-abroad-in-the-wamca-part-not-opted-in.json` and a new one for an action outside the Directive do.
 - Core 9: the open format of section 11 carries the facts that set each grade; the source records, the evidence, the flow captures and the change log go with them, complete and readable without the operator's systems, in a form the representative and the operator agree.
 - Core 9: a fee that does not depend on the number of records is this standard's own condition, with its reason.
 - Core 10: the annex recommends a level, and that recommendation is not a court's rule.
