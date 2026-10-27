@@ -26,6 +26,14 @@ Each row from A to C counts the active records at that grade or better (core 6.2
 
 These figures describe the representative's register. They do not establish whom the law or the court treats as represented or bound: that follows from the applicable law and the court's orders (the annex, section 2).
 
+## Coverage per subgroup and per part
+
+Where the class has subgroups (core 6.4) or the claim is split into parts (core 4.6), the coverage of each against a denominator of its own. A record in both parts counts in each.
+
+| Subgroup or part | Denominator | A or better | B or better | C or better |
+|---|---|---:|---:|---:|
+| <name> | <low> to <high>, from <source>, as of <date> | | | |
+
 ## The snapshot
 
 | | |

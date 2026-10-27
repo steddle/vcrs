@@ -26,6 +26,10 @@ Each row from A to C counts the active records at that grade or better (core 6.2
 
 These figures describe the representative's register. They do not establish whom the law or the court treats as represented or bound: that follows from the applicable law and the court's orders (the annex, section 2).
 
+## Coverage per subgroup and per part
+
+The example class has no subgroups, and its claim is not split into parts.
+
 ## The snapshot
 
 | | |

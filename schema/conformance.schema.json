@@ -198,6 +198,20 @@
             "type": "integer",
             "minimum": 0
         },
+        "subgroups": {
+            "description": "Per subgroup the export sizes, its denominator and the coverage of active records at or above each grade (section 6.4).",
+            "type": "object",
+            "additionalProperties": {
+                "$ref": "#/$defs/group"
+            }
+        },
+        "parts": {
+            "description": "Per part of a split claim, its denominator and the coverage of active records at or above each grade; a record in both parts counts in each (section 4.6).",
+            "type": "object",
+            "additionalProperties": {
+                "$ref": "#/$defs/group"
+            }
+        },
         "snapshot": {
             "type": "object",
             "required": [
@@ -351,6 +365,66 @@
                     "description": "records as a percentage of the denominator's low end.",
                     "type": "number",
                     "minimum": 0
+                }
+            }
+        },
+        "size": {
+            "type": "object",
+            "required": [
+                "low",
+                "high",
+                "source",
+                "as_of"
+            ],
+            "additionalProperties": false,
+            "properties": {
+                "low": {
+                    "type": "integer",
+                    "minimum": 1
+                },
+                "high": {
+                    "type": "integer",
+                    "minimum": 1
+                },
+                "source": {
+                    "type": "string",
+                    "minLength": 1
+                },
+                "as_of": {
+                    "$ref": "#/$defs/date"
+                }
+            }
+        },
+        "group": {
+            "type": "object",
+            "required": [
+                "denominator",
+                "coverage"
+            ],
+            "additionalProperties": false,
+            "properties": {
+                "denominator": {
+                    "$ref": "#/$defs/size"
+                },
+                "coverage": {
+                    "type": "object",
+                    "required": [
+                        "A",
+                        "B",
+                        "C"
+                    ],
+                    "additionalProperties": false,
+                    "properties": {
+                        "A": {
+                            "$ref": "#/$defs/share"
+                        },
+                        "B": {
+                            "$ref": "#/$defs/share"
+                        },
+                        "C": {
+                            "$ref": "#/$defs/share"
+                        }
+                    }
                 }
             }
         }

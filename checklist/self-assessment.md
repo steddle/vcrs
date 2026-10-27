@@ -42,7 +42,7 @@ All of Level 2, and:
 |---:|---|---|
 | 21 | Did a bailiff or a notary witness every version of the sign-up flow? | 5.1 |
 | 22 | Does every evidence document carry a digest the record names? | 5.3 |
-| 23 | Do we report coverage per subgroup, or state that the class has none? | 6.4 |
+| 23 | Do we report coverage per subgroup, each against a denominator of its own, or state that the class has none? | 6.4 |
 | 24 | Do we report how many records are grade A? | 10 |
 | 25 | Does the auditor run the reproduction test: read-only access to the live system, no export from the operator, every grade and the coverage recomputed, the snapshot root and the manifest matched, a test sign-up through each live flow version? | 8 |
 

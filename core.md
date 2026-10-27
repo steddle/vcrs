@@ -98,7 +98,7 @@ The annex says when the opt-in is due and through which channel. Where it binds 
 
 The export states the terms set for opting in (`opt_in_terms`): each with its first day, its last day once set, the channel the court set for it, and the subgroups it applies to where it applies to some alone. Where people opt in during terms the court sets after it appoints the representative, the record of a person who has to opt in needs the opt-in only at a reference date after the last term that applies to it closed, made within one of those terms and through its channel, or else the one the annex names; an opt-in made between two terms does not count. Until then this standard counts the record on its residence alone; the annex says whether a court is known to count that support, and the cross-section (6.3) can show people abroad apart from residents, so their support can be weighed either way. Where the annex has no such window, the opt-in is due from the start; where the law sets a deadline for it, the annex says whether the export states the deadline as a term, without a channel, since the law names the channel; where it does, an opt-in after it does not count. Where the court applies opt-out to people abroad, the export states no term.
 
-Where the court fixes the date residence is tested on, the export states it (`residence_on`), and each record's residence is established for that date. Where a claim falls under two laws, as a transitional rule may split it, the export states the parts (`parts`) and each record the parts it belongs to; the annex names the part its opt-in governs. The opt-in counts in that part alone: a record outside it needs none, and a record in it and in another part is graded without it, and counts in the part the opt-in governs at the grade the opt-in gives it there.
+Where the court fixes the date residence is tested on, the export states it (`residence_on`), and each record's residence is established for that date. Where a claim falls under two laws, as a transitional rule may split it, the export states the parts (`parts`), the size of each (`denominator.parts`), and each record the parts it belongs to; a person whose claim falls in both parts counts in the size and the coverage of each. The annex names the part its opt-in governs. The opt-in counts in that part alone: a record outside it needs none, and a record in it and in another part is graded without it, and counts in the part the opt-in governs at the grade the opt-in gives it there.
 
 An electronic identification proves who a person is. In the EU Digital Identity Wallet residence is an optional attribute (Implementing Regulation (EU) 2024/2977, Annex, Table 2), so residence needs a source of its own.
 
@@ -153,7 +153,7 @@ Where the class has facets of its own (region, age band, product, period, channe
 
 ### 6.4 Subgroups
 
-Where the class has real subgroups (different products, contracts or periods that change the claim), coverage is stated per subgroup.
+Where the class has real subgroups (different products, contracts or periods that change the claim), coverage is stated per subgroup, each against a denominator of its own with its source, method and date (`denominator.subgroups`). A record belongs to one subgroup.
 
 ### 6.5 Represented claims
 
@@ -217,13 +217,13 @@ A register claims one level. The representative chooses the level its class and 
 
 ### 11.1 The facts export
 
-The facts export is one JSON document: the register's metadata (representative, action and whether it is brought under the Directive, class definition, denominator, reference date, the opt-in terms, the residence date where a court fixed it, the parts of a claim that falls under two laws, facets), its flow versions, its terms versions, its records and the anchor of its manifest. `schema/export.schema.json` defines it. It holds the facts that set each grade, not the personal data behind them: whether a name is held, not the name. Its records keep their pseudonymous identifiers, so for whoever can link them to the source records, the representative first, the export is still personal data.
+The facts export is one JSON document: the register's metadata (representative, action and whether it is brought under the Directive, class definition, denominator with the size of each subgroup and part, reference date, the opt-in terms, the residence date where a court fixed it, the parts of a claim that falls under two laws, facets), its flow versions, its terms versions, its records and the anchor of its manifest. `schema/export.schema.json` defines it. It holds the facts that set each grade, not the personal data behind them: whether a name is held, not the name. Its records keep their pseudonymous identifiers, so for whoever can link them to the source records, the representative first, the export is still personal data.
 
 The facts export is what a validator reads, what a funder or court may be shown in aggregate, and what moves with the register when the operator changes. The auditor of section 8 reads the source records, not the export.
 
 ### 11.2 The conformance statement
 
-A representative that claims a level publishes a one-page statement: the level, the annex, the reference date, the denominator and its source, the count and coverage at each grade, how many records at grade C rest on evidence that does not establish class membership, the snapshot root, the manifest's digest and its anchor, and the auditor with the kind of engagement and the date of the report. No personal data. Until the auditor has reported, the statement is a draft and says so. `schema/conformance.schema.json` defines it.
+A representative that claims a level publishes a one-page statement: the level, the annex, the reference date, the denominator and its source, the count and coverage at each grade, and per subgroup and per part where the class has them, how many records at grade C rest on evidence that does not establish class membership, the snapshot root, the manifest's digest and its anchor, and the auditor with the kind of engagement and the date of the report. No personal data. Until the auditor has reported, the statement is a draft and says so. `schema/conformance.schema.json` defines it.
 
 ### 11.3 Canonical form and digests
 
@@ -281,15 +281,15 @@ A validator never states that a register meets a level: the auditor's check and 
 | `joined_outside_flow` | not consistent | A record joined on a day its flow version was not live (5.1) |
 | `confirmed_before_joining` | not consistent | A record's confirmation predates its joining |
 | `flow_dates_inverted` | not consistent | A flow version was replaced before it went live |
-| `denominator_inverted` | not consistent | The denominator's low end is above its high end |
+| `denominator_inverted` | not consistent | A denominator's low end is above its high end |
 | `claims_inverted` | not consistent | The represented claims' low end is above their high end |
 | `residents_unstated` | not consistent | The annex leaves residents' opt-in to the action, and the export does not state it, or not for a record's subgroup (4.6) |
 | `opt_in_terms_without_opt_in` | not consistent | The export states opt-in terms, and the action binds nobody on an opt-in |
 | `term_channel_without_window` | not consistent | An opt-in term states a channel where the annex has no window, so the law names the channel (4.6) |
 | `opt_in_term_inverted` | not consistent | An opt-in term closes before it opens |
-| `unknown_subgroup` | not consistent | A term or the residents' opt-in names a subgroup the export does not declare |
+| `unknown_subgroup` | not consistent | A term, the residents' opt-in or the denominator names a subgroup the export does not declare |
 | `parts_unstated` | not consistent | The export splits the claim into parts, and a record states none |
-| `unknown_part` | not consistent | A record belongs to a part the export does not state |
+| `unknown_part` | not consistent | A record belongs to, or the denominator sizes, a part the export does not state |
 | `anchored_before_reference_date` | not consistent | The anchor is dated before the reference date it fixes |
 | `grade_differs` | not verified | A record states a grade its facts do not give |
 | `digest_differs` | not verified | A record states a digest its canonical form does not give |
@@ -299,6 +299,7 @@ A validator never states that a register meets a level: the auditor's check and 
 | `flow_not_captured` | registered | A flow version an active record names was not captured (5.1) |
 | `residence_unsourced` | registered | A residence the opt-in turns on has no source (4.6) |
 | `opt_in_names_other_action` | registered | An opt-in names the action otherwise than the court's reference (4.6) |
+| `part_without_denominator` | registered | A part of a split claim has no size of its own (4.6) |
 | `flow_without_digest` | identified | A captured flow version an active record names has no digest (5.1) |
 | `terms_without_digest` | identified | A terms version an active record names has no digest (5.2) |
 | `record_without_digest` | identified | A record has no digest (5.3) |
@@ -307,6 +308,7 @@ A validator never states that a register meets a level: the auditor's check and 
 | `flow_not_witnessed` | verified | A flow version an active record names was not witnessed by a bailiff or notary (5.1) |
 | `subgroups_undeclared` | verified | The export does not declare its subgroups, or that it has none (6.4) |
 | `subgroup_undeclared` | verified | A counted record has no declared subgroup (6.4) |
+| `subgroup_without_denominator` | verified | A declared subgroup has no denominator of its own (6.4) |
 
 ## 12. Annexes
 

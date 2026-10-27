@@ -208,6 +208,20 @@
                 },
                 "as_of": {
                     "$ref": "#/$defs/date"
+                },
+                "subgroups": {
+                    "description": "The size of each subgroup the export declares, by its name (section 6.4).",
+                    "type": "object",
+                    "additionalProperties": {
+                        "$ref": "#/$defs/size"
+                    }
+                },
+                "parts": {
+                    "description": "The size of each part of a split claim, by its name: a person whose claim falls in both counts in each (section 4.6).",
+                    "type": "object",
+                    "additionalProperties": {
+                        "$ref": "#/$defs/size"
+                    }
                 }
             }
         },
@@ -398,6 +412,39 @@
         }
     },
     "$defs": {
+        "size": {
+            "description": "A size as a range, or a figure as low equal to high, with its source, method and date (section 6.1).",
+            "type": "object",
+            "required": [
+                "low",
+                "high",
+                "source",
+                "method",
+                "as_of"
+            ],
+            "additionalProperties": false,
+            "properties": {
+                "low": {
+                    "type": "integer",
+                    "minimum": 1
+                },
+                "high": {
+                    "type": "integer",
+                    "minimum": 1
+                },
+                "source": {
+                    "type": "string",
+                    "minLength": 1
+                },
+                "method": {
+                    "type": "string",
+                    "minLength": 1
+                },
+                "as_of": {
+                    "$ref": "#/$defs/date"
+                }
+            }
+        },
         "date": {
             "type": "string",
             "format": "date",
