@@ -18,7 +18,7 @@ For the board of a representative, before it claims a level. Each line is a yes 
 | 10 | Is every change to a record logged: what, when, by whom, why? | 5.3 |
 | 11 | At each reference date, do we fix the snapshot root and the manifest, and anchor the manifest in time? | 5.4 |
 | 12 | Does the board commission an auditor, independent of the operator and the funder, who traces a sample from the register to the source records and back? | 8 |
-| 13 | Do we own the register, can we export it complete at any time at no extra cost, and can we replace the operator? | 9 |
+| 13 | Do we own the register, can we export it complete at any time at no extra cost, its source records readable without the operator's systems in the form we fixed when the operator started, and can we replace the operator? | 9 |
 | 14 | Does the operator's fee depend neither on the outcome nor on the number of records? | 9 |
 
 ## Level 2: Identified
