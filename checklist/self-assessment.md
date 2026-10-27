@@ -7,7 +7,7 @@ For the board of a representative, before it claims a level. Each line is a yes 
 | # | Question | Core |
 |---:|---|---|
 | 1 | Is the class definition written down, versioned, dated and approved by the board? | 3, 9 |
-| 2 | Do we state the size of the class with its source, its method and its date, as a range where it is uncertain? | 6.1 |
+| 2 | Do we state the size of the class with its source, its method and its date, as a range where it is uncertain, and, where the claim is split into parts, the size of each part? | 4.6, 6.1 |
 | 3 | Does every version of the sign-up flow state the representative, the defendant, the claim and the period before anyone joins? | 5.1 |
 | 4 | Is every version of the sign-up flow captured in full, in every language, with the dates it was live? | 5.1 |
 | 5 | Does every record name the flow version it joined through and the terms version the person accepted? | 5.1, 5.2 |

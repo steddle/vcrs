@@ -18,7 +18,7 @@
 - Core 11.1 and the descriptions of the export and record schemas: the records keep pseudonymous identifiers, so the export is personal data for whoever can link them to the source records.
 - The descriptions of `opt_in.action` and `action.court_reference` in the record and export schemas: an opt-in that names another action leaves the grade as it is and withholds every level, as core 11.6 says.
 - The conformance statement says its figures describe the representative's register, not whom the law or the court treats as represented or bound.
-- The self-assessment's question 23 asks for each subgroup's denominator.
+- The self-assessment's question 2 asks for the size of each part of a split claim, and question 23 for each subgroup's denominator.
 - Every annex quotation that was shortened with '(...)' quotes the publisher's text literally, as one passage or as separate passages joined by the annex's own words (Annexes AT, CZ, DE, IT, NL and PT). Annex NL-5 keeps the court's qualifier that the date of birth was asked on enrolment through SOMI's websites, and NL-4 says what the Hoge Raad faulted the Hof for.
 - Each annex and the annex template say who wrote the annex and whether counsel admitted in its jurisdiction has reviewed it; GOVERNANCE says the same.
 - Annex NL-9: the foundation supplies the figures in the writ, or at the latest in reply to an express defence, as Rb Noord-Holland 2025:8944 ro. 4.50 and 4.52 say.
