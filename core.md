@@ -4,11 +4,11 @@ VCRS 0.1.0-beta.5, core. Draft for consultation. Not legal advice.
 
 ## 1. Purpose and scope
 
-A collective action is brought by one party for many: a foundation, an association, a qualified entity or a class representative. Courts ask that party to show who stands behind it, and later who gets paid. The record of those people is the register.
+A collective action is brought by one party for many: a foundation, an association, a qualified entity or a class representative. Courts ask that party to show who stands behind it, and later who gets paid. The record of those people is the register. What a court asks of it, and when, differs per jurisdiction: one weighs the support the register shows, another binds people through a list the law itself keeps.
 
 This standard sets out how a register shows that: how each record is graded, what provenance it carries, how coverage of the class is measured, at which date, and how an outsider checks it without trusting whoever runs it.
 
-The core holds what is the same in every jurisdiction. An annex per jurisdiction holds what its law and courts require, with the article or ruling for each item. A register applies the core and one annex.
+The core holds what is the same in every jurisdiction. An annex per jurisdiction holds what its law and courts require, with the article or ruling for each item, and the role the register plays there. A register applies the core and one annex.
 
 The standard describes a register. It says nothing about the merits of a claim.
 

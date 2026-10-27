@@ -2,6 +2,9 @@
 
 ## [Unreleased]
 
+**Changed**
+- Core 1: what a court asks of a register, and when, differs per jurisdiction, and the annex says what role the register plays there.
+
 ## [0.1.0-beta.4] - 2026-10-26
 
 **Added**
