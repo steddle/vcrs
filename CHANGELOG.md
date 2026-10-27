@@ -6,6 +6,7 @@
 - Core 1: what a court asks of a register, and when, differs per jurisdiction, and the annex says what role the register plays there.
 - Core 9: the open format of section 11 carries the facts that set each grade; the source records, the evidence, the flow captures and the change log go with them in a form the representative and the operator agree.
 - Core 9: a fee that does not depend on the number of records is this standard's own condition, with its reason.
+- Core 10: the annex recommends a level, and that recommendation is not a court's rule.
 
 ## [0.1.0-beta.4] - 2026-10-26
 

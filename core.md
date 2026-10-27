@@ -197,7 +197,7 @@ The register serves the representative, and stays under its control whoever runs
 
 ## 10. Levels
 
-A register claims one level. The representative chooses the level its class and claim need; the annex says which level a court there is likely to look for.
+A register claims one level. The representative chooses the level its class and claim need; the annex recommends the level a typical action there needs, a recommendation and not a court's rule.
 
 | | Level 1: Registered | Level 2: Identified | Level 3: Verified |
 |---|---|---|---|
