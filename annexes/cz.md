@@ -1,13 +1,13 @@
 # Annex CZ: Czech Republic (hromadné řízení)
 
-VCRS 0.1.0-beta.5. Draft for consultation. Not legal advice. Law and rulings as read on 19 and 21 October 2026 in the Sbírka zákonů (e-Sbírka), the Ministerstvo spravedlnosti's rejstřík hromadných řízení and the Městský soud v Praze's documents published in it, the Ministerstvo průmyslu a obchodu's list of authorised persons and the European Commission's overview of notified eID schemes.
+VCRS 0.1.0-beta.5. Draft for consultation. Not legal advice. Law and rulings as read on 19, 21 and 27 October 2026 in the Sbírka zákonů (e-Sbírka), the Ministerstvo spravedlnosti's rejstřík hromadných řízení and the Městský soud v Praze's documents published in it, the Ministerstvo průmyslu a obchodu's list of authorised persons and the European Commission's overview of notified eID schemes.
 
 ## 1. The regime
 
 A collective damages action is a hromadná žaloba under the zákon č. 179/2024 Sb., o hromadném občanském řízení soudním, in force since 1 July 2024, which transposes Directive (EU) 2020/1828 and applies to disputes between consumers and a trader (§ 4). 'Podle tohoto zákona lze projednat a rozhodnout spory o práva nebo oprávněné zájmy, které vznikly po dni 24. listopadu 2020.' (§ 92 odst. 1).
 
 - **Who may sue.** 'Žalobcem v hromadném řízení může být pouze právnická osoba, která je zapsána do seznamu oprávněných osob podle zákona o ochraně spotřebitele, nebo společně více takovýchto osob.' (§ 8 odst. 1). The Ministerstvo průmyslu a obchodu keeps the Czech list, and an entity enters it only after it 'aktivně působí v oblasti ochrany zájmů spotřebitelů po dobu alespoň 12 měsíců' (§ 25a odst. 1 písm. b) zákona č. 634/1992 Sb.), so no entity formed for one action can sue. The plaintiff 'musí být v hromadném řízení zastoupen advokátem' (§ 14).
-- **Admissibility.** 'Hromadná žaloba je přípustná, jestliže (...) c) skupina má alespoň 10 členů, d) tvrzená práva nebo oprávněné zájmy členů skupiny jsou založeny na podobném skutkovém a právním základu' (§ 15). The court examines these when the defendant raises them, and checks only the plaintiff's listing of its own motion (Městský soud v Praze, 11 February 2025, 3 C 10/2024-10, para. 18). It examines them at any later stage too: 'Podmínky přípustnosti hromadné žaloby soud zkoumá kdykoliv v průběhu hromadného řízení ve věci samé.' (§ 24 odst. 1).
+- **Admissibility.** 'Hromadná žaloba je přípustná, jestliže', among other conditions, 'c) skupina má alespoň 10 členů, d) tvrzená práva nebo oprávněné zájmy členů skupiny jsou založeny na podobném skutkovém a právním základu' (§ 15). The court examines these when the defendant raises them, and checks only the plaintiff's listing of its own motion (Městský soud v Praze, 11 February 2025, 3 C 10/2024-10, para. 18). It examines them at any later stage too: 'Podmínky přípustnosti hromadné žaloby soud zkoumá kdykoliv v průběhu hromadného řízení ve věci samé.' (§ 24 odst. 1).
 - **The court.** The Městský soud v Praze heard both actions admitted by 21 October 2026.
 
 ## 2. Who is bound, and how they join

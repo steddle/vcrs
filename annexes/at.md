@@ -1,6 +1,6 @@
 # Annex AT: Austria (Verbandsklage auf Abhilfe)
 
-VCRS 0.1.0-beta.5. Draft for consultation. Not legal advice. Law and rulings as read on 19 and 21 October 2026 on the Rechtsinformationssystem des Bundes (RIS), the Parlament's site, the Bundeskartellanwalt's publications and the Official Journal of the European Union.
+VCRS 0.1.0-beta.5. Draft for consultation. Not legal advice. Law and rulings as read on 19, 21 and 27 October 2026 on the Rechtsinformationssystem des Bundes (RIS), the Parlament's site, the Bundeskartellanwalt's publications and the Official Journal of the European Union.
 
 ## 1. The regime
 
@@ -12,7 +12,7 @@ A collective damages action is a Verbandsklage auf Abhilfe under §§ 623 to 635
 
 ## 2. Who is bound, and how they join
 
-- **Opt-in, for everyone.** Austria 'wählt (...) für die Verbandsklage auf Abhilfe ein opt-in System' (ErläutRV zu § 624). The judgment binds the consumers named in the claim and those who join (§ 624(1), § 628(4) ZPO); a court-approved settlement 'bindet auch die beigetretenen Verbraucher' (§ 631(3)). Neither § 624 nor § 628 distinguishes by residence, so everyone opts in, wherever they live: `at.json` sets `opt_in_abroad` and `opt_in_residents` to true, names the QE's filing as the channel, `qe`, and asks every opt-in for the declaration on parallel actions (core 4.6). The export states no opt-in window: the opt-in is due from the start, so a record counts once the QE has filed the claim or the Beitritt that names the person.
+- **Opt-in, for everyone.** Austria chose 'für die Verbandsklage auf Abhilfe ein opt-in System' (ErläutRV zu § 624). The judgment binds the consumers named in the claim and those who join (§ 624(1), § 628(4) ZPO); a court-approved settlement 'bindet auch die beigetretenen Verbraucher' (§ 631(3)). Neither § 624 nor § 628 distinguishes by residence, so everyone opts in, wherever they live: `at.json` sets `opt_in_abroad` and `opt_in_residents` to true, names the QE's filing as the channel, `qe`, and asks every opt-in for the declaration on parallel actions (core 4.6). The export states no opt-in window: the opt-in is due from the start, so a record counts once the QE has filed the claim or the Beitritt that names the person.
 - **Joining, through the QE.** 'Einer Verbandsklage auf Abhilfe kann jeder Verbraucher im Wege der Qualifizierten Einrichtung beitreten' (§ 628(1)), and 'Der Beitritt kann von der Qualifizierten Einrichtung ohne Angabe von Gründen abgelehnt werden'. It runs in two steps: 'Der Beitritt erfolgt zweistufig, indem sich der Verbraucher zunächst außergerichtlich und verfahrensrechtlich unverbindlich an die Qualifizierte Einrichtung wendet' (ErläutRV zu § 628). The QE then files a Schriftsatz with court and defendant stating the facts, a claim, 'sowie die Erklärung, dass der Anspruch weder im Inland noch im Ausland geltend gemacht wurde oder wird' (§ 628(2)).
 - **The window.** 'Ein Beitritt kann bis drei Monate nach Veröffentlichung der Entscheidung über die Durchführung eines Verbandsklageverfahrens gemäß § 627 Abs. 1 ZPO erfolgen' (§ 628(3)). The QE may set a shorter one: 'Es steht der Qualifizierten Einrichtung aber frei, diesen Zeitraum zu verkürzen' (ErläutRV zu § 628).
 - **No withdrawal.** 'Eine Zurücknahme des Beitritts ist unzulässig' (§ 628(5)).
@@ -31,7 +31,7 @@ A collective damages action is a Verbandsklage auf Abhilfe under §§ 623 to 635
 | Distribution | The payee for each claimant, the QE where it asked for payment to itself, and the QE's payout record | § 633 ZPO; § 9(7) QEG |
 | After rejection | Who had joined and when, so each can use the three months left to them | § 635 ZPO |
 
-**Reference dates.** The filing date for the initial 50: the number 'soll (...) nur im Zeitpunkt der Klagserhebung vorliegen müssen' (ErläutRV zu § 624). For joiners, the date each Beitritt is filed, and the last day of the window. No Abhilfeklage had been admitted by 19 October 2026: the Handelsgericht Wien's page for publications under §§ 627 and 634 listed none.
+**Reference dates.** The filing date for the initial 50: the number need be met 'nur im Zeitpunkt der Klagserhebung' (ErläutRV zu § 624). For joiners, the date each Beitritt is filed, and the last day of the window. No Abhilfeklage had been admitted by 19 October 2026: the Handelsgericht Wien's page for publications under §§ 627 and 634 listed none.
 
 ## 4. Required items
 
@@ -57,7 +57,7 @@ A register that claims a level in an Austrian action meets every item below. The
 
 | # | Item | Core | Reason |
 |---|---|---|---|
-| AT-12 | Deduplication on name and birth date at least, so that namesakes are told apart | 4.1 (6), 4.5 | The Handelsgericht Wien ordered the QE to describe each person 'unzweifelhaft individualisierbar so (...) dass das Gericht prüfen könne, ob die mehrfache Anführung des gleichen Namens in Beilage ./D dieselbe Person oder verschiedene, namensgleiche Personen betreffe' (as quoted in OLG Wien 33 R 135/25b); a list of consumers 'durch ihr Geburtsdatum individualisierten' drew no criticism (OGH 9 Ob 111/25a [2]) |
+| AT-12 | Deduplication on name and birth date at least, so that namesakes are told apart | 4.1 (6), 4.5 | The Handelsgericht Wien ordered the QE 'die Personen, deren Begehren auf Abhilfe geltend gemacht werde, unzweifelhaft individualisierbar so zu beschreiben, dass das Gericht prüfen könne, ob die mehrfache Anführung des gleichen Namens in Beilage ./D dieselbe Person oder verschiedene, namensgleiche Personen betreffe' (as quoted in OLG Wien 33 R 135/25b); a list of consumers 'durch ihr Geburtsdatum individualisierten' drew no criticism (OGH 9 Ob 111/25a [2]) |
 | AT-13 | The consumers named in the claim hold the declaration on parallel actions too | 4.1 (8), 4.6 | § 628(2) ZPO asks it of joiners alone. A named consumer's claim pursued elsewhere fails the same way a joiner's does (§ 628(4)), and nobody is represented twice on the same claim (Directive (EU) 2020/1828, art. 9(4)). `parallel_declaration` applies to every opt-in, so the validator asks it of all |
 
 ## 5. Recommended items
