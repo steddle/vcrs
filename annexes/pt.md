@@ -1,6 +1,6 @@
 # Annex PT: Portugal (ação popular and DL 114-A/2023)
 
-VCRS 0.1.0-beta.5. Draft for consultation. Not legal advice. Law and rulings as read on 19, 21 and 27 October 2026 on the Diário da República, the consolidated database of the Procuradoria-Geral Regional de Lisboa, dgsi.pt and the Direção-Geral do Consumidor.
+VCRS 0.1.0-beta.6. Draft for consultation. Not legal advice. Law and rulings as read on 19, 21 and 27 October 2026 on the Diário da República, the consolidated database of the Procuradoria-Geral Regional de Lisboa, dgsi.pt and the Direção-Geral do Consumidor.
 
 Written by Holly Thackwray and Mischa Sigtermans for Steddle. Not yet reviewed by counsel admitted in Portugal.
 

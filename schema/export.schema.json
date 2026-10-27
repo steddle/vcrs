@@ -1,8 +1,8 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://vcrs.org/schema/0.1.0-beta.5/export.schema.json",
+    "$id": "https://vcrs.org/schema/0.1.0-beta.6/export.schema.json",
     "title": "VCRS facts export",
-    "description": "A claimant register in the open format of VCRS 0.1.0-beta.5, section 11.1: the facts that set each record's grade, without the names, contact details and documents behind them. Its records keep their pseudonymous identifiers, so for whoever can link them to the source records, the representative first, the export is personal data.",
+    "description": "A claimant register in the open format of VCRS 0.1.0-beta.6, section 11.1: the facts that set each record's grade, without the names, contact details and documents behind them. Its records keep their pseudonymous identifiers, so for whoever can link them to the source records, the representative first, the export is personal data.",
     "type": "object",
     "required": [
         "vcrs",
@@ -22,7 +22,7 @@
     "additionalProperties": false,
     "properties": {
         "vcrs": {
-            "const": "0.1.0-beta.5"
+            "const": "0.1.0-beta.6"
         },
         "annex": {
             "description": "The jurisdiction annex applied, by ISO 3166-1 alpha-2 code in lowercase.",

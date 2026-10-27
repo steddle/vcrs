@@ -1,6 +1,6 @@
 # Annex BE: Belgium (action en réparation collective)
 
-VCRS 0.1.0-beta.5. Draft for consultation. Not legal advice. Law and rulings as read on 19 and 21 October 2026 on Justel, the Moniteur belge, the Cour constitutionnelle, the Chambre des représentants, the SPF Economie and the Conseil central de l'économie.
+VCRS 0.1.0-beta.6. Draft for consultation. Not legal advice. Law and rulings as read on 19 and 21 October 2026 on Justel, the Moniteur belge, the Cour constitutionnelle, the Chambre des représentants, the SPF Economie and the Conseil central de l'économie.
 
 Written by Holly Thackwray and Mischa Sigtermans for Steddle. Not yet reviewed by counsel admitted in Belgium.
 

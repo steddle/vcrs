@@ -1,6 +1,6 @@
 # Annex DE: Germany (Verbandsklage under the VDuG)
 
-VCRS 0.1.0-beta.5. Draft for consultation. Not legal advice. Law and rulings as read on 19, 21 and 27 October 2026 on gesetze-im-internet.de, the Bundestag, the Bundesamt für Justiz, the Bundesgerichtshof and the Official Journal of the European Union.
+VCRS 0.1.0-beta.6. Draft for consultation. Not legal advice. Law and rulings as read on 19, 21 and 27 October 2026 on gesetze-im-internet.de, the Bundestag, the Bundesamt für Justiz, the Bundesgerichtshof and the Official Journal of the European Union.
 
 Written by Holly Thackwray and Mischa Sigtermans for Steddle. Not yet reviewed by counsel admitted in Germany.
 

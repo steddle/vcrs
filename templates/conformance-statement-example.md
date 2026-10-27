@@ -1,6 +1,6 @@
 # Conformance statement: an example
 
-VCRS 0.1.0-beta.5, core and Annex NL. The [conformance statement](conformance-statement.md) filled in for the example register in [register.json](register.json) and [records.csv](records.csv). The representative, the defendant, the operator, the auditor and the anchor's timestamp are fictional. The figures are the example register's: eight records against a class of 21 000 to 26 000, so its coverage is a fraction of a percent.
+VCRS 0.1.0-beta.6, core and Annex NL. The [conformance statement](conformance-statement.md) filled in for the example register in [register.json](register.json) and [records.csv](records.csv). The representative, the defendant, the operator, the auditor and the anchor's timestamp are fictional. The figures are the example register's: eight records against a class of 21 000 to 26 000, so its coverage is a fraction of a percent.
 
 | | |
 |---|---|
@@ -36,7 +36,7 @@ The example class has no subgroups, and its claim is not split into parts.
 |---|---|
 | Records in the snapshot | 8 |
 | Snapshot root | sha256:c5c5ab8d8c56c7dc71e1b26e22d95968dd938a032ae853a7ea49862a935b3937 |
-| Manifest | sha256:3a8aad97f3913f7dd6c6ceee305a58098681f5bb5abf1d7cc7c1e1eb84765c64 |
+| Manifest | sha256:3d94a663d062005d2e7ea39af5eb4e7462184d419a93053578a4f31f38a7649e |
 | Anchored by | OpenTimestamps, snapshots/2026-10-12.ots, 2026-10-12 |
 
 ## The independent check
@@ -57,7 +57,7 @@ The same statement, as [`schema/conformance.schema.json`](../schema/conformance.
 
 ```json
 {
-    "vcrs": "0.1.0-beta.5",
+    "vcrs": "0.1.0-beta.6",
     "annex": "nl",
     "level": "verified",
     "draft": false,
@@ -110,7 +110,7 @@ The same statement, as [`schema/conformance.schema.json`](../schema/conformance.
     "membership_not_established": 0,
     "snapshot": {
         "root": "sha256:c5c5ab8d8c56c7dc71e1b26e22d95968dd938a032ae853a7ea49862a935b3937",
-        "manifest": "sha256:3a8aad97f3913f7dd6c6ceee305a58098681f5bb5abf1d7cc7c1e1eb84765c64",
+        "manifest": "sha256:3d94a663d062005d2e7ea39af5eb4e7462184d419a93053578a4f31f38a7649e",
         "records": 8,
         "anchor": {
             "method": "opentimestamps",

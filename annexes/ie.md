@@ -1,6 +1,6 @@
 # Annex IE: Ireland (representative action under the 2023 Act)
 
-VCRS 0.1.0-beta.5. Draft for consultation. Not legal advice. Law and rulings as read on 19 and 21 October 2026 on the electronic Irish Statute Book, the Courts Service's judgments, the British and Irish Legal Information Institute, the Department of Enterprise, Tourism and Employment's register of qualified entities and the European Commission's overview of notified eID schemes.
+VCRS 0.1.0-beta.6. Draft for consultation. Not legal advice. Law and rulings as read on 19 and 21 October 2026 on the electronic Irish Statute Book, the Courts Service's judgments, the British and Irish Legal Information Institute, the Department of Enterprise, Tourism and Employment's register of qualified entities and the European Commission's overview of notified eID schemes.
 
 Written by Holly Thackwray and Mischa Sigtermans for Steddle. Not yet reviewed by counsel admitted in Ireland.
 

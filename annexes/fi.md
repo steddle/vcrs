@@ -1,6 +1,6 @@
 # Annex FI: Finland (ryhmäkanne under the ryhmäkannelaki)
 
-VCRS 0.1.0-beta.5. Draft for consultation. Not legal advice. Law as read on 19 and 21 October 2026 on Finlex, the Kilpailu- ja kuluttajavirasto's publications and the European Commission's list of qualified entities and overview of notified eID schemes.
+VCRS 0.1.0-beta.6. Draft for consultation. Not legal advice. Law as read on 19 and 21 October 2026 on Finlex, the Kilpailu- ja kuluttajavirasto's publications and the European Commission's list of qualified entities and overview of notified eID schemes.
 
 Written by Holly Thackwray and Mischa Sigtermans for Steddle. Not yet reviewed by counsel admitted in Finland.
 
