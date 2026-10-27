@@ -191,7 +191,7 @@ The auditor reports under a recognised standard for agreed-upon procedures or as
 The register serves the representative, and stays under its control whoever runs it.
 
 - The representative owns the register and is the controller of its personal data. The operator processes on its instructions.
-- The representative can export the complete register, with its evidence, flow captures and change log, in the open format of section 11, at any time and at no extra cost, and can replace the operator.
+- The representative can export the complete register, with its evidence, flow captures and change log, at any time and at no extra cost, and can replace the operator. The facts that set each grade go in the open format of section 11; the source records, the evidence, the flow captures and the change log go with them in a form the representative and the operator agree.
 - The representative's board approves the class definition, the text of each flow version, and any rule the annex leaves to the case.
 - The operator's fee does not depend on the outcome of the action or on the number of records.
 
